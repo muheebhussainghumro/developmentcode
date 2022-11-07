@@ -1,0 +1,1736 @@
+@font-face {
+    font-family: 'Playlist';
+    src: url('/resource_redirect/downloads/sites/2147609345/themes/2151844154/downloads/xTA6TX6ZQauVH8HTLtkR_Playlist_Script.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'London';
+    src: url('/resource_redirect/downloads/sites/2147609345/themes/2151826255/downloads/xw7wuIu3TdOnE0pbDE5R_MisterLondonScript-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Lato';
+    src: url('/resource_redirect/downloads/sites/2147609345/themes/2151844154/downloads/C24qI8zPRciX6GSFKiSF_Lato-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Albert Sans';
+    src: url('/resource_redirect/downloads/sites/2147609345/themes/2151844154/downloads/ml7WhR6AQ5GcsYcMRUaH_AlbertSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Albert Sans';
+    src: url('/resource_redirect/downloads/sites/2147609345/themes/2151844154/downloads/ZoxzjYrqT9S2bW0qGD9g_AlbertSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: s.underlined:before
+  wap;
+  }
+  @font-face {
+    font-family: 'Holiday Script';
+    src: url('https://meredithandalicia.mykajabi.com/resource_redirect/downloads/sites/2147609345/themes/2151844154/downloads/G3CjHmwMQimrnNh0pebQ_HolidayScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* This removes the rounded corners of the form fields */
+  
+  .form-control {
+  border-radius: 0px;
+  margin-top: -1px;
+  }
+  
+  /* This changes the bulleted list to have green arrows instead of dots */
+  
+  .bullet-arrow {
+  list-style-type: none;
+  }
+  
+  .bullet-arrow li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 8px;
+  }
+  
+  .bullet-arrow li:before {
+  content: '\00BB';
+  color: #127059;
+  font-size: 34px;
+  position: absolute;
+  top: -14px;
+  left: -20px;
+  }
+  
+  
+  /* This changes the bulleted list to have green check marks instead of dots */
+  
+  .bullet-check {
+  list-style-type: none;
+  }
+  
+  .bullet-check li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 6px;
+  }
+  
+  .bullet-check li:before {
+  content: '\2713';
+  color: #127059;
+  font-size: 20px;
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  }
+  
+  /* This changes the bulleted list to have white arrows instead of dots */
+  
+  .bullet-arrow-white {
+  list-style-type: none;
+  }
+  
+  .bullet-arrow-white li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 8px;
+  }
+  
+  .bullet-arrow-white li:before {
+  content: '\00BB';
+  color: #ffffff;
+  font-size: 34px;
+  position: absolute;
+  top: -14px;
+  left: -20px;
+  }
+  
+  
+  /* This changes the bulleted list to have white check marks instead of dots */
+  
+  .bullet-check-white {
+  list-style-type: none;
+  }
+  
+  .bullet-check-white li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 6px;
+  }
+  
+  .bullet-check-white li:before {
+  content: '\2713';
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  }
+  
+  
+  /* This removes the rounded corners of the filter field as seen on the Announcements and Blog Search Pages  */
+  
+  .filter__field {
+  border-radius: 0px !important;
+  }
+  
+  
+  /* This moves the podcast intro section up higher so that it is behind the transparent header. Delete this code if not using a transparent header for the website theme */
+  
+  .podcast-intro { 
+  margin-top: -80px !important;
+  padding-top: 80px !important;
+  }
+  
+  
+  /* This moves the coaching product hero section up higher so that it is behind the transparent header. Delete this code if not using a transparent header for the website theme */
+  
+  .coaching-programs__container { 
+  margin-top: -94px !important;
+  }
+  
+  .coaching-programs__header  {
+  padding-top: 94px !important;
+  }
+  
+  
+  /* This removes the rounded corners on the error prompt */
+  
+  .parsley-errors-list {
+  border-radius: 0px !important;
+  }
+  
+  
+  /* This removes the rounded corners on alert messages */
+  
+  .alert {
+  border-radius: 0px !important;
+  }
+  
+  
+  /* This makes form labels white - important for the login page */
+  
+  .form-group label {
+  color: #ffffff !important;
+  }
+  
+  /* HOMEPAGE CSS */
+  .header__block--logo a img {
+    filter: drop-shadow(0px 5px 7px rgba(0,0,0,.7)) !important;
+  }
+  .header__block--logo a {
+    -webkit-filter: brightness(115%) !important;
+    filter: brightness(115%) !important;
+  }
+  
+  body {
+    background-color: #FFFCFC !important;
+  }
+  
+  div#block-1555988491313 .link-list > a.active {
+    color: #F1A885;
+    text-transform: uppercase;
+  }
+  div#block-1555988491313 .link-list > a:hover {
+    color: #F1A885;
+  }
+  .hero-title-h1 {
+    font-family: 'Albert Sans';
+    font-weight: 600;
+    font-style: normal;
+    line-height: 230%;
+    text-transform: uppercase;
+   font-size: 60px;
+   color: #fff;
+  }
+  .hero-title-h1 span {
+    font-family: 'Playlist';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    font-size: 130px;
+    text-transform: capitalize;
+  }
+  .hero-title-h2 {
+    font-family: 'Albert Sans';
+    font-weight: 600;
+    font-style: normal;
+    line-height: 230%;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #fff;
+  }
+  .hero-title-h2 span {
+    font-family: 'Playlist';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    font-size: 130px;
+    text-transform: capitalize;
+  }
+  .hero-title-h1 {
+    padding-right: 45px !important;
+  }
+  div#section-1643050831110{
+    background-color: #FFFCFC !important;
+  }
+  .custom-section-title h2 span {
+    font-family: 'Playlist';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-transform: capitalize;
+    font-size: 96px;
+    color: #F1A885;
+  }
+  .custom-section-title h2 {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+  }
+  .custom-section-title p {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+  }
+  .btn.btn--solid {
+    font-family: 'Albert Sans' !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+  }
+  .btn.btn--outline,
+  .form-btn.btn--outline {
+    font-family: 'Playlist';
+    font-size: 32px;
+    font-weight: 400;
+    padding: 0 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 30px;
+  }
+  a.btn.btn--outline:after,
+  .form-btn.btn--outline:after {
+    content: '';
+    display: inline-block;
+    background-image: url(https://meredithandalicia.mykajabi.com/resource_redirect/downloads/sites/2147609345/themes/2151844154/downloads/ecUxHB9SQkdJw7sdOtcA_btn-arrow.png);
+    background-size: contain;
+    width: 36px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+  .mission-title > h2 {
+    margin-bottom: 35px;
+  }
+  div#section-1665398125340:after,
+  div#section-1665489467478:after{
+    content: '';
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//sites/2147609345/images/ca7aade6-ea30-4f00-933f-d173b0699c4f.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  div#section-1665398125340,
+  div#section-1665489467478 {
+    position: relative;
+  }
+  /* What We Offer Section Starts */
+  .promo-banner-title {
+    font-family: 'Albert Sans' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 28px !important;
+    color: #FFFFFF !important;
+  }
+  div#block-1665403881163,
+  div#block-1665484586149 {
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//sites/2147609345/images/ad1f030e-d5d5-417f-8986-0899098dc349.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 43%;
+    margin-right: 25px;
+  }
+  div#block-1665403965351,
+  div#block-1665484633108 {
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//sites/2147609345/images/eaab87fc-7283-4448-a95e-2860ffad9c8d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 43%;
+    margin-left: 25px;
+  }
+  div#block-1665403427608,
+  div#block-1665484484024 {
+    margin-bottom: 4%;
+  }
+  /* What We Offer Section Ends */
+  .custom-section-title.about-title p {
+    text-align: left;
+  }
+  .custom-section-title.about-title h2 {
+    text-align: left;
+  }
+  div#section-1665406235706, 
+  div#section-1665409050202, 
+  div#section-1665412692335, 
+  div#section-1665415082198,
+  div#section-1665481828726,
+  div#section-1665489467478,
+  div#section-1599589855686 {
+    background-color: #FFFCFC;
+  }
+  .custom-section-title.about-title h2 span {
+    line-height: 155%;
+  }
+  div#section-1665406235706:before,
+  div#section-1665494318401:before {
+    content: '';
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//sites/2147609345/images/aad8a71a-6f76-4e21-be0c-9bbeb608f067.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  div#section-1665406235706,
+  div#section-1665494318401 {
+    position: relative;
+  }
+  div#section-1665408134918,
+  div#section-1665565935723 {
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//sites/2147609345/images/7ec3a06d-c273-4951-ac2c-8ade363fb0f1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: #FFFCFC;
+  }
+  .review-content, .reviewer-details p {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+  }
+  .reviewer-info > div:not(:last-child) {
+    margin-right: 20px;
+  }
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7%;
+  }
+  .reviewer-details h4 {
+    font-family: 'Playlist';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+  }
+  .reviewer-feature, .reviewer-feature img {
+    display: block;
+  }
+  div#section-1665409050202 .carousel.row .block-type--feature .block{
+  position: relative;
+  }
+  div#section-1665409050202 .carousel.row .block-type--feature .block:before {
+    content: '';
+    display: inline-block;
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//sites/2147609345/images/55719f71-adff-485b-bb43-bcf0b4bedc4a.png);
+    background-size: contain;
+    width: 80px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #section-1665409050202 .slick-prev:before, 
+  #section-1665409050202 .slick-next:before {
+    background-color: #F4F4F4;
+    padding: 10px;
+    display: inline-flex;
+    width: 55px !important;
+    height: 55px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 50% !important;
+    font-size: 26px !important;
+  }
+  #section-1665409050202 .slick-prev:hover:before, 
+  #section-1665409050202 .slick-next:hover:before {
+    background-color: #F1A885;
+  }
+  div#block-1665413017073 .block > h2 {
+    display: none !important;
+  }
+  div#block-1665413997588 {
+    margin: 0 !important;
+  }
+  footer .link-list.link-list--row > div > a:not(:last-child):after {
+    content: '|';
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  footer .link-list.link-list--row > div > a {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  div#block-1665414021021 {
+    padding-bottom: 0;
+  padding-top: 5px;
+  }
+  .footer__content {
+    padding: 15px 0;
+  }
+  .contact-info > div:not(:last-child) {
+    margin-right: 15px;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  .contact-details > label {
+    display: block;
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  .contact-details > a {
+    display: block;
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+  }
+  .contact-icon {
+    flex: 0 0 60px;
+    position: relative;
+  }
+  div#section-1665415082198 .link-list.link-list--row > div > a, 
+  div#section-1665481828726 .link-list.link-list--row > div > a,
+  div#section-1665495444244 .link-list.link-list--row > div > a,
+  div#block-1665502342332 .link-list.link-list--row > div > a,
+  div#block-1665504605898 .link-list.link-list--row > div > a,
+  div#block-1665507076860 .link-list.link-list--row > div > a,
+  div#block-1665508810167 .link-list.link-list--row > div > a {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 30px;
+    color: #333333 !important;
+  }
+  div#section-1665415082198 .link-list.link-list--row > div > a.active, 
+  div#section-1665481828726 .link-list.link-list--row > div > a.active,
+  div#section-1665495444244 .link-list.link-list--row > div > a.active,
+  div#block-1665502342332 .link-list.link-list--row > div > a.active,
+  div#block-1665504605898 .link-list.link-list--row > div > a.active,
+  div#block-1665507076860 .link-list.link-list--row > div > a.active,
+  div#block-1665508810167 .link-list.link-list--row > div > a.active {
+    color: #F1A885 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  div#section-1665415082198 .link-list.link-list--row > div, 
+  div#section-1665481828726 .link-list.link-list--row > div,
+  div#section-1665495444244 .link-list.link-list--row > div,
+  div#block-1665502342332 .link-list.link-list--row > div,
+  div#block-1665504605898 .link-list.link-list--row > div,
+  div#block-1665507076860 .link-list.link-list--row > div,
+  div#block-1665508810167 .link-list.link-list--row > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div#block-1665415695375, 
+  div#block-1665482952433,
+  div#block-1665495701302,
+  div#block-1665502342332,
+  div#block-1665504605898,
+  div#block-1665507076860,
+  div#block-1665508810167 {
+    margin-top: 3%;
+  }
+  div#section-1665415082198 .link-list.link-list--row > div > a:hover,
+  div#section-1665481828726 .link-list.link-list--row > div > a:hover,
+  div#section-1665495444244 .link-list.link-list--row > div > a:hover,
+  div#block-1665502342332 .link-list.link-list--row > div > a:hover,
+  div#block-1665504605898 .link-list.link-list--row > div > a:hover,
+  div#block-1665507076860 .link-list.link-list--row > div > a:hover,
+  div#block-1665508810167 .link-list.link-list--row > div > a:hover {
+    color: #F1A885 !important;
+  }
+  div#block-1555988491313 .link-list > a {
+    font-size: 16px;
+    color: #3F557B;
+    font-weight: 600;
+    margin: 0 20px;
+  }
+  
+  
+  /* INSIDE PAGES */
+  .inner-page-title {
+    font-family: 'Playlist' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 120px !important;
+    color: #FFFFFF !important;
+    margin-bottom: 0 !important;
+    line-height: 150%;
+  }
+  
+  /* Promo-Banner */
+  div#block-1665484586149,
+  div#block-1665484633108,
+  div#block-1665403881163,
+  div#block-1665403965351 {
+    overflow: hidden;
+  }
+  div#block-1665484586149 > div,
+  div#block-1665484633108 > div,
+  div#block-1665403881163 > div,
+  div#block-1665403965351 > div {
+    position: relative; 
+    bottom: -45px;
+    transition: .2s ease-in-out;
+  }
+  div#block-1665484586149 > div a.btn,
+  div#block-1665484633108 > div a.btn,
+  div#block-1665403881163 > div a.btn,
+  div#block-1665403965351 > div a.btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+  }
+  div#block-1665484586149:hover > div,
+  div#block-1665484633108:hover > div,
+  div#block-1665403881163:hover > div,
+  div#block-1665403965351:hover > div {
+    bottom: 0;
+  }
+  div#block-1665484586149:hover > div a.btn,
+  div#block-1665484633108:hover > div a.btn,
+  div#block-1665403881163:hover > div a.btn,
+  div#block-1665403965351:hover > div a.btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Parent Page */
+  .text-title {
+    font-family: 'Albert Sans' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    text-transform: uppercase;
+    color: #333333 !important;
+    line-height: 200%;
+  }
+  .text-title > span {
+    color: #F0A885 !important;
+    font-family: 'Playlist' !important;
+    text-transform: lowercase !important;
+    font-size: 48px !important;
+    font-weight: 400 !important;
+  }
+  .info-box-content > h4 {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 25px;
+  }
+  .info-box-content > p {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 0 !important;
+  }
+  .custom-section-title.course-page-title h2 {
+    font-size: 36px;
+    text-align: left !important;
+  }
+  .custom-section-title.course-page-title h2 span {
+    font-size: 60px !important;
+    line-height: 150% !important;
+  }
+  .course-page-title > p {
+    text-align: left !important;
+  }
+  .education-title > h2 {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  .education-title > h2 {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  .education-title > h2 > span {
+    font-family: 'Playlist';
+    text-transform: lowercase;
+    color: #F0A885;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 56px;
+  }
+  .custom-section-title.education-title ul > li:before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #333333;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  .custom-section-title.education-title ul {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    margin-top: 30px;
+  }
+  .custom-section-title.education-title ul > li {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    list-style-type: none !important;
+  }
+  .custom-section-title.education-title ul > li {
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  #section-1665495002506 {
+    background-position: bottom center !important;
+    background-size: 100% !important;
+  }
+  .course-content-wrap .ccw > h3 {
+    font-family: 'Playlist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #F1A885;
+    line-height: 155%;
+  }
+  .course-content-wrap .ccw > p,
+  .course-content-wrap .ccw > ul li {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+  }
+  .course-content-wrap > div:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .offer-title{
+    line-height: 150% !important;
+  }
+  .bw-section > h3 {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  .bw-section > h3 > span {
+    font-family: 'Playlist' !important;
+    text-transform: lowercase !important;
+    color: #F1A885 !important;
+    font-weight: 400 !important;
+    font-size: 60px;
+  }
+  .bw-section p {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+  }
+  div#block-1665501833517 {
+    margin-bottom: 5%;
+  }
+  .blog-listings__content--grid-3 .blog-listing__title {
+    font-family: 'Albert Sans' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    text-transform: uppercase !important;
+    color: #333333 !important;
+  }
+  .blog-listings__content--grid-3 .blog-listing__content {
+    font-family: 'Albert Sans' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #333333 !important;
+  }
+  .blog-listings__content--grid-3 .blog-listing__more {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #C06932;
+  }
+  .blog-listings__content--grid-3 .blog-listing__panel {
+    height: 100% !important;
+  }
+  .blog-listings__content--grid-3 .blog-listing__panel img {
+    min-height: 300px !important;
+    object-fit: cover !important;
+  }
+  #block-1665504995310 .bw-section > h3 span {
+    text-transform: capitalize !important;
+    line-height: 150% !important;
+  }
+  #block-1665504995310 .bw-section > h3 {
+    margin-bottom: 0 !important;
+  }
+  .form-title {
+    font-family: 'Playlist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #F1A885;
+    margin-bottom: 30px;
+  }
+  div#section-1665506737511 input, 
+  div#section-1665506737511 textarea {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #3F557B !important;
+  }
+  .shop-title {
+    font-family: 'Playlist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #F1A885;
+  }
+  div#section-1593046178513 .card__title {
+    font-family: 'Albert Sans' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    text-transform: uppercase !important;
+    color: #333333 !important;
+  }
+  div#section-1593046178513 .card__text {
+    font-family: 'Albert Sans' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    color: #000000 !important;
+  }
+  div#section-1593046178513 .card__price {
+    font-family: 'Playlist' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 32px !important;
+    color: #3F557B !important;
+  }
+  div#section-1665565935723 .owl-nav > button > span {
+    font-size: 36px !important;
+  }
+  div#section-1665565935723 .owl-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center !important;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  div#section-1665565935723 .owl-nav > button {
+    background-color: #F4F4F4 !important;
+    display: inline-flex;
+    width: 55px !important;
+    height: 55px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 50% !important;
+  }
+  div#section-1665565935723 button.owl-prev {
+    margin-left: 30px;
+    position: relative;
+    z-index: 9;
+    pointer-events: all;
+  }
+  div#section-1665565935723 button.owl-next{
+    margin-right: 30px;
+    position: relative;
+    z-index: 9;
+    pointer-events: all;
+  }
+  div#section-1665565935723 .owl-nav > button:hover {
+    background-color: #F1A885 !important;
+    color: #fff !important;
+  }
+  .popup-title > h2 {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  .popup-title > h2 span {
+    color: #F0A885 !important;
+    font-family: 'playlist' !important;
+    text-transform: capitalize !important;
+    font-weight: 400 !important;
+    font-size: 76px;
+  }
+  .popup-title > p {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+  }
+  #block-1665565967506 .owl-item {
+    padding: 30px !important;
+    transition: .2s ease-in-out;
+  }
+  #block-1665565967506 .owl-item.active.center {
+    padding: 0 !important;
+  }
+  .contact-info, 
+  .contact-info > div, 
+  .contact-info > div > label {
+    cursor: pointer !important;
+  }
+  .contact-icon:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #F1A885;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+  .contact-icon > img {
+    position: relative;
+    z-index: 1;
+  }
+  .contact-info:hover .contact-icon > img{
+    filter: invert(0) sepia(93%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(106%);
+  }
+  .contact-info:hover .contact-icon:after {
+    opacity: 1;
+  }
+  .contact-info:hover a {
+    color: #F1A885;
+  }
+  div#section-1593046178513 a.card {
+    text-align: center !important;
+  }
+  div#section-1666012399082 .card__title {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center !important;
+    min-height: 60px;
+  }
+  
+  
+  /* RESPONSIVE */
+  
+  @media only screen and (min-width: 768px) {
+    #section-1643050831110 .sizer {
+        padding-top: 400px !important;
+    }
+    div#section-1643050831110{
+        min-height: 100vh;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    .hero-title-h1 span, .hero-title-h2 span {
+        font-size: 80px !important;
+    }
+    .hero-title-h1, .hero-title-h2, .custom-section-title h2 {
+        font-size: 36px !important;
+    }
+    .custom-section-title h2 span{
+    font-size: 60px !important;
+    }
+    div#block-1555988491313 .link-list > a {
+        margin: 0 10px !important;
+    }
+    .inner-page-title {
+        font-size: 48px !important;
+    }
+    .text-title {
+        font-size: 26px !important;
+    }
+    div#section-1665489615381 .row {
+        align-items: flex-start !important;
+    }
+    .info-box-content > h4 {
+        font-size: 20px !important;
+        margin-bottom: 15px !important;
+    }
+    #block-1665494225733 .btn.btn--outline {
+        margin-top: 0 !important;
+    }
+    #block-1665494436312 .custom-section-title.course-page-title h2 span {
+        font-size: 36px !important;
+        line-height: 150% !important;
+    }
+    #block-1665494692224 .custom-section-title h2 span {
+        font-size: 40px !important;
+    }
+    .course-content-wrap .ccw > h3 {
+        font-size: 30px;
+    }
+    .form-title {
+        font-size: 48px !important;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 768px){
+    #section-1665481394350 .sizer {
+        padding-top: 130px !important;
+        padding-bottom: 20px !important;
+    }
+    div#section-1665565935723 button.owl-prev {
+        margin-left: 10px;
+    }
+    div#section-1665565935723 button.owl-next{
+        margin-right: 10px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 767px){
+    .hero-title-h1, .hero-title-h2 {
+        font-size: 26px !important;
+        line-height: 130% !important;
+    }
+    .hero-title-h1 span, .hero-title-h2 span {
+        font-size: 36px !important;
+    }
+    .hero-title-h1 {
+        padding-right: 0;
+    }
+    .header__content--desktop {
+        padding: 5px 0 !important;
+    }
+    #block-1555988494486 .logo__image {
+        width: 40px !important;
+    }
+    .mission-title > h2{
+    font-size: 28px !important;
+    }
+    .custom-section-title h2 span {
+        font-size: 36px !important;
+    }
+    .btn.btn--outline {
+        display: block;
+    }
+    div#block-1665403881163, 
+    div#block-1665403965351,
+    div#block-1665484586149,
+    div#block-1665484633108,
+    div#block-1665403881163,
+    div#block-1665403965351 {
+        padding-top: 100%;
+        text-align: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    div#block-1665403881163,
+    div#block-1665484586149{
+        margin-bottom: 25px;
+    }
+    .custom-section-title h2 {
+        font-size: 26px !important;
+    }
+    div#section-1665409050202 .carousel.row .block-type--feature .block:before {
+        width: 30px;
+        height: 25px;
+    }
+    .reviewer-info {
+        flex-direction: column;
+    }
+    .reviewer-info > div:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    div#block-1665409067426 > div {
+        padding-bottom: 0 !important;
+    }
+    #section-1665409050202 .sizer {
+        padding-bottom: 0 !important;
+    }
+    #section-1665412692335 .sizer {
+        padding-top: 20px;
+    }
+    div#block-1665415242902 {
+        max-width: 200px;
+    }
+    .contact-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div#section-1665415082198 .link-list.link-list--row > div,
+    div#section-1665481828726 .link-list.link-list--row > div,
+    div#section-1665495444244 .link-list.link-list--row > div,
+    div#block-1665502342332 .link-list.link-list--row > div,
+    div#block-1665504605898 .link-list.link-list--row > div,
+    div#block-1665507076860 .link-list.link-list--row > div,
+    div#block-1665508810167 .link-list.link-list--row > div {
+        display: flex;
+        flex-direction: column;
+    }
+    div#block-1665413997588 {
+        text-align: center !important;
+    }
+    div#block-1555988491313 .link-list > a {
+        color: #fff !important;
+    }
+    .header a.social-icons__icon {
+        color: #fff !important;
+    }
+    .inner-page-title {
+        font-size: 34px !important;
+    }
+    #section-1665488202831,
+    #section-1665501414250 {
+        background-position: 15% center !important;
+    }
+    .text-title {
+        font-size: 20px !important;
+    }
+    .text-title > span {
+        font-size: 28px !important;
+    }
+    #block-1665494436312 .custom-section-title.course-page-title h2 span {
+        font-size: 28px !important;
+        line-height: 150% !important;
+    }
+    #block-1665494692224 .custom-section-title h2 span {
+        font-size: 30px !important;
+    }
+    .bw-section > h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .bw-section > h3 > span {
+        font-size: 30px;
+    }
+    .blog-listings__content--grid-3 .blog-listing__title {
+        font-size: 18px !important;
+    }
+    #section-1665504969780 .sizer {
+        padding-bottom: 0 !important;
+    }
+    .form-title {
+        font-size: 36px !important;
+    }
+    .shop-title {
+        font-size: 28px;
+    }
+    div#section-1593046178513 .card__title {
+        font-size: 20px !important;
+    }
+    div#section-1593046178513 .card__price {
+        font-size: 26px !important;
+    }
+  }
+  
+  
+  h3.hdr-text {
+    font-family: 'Playlist' !important;
+    font-size: calc(32px + 1.7vw) !important;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .body-text {
+    font-family: 'Albert Sans', sans-serif;
+  }
+  
+  
+  /* LANDING PAGE */
+  div.landing {
+    background: #fffdf9;
+  }
+  em.font-cursive {
+    color: #7da3a7;
+    margin-right: 10px;
+  }
+  .font-cursive {
+    font-family: 'London';
+    font-size: calc(24px + 1.5vw);
+    font-weight: 400;
+    z-index: 25;
+    position: relative;
+  }
+  .font-text {
+    font-size: 20px;
+  font-family: 'Albert Sans' !important;
+  }
+  span.fn {
+    font-family: 'Albert Sans' !important;
+  }
+  div#section-1666195535 img.image__image {
+    max-width: 85%;
+    float: right;
+  }
+  .float-box {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    background: rgb(194 134 94 / 90%);
+    padding: 2%;
+    color: #fff;
+  }
+  .float-box h4 {
+    color: #fff;
+    font-weight: 400;
+  }
+  .float-bottom {
+    position: absolute;
+    bottom: -27.5%;
+    background: rgb(145 186 180 / 90%);
+    right: 7.5%;
+    padding: 3% 5%;
+    max-width: 575px;
+    color: #fff;
+    text-align: center !important;
+  }
+  .float-bottom ul.font-text {
+    padding: 0 !important;
+  }
+  .float-bottom ul.font-text li {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sec-title h4 {
+    font-size: calc(42px + 1vw);
+    color: #C06A32 !important;
+  }
+  .sec-title h4.font-text {
+    transform: translate(7.5%, -20px);
+  font-weight: 400;
+  }
+  .sec-title .underlined:before {
+    bottom: -15px;
+  }
+  h5.font-cursive.font-light.dark {
+    font-size: calc(20px + 1vw);
+  }
+  .sec-col .font-text li {
+    font-size: 20px;
+    color: #000;
+  }
+  .imgbtn-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  a.site-btn.primary-btn {
+    background: #c06a32;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Albert Sans';
+  }
+  .img-col img {
+    margin: 25px 0;
+  }
+  div#section-1666205191965 {
+    padding: 3% 0 0;
+  }
+  .bonus-title {
+    color: #7da3a7;
+  }
+  a.primary-btn.green-btn {
+    background: #80B0AA;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Albert Sans';
+    display: inline-block;
+  }
+  
+  
+  @media (min-width:1025px){
+  
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+  .landing .row > div {
+    width: 90%;
+  }
+  }
+  
+  @media (max-width: 991px) {
+  div#section-1666195535 .container {
+    padding: 0px;
+    padding-top: 35px;
+  }
+  div#section-1666195535 div.block-type--image {
+    padding: 0px;
+  }
+  div#section-1666195535 .row {
+    flex-direction: column-reverse;
+  }
+  .font-text {
+    font-size: 20px;
+  }
+  .float-box {
+    position: relative;
+  }
+  div#section-1666195536 {
+    margin-top: -50px;
+  }
+  .float-bottom {
+    position: initial;
+  }
+  .sec-title h4.font-text {
+    transform: none;
+  }
+  div#section-1666200047993 {
+    min-height: 450px;
+    background-attachment: scroll;
+  }
+  }
+  @media (max-width: 767px) {
+  div#section-1666200047993 {
+    min-height: 300px;
+  }
+  }
+  
+  /* EDITS TO LANDING PAGE */
+  .float-box p.font-text {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  .underlined {
+    position: relative;
+    padding: 0 0 3px 0;
+    overflow: visible;
+  }
+  .underlined:before {
+    content: '';
+    position: absolute;
+    bottom: -0px;
+    left: -5px;
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151826255/settings_images/XqT3PZqjTticeV6aAgK0_underline-new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 100%;
+    width: 140%;
+    height: 35px;
+    z-index: -1;
+  }
+  .overlay {
+    position: relative;
+    overflow: visible;
+    max-width: max-content;
+    margin: 0 auto 35px;
+    padding: 0;
+  }
+  .overlay span {
+    position: relative;
+  }
+  .overlay:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    background: #FAECE6;
+    width: 100%;
+    height: calc(100% - 15px);
+  }
+  h4.font-cursive.fc-lg {
+    font-size: calc(42px + 2.25vw);
+  }
+  h4.font-cursive.overlay {
+    color: #7C7977;
+  }
+  .page-content p {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #272726;
+  }
+  .section-banner {
+    background: #B77753;
+    padding: 5% 5% 10%;
+  }
+  .center {
+    text-align: center;
+  }
+  .font-light * {
+    color: #fff;
+  }
+  h4.font-hdr {
+    font-weight: 400;
+    font-size: calc(32px + .75vw);
+    font-family: 'Albert Sans' !important;
+  }
+  .section-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -10%;
+  }
+  .section-image > * {
+    width: calc(30% - 10px);
+  }
+  .section-image img.si2 {
+    width: calc(40% - 20px);
+  }
+  .section4 .font-cursive {
+    color: #385E62;
+  }
+  h4.fc-md {
+    font-size: calc(24px + 2.25vw);
+  }
+  .section4 h4 {
+    margin-bottom: 5%;
+  }
+  ul.theList {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #272726;
+  }
+  ul.theList li {
+    margin-bottom: 25px;
+  }
+  .grey-btn {
+    margin: 20px auto;
+    display: inline-block;
+    background: #046363 !important;
+  }
+  h5.font-text {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0 5%;
+    color: #4E4D49;
+  }
+  .sec-title h5.font-text {
+    font-style: italic;
+    margin: 35px auto 20px;
+  }
+  ul.arrow-list {
+    list-style: none;
+    max-width: max-content !important;
+  }
+  ul.arrow-list li {
+    position: relative;
+    padding-left: 15px;
+    color: #C06A32 !important;
+    font-weight: 700;
+    margin-bottom: 35px !important;
+  }
+  .arrow-list li:before {
+    content: '';
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151826255/settings_images/b6crISZTSTOHZKY1xzhp_arrow-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -40px;
+  }
+  
+  h4.orage-text {
+    color: #C06932;
+  }
+  .before-after h4 {
+    font-size: calc(16px + 1vw);
+    font-family: 'Albert Sans' !important;
+   padding: 20px;
+  }
+  h4.grey-text.pink-box.font-cursive.fc-md {
+    font-family: 'London' !important;
+    font-size: calc(24px + 2vw);
+  }
+  .before-after {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row;
+  }
+  .before-after > div {
+    width: calc(45% - 20px);
+  }
+  .before-after ul {
+    color: #272726;
+    list-style: none;
+  }
+  .before-after ul li {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    position: relative;
+  }
+  h4.grey-text.pink-box {
+    background: #FFF6F2;
+    color: #7C7977;
+  }
+  ul.close-list li:before {
+    content: '';
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151826255/settings_images/4ZFBF2qQQ6nIpsJgxPJY_close-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -40px;
+  }
+  ul.check-list li:before {
+    content: '';
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151826255/settings_images/0LmFyopmSbS1u30kZzCq_check-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -40px;
+  }
+  h4.grey-text {
+    color: #006262;
+    background: #fff;
+    text-align: center;
+  }
+  .step-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .step-plus, .step-or {
+    transform: translateY(19px);
+  }
+  span.step-or {
+    font-size: 24px;
+    color: #80AFA9;
+    font-weight: 600;
+  }
+  div#section-1666784598821 {
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 95%);
+  }
+  h4.font-cursive.font-xl {
+    font-size: calc(40px + 1.5vw);
+    color: #545454;
+  }
+  .orange-text {
+    color: #EEE0BC;
+  }
+  .section12 p {
+    color: #fff;
+  }
+  p.font-text.strong-text {
+    font-size: calc(14px + 1vw);
+    line-height: 1.4;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .underlined.light:before {
+    bottom: -10px;
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151826255/settings_images/XqT3PZqjTticeV6aAgK0_underline-new.png);
+  }
+  .page-content p.font-full {
+    width: 100% !important;
+    font-weight: 600;
+    font-size: calc(16px + .5vw);
+    line-height: 1.4;
+  }
+  #section-1666195535 .sizer {
+    padding-top: 5% !important;
+  }
+  ul.checkList li:before {
+    background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151826255/settings_images/5knYqVCOReOlknwR9YgA_checkList.png);
+  }
+  ul.checkList li {
+    color: #545454 !important;
+    font-weight: 400;
+  }
+  .section14 h4.fc-md {
+  padding-bottom: 10px;
+  }
+  @media (min-width:992px) and (max-width:1024px){
+  .sec-title {
+    padding: 35px 0 !important;
+  }
+  } 
+  @media (min-width:768px) 
+  and (max-width:1024px){
+  .sec-title span.fn,
+  .sec-title h4.font-text {
+        font-size: 30px !important;
+  }
+  }
+  @media (max-width: 1024px) {
+  div#section-1666195535 img.image__image {
+    max-width: 100%;
+  }
+  .float-box * {
+    text-align: center;
+  }
+  #section-1666195535 .sizer {
+    padding-top: 5% !important;
+  }
+  .underlined:before {
+  bottom: -5px;
+  }
+  .float-bottom {
+    max-width: 100%;
+  }
+  #section-1666197930599 .sizer {
+    padding: 20px 0 !important;
+  }
+  .sec-title h4 {
+    font-size: calc(26px + 1vw);
+  }
+  .sec-title span.fn,
+  .sec-title h4.font-text {
+    font-size: calc(22px + 1vw) !important;
+  }
+  div#section-1666200047993 {
+    height: 60vw;
+    background-attachment: scroll;
+  }
+  .flexFix:not(.step-section) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexFix:not(.step-section) > * {
+    width: 100% !important;
+  }
+  .before-after h4 {
+    text-align: center;
+  }
+  span.step-or {
+    text-align: center;
+  }
+  .section-image img {
+    max-width: 450px;
+  }
+  .section-image {
+  margin-top: -7.5%;
+  }
+  .float-box {
+    width: 95%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+  }
+  @media (max-width:768px){
+  .sec-title span.fn {
+    font-size: calc(20px + 1vw) !important;
+  }
+  }
+  @media (max-width: 767px) {
+  .step-section {
+    flex-direction: column;
+  }
+  div#section-1666195535 img.image__image {
+    max-width: 90%;
+    float: none;
+    margin: 0 auto;
+  }
+  .overlay:before {
+  left: 0;
+  }
+  #section-1666769971196 .sizer, #section-1666809858696 .sizer {
+    padding-top: 0;
+  }
+  #section-1666195535 .sizer, #section-1666809044209 .sizer {
+  padding-bottom: 0px !Important;
+  }
+  .section-image img {
+  max-width: 300px;
+  }
+  .section-image {
+    margin-top: 25px;
+  }
+  .section-banner {
+    padding-bottom: 5%;
+  }
+  .sec-title span.fn {
+    font-size: 26px !important;
+  }
+  .sec-title h4.font-text {
+    font-size: 18px !important;
+  }
+  .step-plus, .step-or {
+    transform: none;
+  }
+  .font-text, .landing-page ul li {
+    font-size: 18px !important;
+  }
+  .landing-page ul {
+    width: 90%;
+  }
+  }
+  
+  
+  @media (min-width:768px){
+  div#block-1666207732712_0 h4.font-cursive.bonus-title {
+    margin-top: -40px;
+  }
+  div#block-1666207732712_0 .block.box-shadow-none.aos-init {
+    overflow: visible !important;
+  }
+  }
+  
+  .sec-title h4 span, .sec-title h4.font-text {
+      font-size: calc(24px + 1vw) !important;
+  }
+  @media (max-width:767px){
+      .sec-title h4 span, .sec-title h4.font-text {
+      font-size: 18px !important;
+  }    
+  }
+  
+  .section-image img:first-child, .section-image img:nth-child(3) {
+      height: 280px;
+      width: 280px !important;
+      object-fit: cover;
+      }
+      .section-image img {
+      border-radius: 50% !important;
+      }
+  
+  /* END OF LANDING PAGE */

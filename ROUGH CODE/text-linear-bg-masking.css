@@ -1,0 +1,12 @@
+span.journey-text {
+  background: linear-gradient(
+    89.93deg,
+    #5433ff 18.33%,
+    #20bdff 53.35%,
+    #a5fecb 84.25%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 110px;
+}

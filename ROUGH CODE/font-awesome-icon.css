@@ -1,0 +1,70 @@
+/* stars */
+
+.testimonial-container .testimonial-content footer:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005\f005\f005\f005\f005";
+  vertical-align: middle;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #ffa800;
+  display: block;
+  font-size: 16px;
+}
+
+.header-btn:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f095";
+  display: inline-block;
+  padding-right: 15px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+/* check  */
+
+.header-btn:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 15px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+/* cart  */
+
+header .woodmart-shopping-cart.woodmart-cart-alt .woodmart-cart-icon:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f290";
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 22px !important;
+}
+
+/* user login */
+
+header .my-account-with-icon .wd-tools-icon:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f406";
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 22px !important;
+}
+
+/* user  */
+
+.header-btn:before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+/* call */
+
+.header-btn:before {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}

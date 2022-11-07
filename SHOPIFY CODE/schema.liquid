@@ -1,0 +1,148 @@
+/*
+
+  REF: 
+
+  Settings Types: https://shopify.dev/themes/architecture/settings/input-settings#text
+  Block Types: https://shopify.dev/themes/architecture/sections/section-schema#blocks
+  API Code: https://shopify.dev/api/liquid/filters#img_url
+
+*/
+
+/*
+*   Calling Section settings
+*/
+
+{{ section.settings.SECTION_ID_HERE }}
+{{ section.settings.slider_image | img_url: 'master' }}
+
+/*
+*   Calling Blocks
+*/
+
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'BLOCK_TYPE_HERE' %}
+      <div class="slide" {{ block.shopify_attributes }}>
+        {{ block.settings.image | image_url: width: 2048 | image_tag }}
+      </div>
+    ...
+  {% endcase %}
+{% endfor %}
+
+
+
+{% schema %}
+{
+  "name": "SECTION_NAME_HERE",
+  "tag": "SECTION_HTML_TAG_WRAPPER",
+  "class": "SECTION_CLASS",
+  "max_blocks": 5, // BLOCK LIMIT HERE
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
+}
+{% endschema %}
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Reviews Banner",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "reviews_image",
+          "label": "Reviews Image"
+        },
+        {
+          "type": "html",
+          "id": "reviews_title",
+          "label": "Reviews Title"
+        },
+        {
+          "type": "textarea",
+          "id": "reviews_content",
+          "label": "reviews Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Section Title"
+        }
+    ],
+      "blocks": [
+        {
+          "name": "Review",
+          "type": "review",
+          "settings": [
+            {
+              "type": "text",
+              "id": "review_title",
+              "label": "Review Title"
+            },
+            {
+              "type": "textarea",
+              "id": "review_text",
+              "label": "Review Content"
+            },
+            {
+              "type": "text",
+              "id": "review_author",
+              "label": "Author Name"
+            }
+          ]
+        }
+      ]
+  }
+
+{% endschema %}
+
+
+
+
+{% if section.setting.enabletext %}
+<div><h4>{{% section.setting.textid %}}</h4></div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Reviews Banner",
+    "settings": [
+        {
+          "type": "text",
+          "id": "textid",
+          "label": "Enter your text"
+          "default": "Enter text here"
+        },
+        {
+          "type": "checkbox",
+          "id": "enabletext",
+          "label": "enable your text"
+          "default": "true"
+        }
+      ]
+  }
+
+{% endschema %}
+
+

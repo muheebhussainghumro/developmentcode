@@ -1,0 +1,18 @@
+.pricing-row > div > div > div {
+  background: #ffffff;
+  box-shadow: 0px 42px 32px rgba(0, 0, 0, 0.04);
+  border-radius: 8.75px;
+}
+.pricing-style strong {
+  font-weight: 700;
+  font-size: 30px;
+}
+.pricing-list {
+  padding: 0 10%;
+}
+.pricing-list span.list-content {
+  color: #000 !important;
+}
+.pricing-list li {
+  margin-bottom: 10px !important;
+}

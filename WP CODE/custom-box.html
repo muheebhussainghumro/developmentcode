@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="team-box">
+        <div class="team-row1">
+            <div class="col-1">
+                <img src="https://eseospace.dev/websites/franklin/wp-content/uploads/2022/01/Group-152.png" alt="">
+            </div>
+            <div class="col-2">
+
+                <div class="inner-text">
+                    <p>Franklin National</p>
+                    <h2>Job Title Position</h2>
+                </div>
+            </div>
+        </div>
+        <div class="team-row2">
+            <div class="col1">
+                <p>West Palm Beach, FL 33401</p>
+            </div>
+            <div class="col2">
+                <p><strong>$300</strong>/mo</p>
+            </div>
+        </div>
+    </div>
+    <a href=""></a>
+
+
+
+    <div class="custom-main-blog-wrapper">
+        <div class="container">
+            <div class="row">
+                <?php while ($q->have_posts()) : $q->the_post(); ?>
+                <div class="col-md-4">
+                    <div class="custom-blog-container" style="background-image: url('<?php echo $thumbnail[0]; ?>')">
+                        <a href="<?php the_permalink(); ?>" class="custom-news-link"></a>
+                        <div class="custom-blog-content">
+                            <h4>
+                                <?php if(!empty(get_the_excerpt())){
+            echo strip_tags(substr(get_the_excerpt(), 0, 200));
+            }
+            else{
+            echo strip_tags(substr(get_the_content(), 0, 200));
+            } ?>
+                            </h4>
+                            <div class="custom-blog-date">
+                                <div class="date-col">
+                                    <p class="news-date">
+                                        <?php echo get_the_date('d'); ?>
+                                    </p>
+                                </div>
+                                <div class="date-col">
+                                    <p class="news-date-text">
+                                        <?php echo get_the_date('Y'); ?>
+                                    </p>
+                                    <p class="news-date-text">
+                                        <?php echo get_the_date('M'); ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

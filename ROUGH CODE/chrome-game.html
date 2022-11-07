@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body#t {
+            min-height: 100VH !IMPORTANT;
+            display: grid;
+            place-items: center !important;
+            background: linear-gradient(45deg, red, #07ff48);
+            color: #fff !important;
+            animation: animatebody 5s linear infinite both;
+        }
+
+        @keyframes animatebody {
+
+            0%,
+            100% {
+                background: linear-gradient(45deg, red, #07ff48);
+
+            }
+
+            10%,
+            30%,
+            50%,
+            70% {
+                background: linear-gradient(45deg, blue, #ff3434);
+            }
+
+            20%,
+            40%,
+            60% {
+                background: linear-gradient(45deg, green, red);
+            }
+
+            80% {
+                background: linear-gradient(45deg, pink, #11224e);
+            }
+
+            90% {
+                background: linear-gradient(45deg, #ffb200, #fb00d1);
+            }
+        }
+
+        span {
+            color: #fff !important;
+        }
+
+        div#suggestions-list>p {
+            text-transform: uppercase;
+            font-weight: 900 !important;
+            font-style: normal !important;
+        }
+
+        p,
+        ul li,
+        ul li a {
+            color: #fff !important;
+            font-style: italic !important;
+            font-size: 25px !important;
+            animation: shake-vertical 5s linear infinite both;
+        }
+
+        .error-code {
+            color: red !important;
+            font-size: 16px !important;
+        }
+
+        span {
+            font-family: fantasy;
+            font-size: 40px;
+            animation: colorchanging 5s linear infinite both;
+            line-height: 90px;
+            text-transform: uppercase;
+        }
+
+        span:after,
+        span:before {
+            content: '';
+            background: #fff;
+            width: 170px;
+            height: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 15px;
+            animation: animatebody 5s linear infinite both;
+        }
+
+        div#suggestions-list {
+            text-align: center;
+            max-width: max-content;
+            margin: auto;
+        }
+
+        div#suggestions-list ul,
+        div#suggestions-list ul li {
+            max-width: max-content;
+            margin: auto;
+            list-style: none !important;
+        }
+
+        div#error-information-popup {
+            margin-bottom: 50px !important;
+        }
+
+        h1 {
+            text-align: center !important;
+        }
+
+        label.slow-speed-option {
+            display: none !important;
+        }
+
+        .runner-container {
+            border: 2px solid #ffff !important;
+            border-radius: 15px;
+            padding: 0px 20px !important;
+            animation: animatebody 5s linear infinite both;
+        }
+
+        .offline .runner-canvas {
+            height: 150px;
+            max-width: 560px;
+            opacity: 1;
+            overflow: hidden;
+            top: 0;
+            z-index: 10;
+            position: absolute;
+        }
+
+        .runner-container {
+            width: 550px !important;
+        }
+
+        .error-code {
+            display: none;
+        }
+    </style>
+
+
+
+    <script>
+
+        Runner.instance_.setSpeed(1000000)
+
+
+        Runner.instance_.setSpeed(1000) 
+    </script>
+
+</body>
+
+</html>

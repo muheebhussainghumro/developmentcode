@@ -1,0 +1,32 @@
+<div class="shopify-subscribe-form">
+    {%- assign formId = 'Contact_' | append: section.id -%}
+    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
+    {%- if form.posted_successfully? -%}
+    <p class="form-message form-message--success" tabindex="-1" data-form-status>
+        {{ 'general.newsletter_form.confirmation' | t }}
+    </p>
+    {%- endif -%}
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+        <input type="email" name="contact[email]" id="{{ formId }}-email"
+            class="input-group__field{% if form.errors %} input--error{% endif %}" value="{{ form.email }}"
+            placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+            aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}" aria-required="true" autocorrect="off"
+            autocapitalize="off" {% if form.errors %} aria-invalid="true" aria-describedby="{{ formId }}-email-error"
+            data-form-status {% endif %}>
+        <span class="input-group__btn">
+            <button type="submit" class="btn" name="commit">
+                <span>{{ 'general.newsletter_form.submit' | t }}</span>
+            </button>
+        </span>
+    </div>
+    {%- if form.errors contains 'email' -%}
+    <span id="{{ formId }}-email-error" class="input-error-message">
+        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+        {% include 'icon-error' %}
+        <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email']
+            }}.</span>
+    </span>
+    {%- endif -%}
+    {% endform %}
+</div>

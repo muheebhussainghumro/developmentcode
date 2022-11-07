@@ -1,0 +1,66 @@
+.vc_active .vc_tta-panel-heading {
+  background: #27282d !important;
+}
+.vc_tta-panel-heading {
+  background: linear-gradient(0deg, #ebddbe, #ebddbe),
+    linear-gradient(0deg, #ebddbe, #ebddbe), #ebddbe;
+  padding: 20px 30px;
+}
+.vc_tta-panel {
+  margin-bottom: 10px;
+}
+.vc_tta-panel-heading h4 a {
+  color: #27282d !important;
+  font-size: 25px;
+  font-weight: 400;
+}
+.woodmart-text-block-wrapper {
+  padding: 35px;
+}
+.vc_tta-panel-body {
+  border: none !important;
+}
+.vc_tta-panel {
+  border: none !important;
+}
+.vc_tta-panel-body {
+  padding: 0 !important;
+}
+.vc_active span.vc_tta-title-text {
+  color: #ebddbe !important;
+}
+i.vc_tta-controls-icon.vc_tta-controls-icon-plus {
+  width: 25px;
+  height: 25px;
+}
+.vc_active i.vc_tta-controls-icon.vc_tta-controls-icon-plus {
+  transform: rotate(135deg) !important;
+}
+.vc_active i.vc_tta-controls-icon.vc_tta-controls-icon-plus {
+  border-color: #fff !important;
+}
+i.vc_tta-controls-icon.vc_tta-controls-icon-plus:after {
+  content: "";
+  display: block !important;
+  position: absolute;
+  box-sizing: border-box;
+  left: 50%;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 0 0 2px;
+}
+.vc_active i.vc_tta-controls-icon.vc_tta-controls-icon-plus:before {
+  border-color: rgba(235, 221, 190, 0.66) !important;
+}
+.vc_active i.vc_tta-controls-icon.vc_tta-controls-icon-plus:after {
+  border-color: rgba(235, 221, 190, 0.66) !important;
+}
+.vc_active i.vc_tta-controls-icon.vc_tta-controls-icon-plus {
+  top: 30% !important;
+}
+.vc_tta-panel-heading {
+  border-radius: 0 !important;
+}

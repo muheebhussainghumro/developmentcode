@@ -1,0 +1,52 @@
+/* EXTRA SPACING */
+
+.main-page-wrapper {
+  padding-top: 0;
+}
+.site-content {
+  margin-bottom: 0;
+}
+.wd-prefooter {
+  padding-bottom: 0 !important;
+}
+.footer-sidebar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-column {
+  margin-bottom: 0;
+}
+.error {
+  color: #ff6666;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 767px) {
+}
+
+.main-page-wrapper {
+  padding-top: 0;
+}
+
+.woodmart-prefooter {
+  padding-bottom: 0;
+  background-color: #fff;
+}
+
+.footer-sidebar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-column {
+  margin-bottom: 0;
+}
+
+.site-content {
+  margin-bottom: 0;
+}

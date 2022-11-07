@@ -1,0 +1,8 @@
+select.field {
+  overflow: hidden !important;
+  overflow: -moz-hidden-unscrollable;
+  background: url(https://hyperinventive.net/websites/kentconstructionexpo/wp-content/uploads/2022/08/Vector-2.png)
+    no-repeat right 10px center #eef9ff;
+  display: inline-block;
+  position: relative;
+}

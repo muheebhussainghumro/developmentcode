@@ -1,0 +1,203 @@
+div#product-239 {
+    background: #F6F6F6;
+    padding-top: 5%;
+}
+
+.product-tabs-wrapper {
+    border: 0;
+    padding-bottom: 5%;
+}
+
+div#product-239 h1.product_title.entry-title:before {
+    content: '';
+    background: url(https://eseospace.dev/websites/cbdelicacy/wp-content/uploads/2022/01/chicken-1-min.png);
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-size: contain;
+}
+
+div#product-239 h1.product_title.entry-title {
+    font-family: 'Gill Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 55px;
+}
+
+div#product-239 button.single_add_to_cart_button.button.alt {
+    background: #FADE69 !important;
+    box-shadow: none !important;
+    border-radius: 25px;
+    color: #000000;
+    padding: 12px 30px;
+    text-transform: none !important;
+    font-weight: 400;
+}
+
+div#product-239 input.minus {
+    background: #FADE69 !important;
+    border-radius: 50px;
+    height: 30px !important;
+    min-width: 30px !important;
+    border: none !important;
+    color: #25282A !important;
+    font-weight: 400 !important;
+    font-size: 22px;
+    padding-bottom: 2px !important;
+}
+
+div#product-239 .quantity {
+    align-items: center;
+    column-gap: 10px;
+}
+
+div#product-239 input.plus {
+    background: #FADE69 !important;
+    border-radius: 50px;
+    height: 30px !important;
+    min-width: 30px !important;
+    border: none !important;
+    color: #25282A !important;
+    font-weight: 400 !important;
+    font-size: 22px;
+    padding-bottom: 2px !important;
+}
+
+div#product-239 .quantity input[type=number] {
+    background: #E5E5E5 !important;
+    border: none !important;
+    min-width: 100px !important;
+}
+
+ul.tabs.wc-tabs {
+    display: none !important;
+}
+
+.product--title h4 {
+    font-family: 'Gill Sans';
+    text-transform: uppercase;
+    position: relative;
+    display: block !important;
+    max-width: max-content;
+    margin: auto;
+}
+
+.product--title h4:before {
+    content: '';
+    background: url(https://eseospace.dev/websites/cbdelicacy/wp-content/uploads/2022/01/Vector-2-1.png);
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 110px;
+    top: -40px;
+    left: -70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.product--title h4:after {
+    content: '';
+    background: url(https://eseospace.dev/websites/cbdelicacy/wp-content/uploads/2022/01/Vector-3.png);
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 110px;
+    top: -40px;
+    right: -70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:767px) {
+    .product--title h4:before {
+        width: 40px;
+        height: 60px;
+        top: -20px;
+        left: 0;
+    }
+    .product--title h4:after {
+        width: 40px;
+        height: 60px;
+        top: -20px;
+        right: 0;
+    }
+}
+
+.product-info-box {
+    background: #FADE69 !important;
+    border-radius: 50%;
+    padding: 12%;
+}
+
+.product-info-box img {
+    max-width: 80%;
+}
+
+.tabs-layout-tabs {
+    display: block !important;
+}
+
+.product-info-box h4 {
+    font-family: 'Gill Sans';
+    font-size: 16px !important;
+}
+
+
+/*second section*/
+
+.product-detail-row {
+    background-size: 100% 100% !important;
+}
+
+@media (max-width:767px) {
+    .product-detail-row {
+        background-size: cover;
+    }
+}
+
+.pp-custom-title .woodmart-title-container {
+    font-family: 'Gill Sans';
+    text-transform: uppercase;
+}
+
+.pp-custom-text .woodmart-title-container {
+    font-family: 'Gill Sans' !important;
+}
+
+
+/*third section*/
+
+.custom-info-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.treats-col-1 {
+    bottom: 0;
+}
+
+.treats-col-2 {
+    bottom: 0;
+}
+
+a.woodmart-accordion-title.tab-title-description.active {
+    display: none !important;
+}
+
+a.woodmart-accordion-title.tab-title-reviews {
+    display: none !important;
+}
+
+a.woodmart-accordion-title.tab-title-woodmart_additional_tab {
+    display: none;
+}
+
+.woodmart-tab-wrapper {
+    border: none !important;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper.tabs-layout-accordion {
+    border: none !important;
+}

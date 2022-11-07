@@ -1,0 +1,15 @@
+ytd-video-primary-info-renderer.style-scope.ytd-watch-flexy {
+  visibility: hidden;
+}
+div#meta-contents {
+  visibility: hidden;
+}
+ytd-item-section-renderer#sections {
+  visibility: hidden;
+}
+div#secondary {
+  visibility: hidden;
+}
+ytd-masthead#masthead {
+  visibility: hidden;
+}

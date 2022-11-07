@@ -1,0 +1,27 @@
+div.main-animated-row:before {
+    content: '';
+    background-image: url(https://eseospace.dev/websites/baytecgroup/wp-content/uploads/2022/04/Group-9-min.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block !important;
+    position: absolute;
+    transform: scale(1);
+    animation: backgroundzoom;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 0.8s ease-in-out;
+}
+
+@keyframes backgroundzoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}

@@ -1,0 +1,23 @@
+.testimonial-inner {
+  display: flex;
+  padding: 3% !important;
+}
+.testimonial-avatar {
+  flex: 0 0 30%;
+  border-radius: 0 !important;
+}
+.testimonial-content {
+  flex: 0 0 70%;
+  text-align: left;
+  padding: 0 15px !important;
+}
+.testimonial-content:before {
+  content: "";
+  background: url(https://eseospace.dev/websites/prokgps/wp-content/uploads/2022/05/starstarstarstarstar-min.png) !important;
+  width: 100px;
+  height: 25px !important;
+  display: block;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  margin-bottom: 10px;
+}

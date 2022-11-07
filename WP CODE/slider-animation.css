@@ -1,0 +1,4 @@
+.slider-main-wrapper .is-selected .wd-slide-bg {
+  transform: scale(1.1) translate(-80px, 50px) !important;
+  transition: all 5.5s ease;
+}

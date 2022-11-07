@@ -1,0 +1,30 @@
+.login-link {
+  max-width: max-content;
+}
+.header-popup .box-icon-wrapper {
+  margin-right: 0 !important;
+}
+.header-popup .info-box-content {
+  display: none !important;
+}
+.header-popup .info-box-icon img {
+  max-width: 50px;
+}
+
+.info-box-icon:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px !important;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #928478 !important;
+}
+
+.info-box-icon {
+  position: relative;
+}

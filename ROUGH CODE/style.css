@@ -1,0 +1,114 @@
+/* NEW SPHERE ITEM ROW */
+@media (min-width: 1025px) {
+  .sphere-item-row {
+    height: 40vw;
+    min-height: 500px;
+    background-size: 60% 60% !important;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  .sphere-item-row:before {
+    content: "";
+    background: url(https://eseospace.dev/websites/baytecgroup/wp-content/uploads/2022/07/Logo-1-min-1.png);
+    background-size: 126px 144px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .spheres {
+    position: absolute;
+  }
+  .sphere-item-row .wpb_wrapper {
+    position: relative;
+  }
+  .sphere1 {
+    top: 6vh;
+    left: 20vw;
+  }
+  .spheres .info-box-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .spheres .info-box-content .info-box-inner {
+    position: absolute;
+    top: -50px;
+    left: 80%;
+    right: -90%;
+    text-align: left;
+    background: #fff;
+    padding: 5%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sphere2 {
+    top: 3.5vw;
+    right: 10vw;
+  }
+  .sphere3 {
+    top: 22vw;
+    left: 50%;
+  }
+  .sphere4 {
+    top: 20vw;
+    left: 7vw;
+  }
+  .spheres img {
+    transform: scale(0.85);
+    transition: all 0.3s ease;
+    max-width: 220px;
+  }
+  .spheres.sphere2 .info-box-content .info-box-inner {
+    left: -80%;
+    right: 60%;
+    top: -90px;
+  }
+  .spheres:hover .info-box-content .info-box-inner {
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 15%);
+    opacity: 1;
+    visibility: visible;
+  }
+  .spheres:hover img {
+    transform: scale(0.9);
+  }
+  .show-sm {
+    display: none;
+  }
+}
+
+/* program box  */
+
+.program-infobox:not(:hover) .info-box-inner {
+  display: none;
+}
+.program-infobox:not(:hover) .info-box-content {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.program-infobox:hover {
+  background: linear-gradient(
+      137.45deg,
+      #5433ff 0%,
+      #20bdff 53.12%,
+      #a5fecb 100%
+    ),
+    #d9d9d9 !important;
+}
+.program-infobox:hover h4.info-box-title {
+  color: #fff !important;
+}
+.program-infobox:not(:hover) a.btn {
+  display: none !important;
+}
+.program-infobox a.btn {
+  border: none !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+}

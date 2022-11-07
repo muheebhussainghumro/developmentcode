@@ -1,0 +1,76 @@
+.offers-section {
+    position: relative;
+}
+
+.offers-section:before {
+    position: absolute;
+    content: "";
+    background: url(https://eseospace.dev/websites/playbound/wp-content/uploads/2022/01/rocket-1.png);
+    width: 123px;
+    height: 239px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: -60px;
+    animation: shake-vertical 5s linear infinite both;
+}
+
+.offers-section:after {
+    position: absolute;
+    content: "";
+    background: url(https://eseospace.dev/websites/playbound/wp-content/uploads/2022/01/big-star.png);
+    width: 177px;
+    height: 228px;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: -60px;
+    animation: shake-vertical 5s linear infinite both;
+}
+
+@media (max-width:1024px) {
+    .offers-section:after {
+        bottom: -140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offers-section:before {
+        width: 73px;
+        height: 149px;
+        background-size: 70px;
+    }
+    .offers-section:after {
+        width: 100px;
+        height: 138px;
+        bottom: -50px;
+        background-size: 100px;
+    }
+}
+
+@keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    80% {
+        -webkit-transform: translateY(6.4px);
+        transform: translateY(6.4px);
+    }
+    90% {
+        -webkit-transform: translateY(-6.4px);
+        transform: translateY(-6.4px);
+    }
+}

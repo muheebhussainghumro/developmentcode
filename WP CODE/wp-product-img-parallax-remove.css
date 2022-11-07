@@ -1,0 +1,12 @@
+.product-images-inner img.zoomImg {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.product-images-inner .product-additional-galleries {
+  display: none !important;
+}

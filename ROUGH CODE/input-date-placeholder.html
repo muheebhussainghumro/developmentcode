@@ -1,0 +1,1 @@
+<input type="text" onfocus="(this.type='date')" placeholder="Date Of Birth">

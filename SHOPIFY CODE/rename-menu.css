@@ -1,0 +1,14 @@
+nav ul.site-nav > li.site-nav--has-dropdown:hover .site-nav__dropdown {
+  display: block !important;
+}
+nav ul.site-nav > li.site-nav--has-dropdown .site-nav__dropdown {
+  top: 25px !important;
+  padding-top: 23px;
+  background: none !important;
+  border: none !important;
+}
+nav ul.site-nav > li.site-nav--has-dropdown .site-nav__dropdown > ul {
+  background: #fff !important;
+  border: 1px solid #efefef !important;
+  padding: 10px;
+}

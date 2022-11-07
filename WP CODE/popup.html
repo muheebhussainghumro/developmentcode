@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="mfp-hide popup-team">
+        <section class="mfp-with-anim woodmart-promo-popup" style="background-color: #ffff;">
+        </section>
+    </div>
+    <script>
+        jQuery(document).ready(function($) {
+
+            jQuery(document).on('click', '.open-popup1', function(event) {
+                event.preventDefault();
+                jQuery(this).magnificPopup({
+                    items: {
+                        src: '.popup-review1',
+                        type: 'inline'
+                    },
+                    fixedContentPos: true,
+                    callbacks: {
+                        beforeOpen: function() {
+                            jQuery('html').addClass('mfp-helper');
+                        },
+                        close: function() {
+                            jQuery('html').removeClass('mfp-helper');
+                        }
+                    }
+                }).magnificPopup('open');
+
+            }); //click ends here  
+        });
+
+
+
+        // short code for contact form -------
+        // <?php echo do_shortcode(''); ?>
+    </script>
+</body>
+
+</html>

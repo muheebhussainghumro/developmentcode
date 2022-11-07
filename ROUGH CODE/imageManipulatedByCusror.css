@@ -1,0 +1,32 @@
+jQuery(function () {
+  jQuery(".contact-img").on("mouseenter", function () {
+    jQuery(this).removeClass("not-hovered");
+  });
+
+  jQuery(".contact-img").on("mouseleave", function () {
+    jQuery(this).addClass("not-hovered");
+  });
+
+  jQuery(".contact-img").on("mousemove", function (event) {
+    var x = event.pageX,
+      y = event.pageY,
+      wWidth = jQuery(window).width(),
+      wWidthMid = wWidth / 2,
+      hHeight = jQuery(window).height(),
+      hHeightMid = hHeight / 2;
+    jQuery(".contact-img img").css({
+      transform:
+        "rotateY(" +
+        -(wWidthMid - x) / 50 +
+        "deg) rotateX(" +
+        (hHeightMid - y) / 50 +
+        "deg)",
+    });
+  });
+});
+
+.contact-img.not-hovered img {
+    transition: 0.1s ease-in-out;
+    transition-delay: 300ms;
+    transform: rotateY(0deg) rotateX(0deg) !important;
+}

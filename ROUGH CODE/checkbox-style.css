@@ -1,0 +1,20 @@
+.get-started-form form .wpcf7-response-output {
+  background: none !important;
+  color: #000 !important;
+  text-align: center !important;
+  justify-content: center !important;
+  max-width: max-content;
+  margin: auto !important;
+  font-size: 18px;
+}
+.get-started-form form .wpcf7-response-output:before {
+  content: "Form Sent!" !important;
+  display: block !important;
+  width: 100%;
+  position: static !important;
+  font-family: "Inter" !important;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  color: #ec6a2c;
+  margin-bottom: 20px !important;
+}

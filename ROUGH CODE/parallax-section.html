@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .single-img-fullwidth-parallax {
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        @media (min-width: 1200px) {
+            .single-img-fullwidth-parallax .parallax-layer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                transform: translateZ(0);
+                z-index: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                -webkit-backface-visibility: hidden;
+                -webkit-perspective: 1000;
+            }
+
+            .single-img-fullwidth-parallax .parallax-layer.grid-image {
+                z-index: 2;
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+                padding-top: 30px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+
+            .single-img-fullwidth-parallax .photowrap {
+                clip: rect(0, auto, auto, 0);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .single-img-fullwidth-parallax .photowrap.second {
+                z-index: 0;
+            }
+
+            .single-img-fullwidth-parallax .parallax-layer-2 {
+                overflow: hidden;
+                height: 800px;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            .single-img-fullwidth-parallax .parallax-layer-2 {
+                height: 62.500vw;
+            }
+
+            .single-img-fullwidth-parallax .parallax-layer-1 {
+                width: 100%;
+                padding: 30vw 0;
+                position: relative;
+            }
+
+            @media (max-width:991px) {
+                .single-img-fullwidth-parallax .parallax-layer-1 {
+                    padding-bottom: 140%;
+                }
+            }
+
+            .single-img-fullwidth-parallax .photowrap.image.first {
+                padding: 0;
+            }
+
+            .single-img-fullwidth-parallax h2 {
+                font-weight: normal;
+                font-size: 82px;
+                line-height: 80px;
+                letter-spacing: -0.04em;
+                max-width: 800px;
+                font-family: "KareliaWeb Medium", sans-serif;
+                position: relative;
+                margin-top: 24px;
+            }
+
+            .text-parallax .parallax-layer-1 {
+                padding: 32vw 0;
+            }
+
+            .text-parallax img {
+                width: auto;
+            }
+
+            .text-parallax .parallax-layer-2 {
+                height: 866px;
+            }
+
+            .text-parallax .parallax-layer-2 {
+                height: 63.5vw;
+            }
+
+            .centered_text {
+                position: fixed;
+                right: 0;
+                left: 55%;
+                top: 50%;
+                transform: translateY(-50%);
+                padding-right: calc(50vw - 680px);
+                z-index: 9;
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .single-img-fullwidth-parallax .parallax-tagline {
+                position: fixed;
+                left: 60px;
+                z-index: 3;
+                bottom: 30px;
+                width: 100%;
+                color: #FFF;
+                font-size: 50px !important;
+                line-height: 1.2;
+            }
+        }
+
+        .single-img-fullwidth-parallax .parallax-tagline {
+            color: #FFF;
+            font-size: 30px;
+        }
+
+        .centered_text p {
+            font-size: 26px;
+            line-height: 1.7;
+            color: #fff;
+        }
+
+        .centered_text p span {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+            .centered_text {
+                padding: 30px 0;
+            }
+
+            .centered_text p span {
+                color: #3287FE !important;
+            }
+
+            .centered_text p {
+                color: #000 !important;
+            }
+
+            .centered_text h3 {
+                font-size: 24px;
+                color: white;
+                padding: 0 30px;
+            }
+
+            .centered_text p {
+                font-size: 18px;
+                line-height: 1.6;
+                padding: 0 30px;
+            }
+
+            .single-img-fullwidth-parallax .parallax-tagline {
+                color: #FFF;
+                font-size: 30px;
+                padding: 30px 30px;
+                margin-bottom: 40px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+    </style>
+    <section class="single-img-fullwidth-parallax text-parallax">
+        <div class="parallax-layer-1 active">
+            <div class="photowrap image">
+                <div class="centered_text">
+                    <p>
+                        Remote Focus <span>EMPOWERS</span> homecare providers with a true way to impact their Value
+                        Based Incentives and patient lives.
+                    </p>
+                </div>
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/Group-7-min.png"
+                    class="parallax-layer grid-image d-lg-block">
+            </div>
+        </div>
+        <div class="parallax-layer-2 ge-prallax-v1-slide2 last">
+            <div class="photowrap image second">
+                <div class="centered_text">
+                    <p>
+                        Remote Focus <span>CONNECTS</span> you with your patients, and closes the Gap in Care.
+                    </p>
+                </div>
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/Group-7-1-min.png"
+                    class="parallax-layer grid-image d-lg-block">
+            </div>
+        </div>
+        <div class="parallax-layer-2 ge-prallax-v1-slide2 last">
+            <div class="photowrap image second">
+                <div class="centered_text">
+                    <p>
+                        Our software <span>PROMOTES</span> Preventative Care to help you address your patient's health
+                        concerns faster.
+                    </p>
+                </div>
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/Group-7-min.jpg"
+                    class="parallax-layer grid-image d-lg-block">
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

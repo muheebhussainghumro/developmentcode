@@ -1,0 +1,118 @@
+/* EXTRA SPACING */
+
+.main-page-wrapper {
+  padding-top: 0;
+}
+.site-content {
+  margin-bottom: 0;
+}
+.wd-prefooter {
+  padding-bottom: 0 !important;
+}
+.footer-sidebar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-column {
+  margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+} 
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 767px) {
+}
+
+/* footer center in responsive  */
+
+@media (max-width: 1199px) {
+  .footer-logo {
+    text-align: center !important;
+  }
+  .inquire-btn-row > div > div > div {
+    justify-content: center !important;
+  }
+  .footer-heading {
+    text-align: center !important;
+  }
+  .footer-heading .liner-continer:after {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  .footer-menu ul li {
+    text-align: center !important;
+  }
+  .list-style ul li {
+    display: block !important;
+    text-align: center !important;
+  }
+  .social-icons {
+    text-align: center !important;
+  }
+}
+
+/* LIST STYLE  */
+
+.ip-list-style ul li:before {
+  display: none !important;
+}
+.ip-list-style ul li {
+  list-style: disc !important;
+}
+
+/* product page  */
+
+div#product-152 {
+  background: #f6f6f6;
+  padding: 5%;
+}
+
+div#product-152 button.single_add_to_cart_button.button.alt {
+  background: #b3c7e3 !important;
+  box-shadow: none !important;
+  border-radius: 25px;
+  color: #000000;
+  padding: 12px 30px;
+  text-transform: none !important;
+  font-weight: 400;
+}
+
+div#product-152 input.minus {
+  background: #b3c7e3 !important;
+  border-radius: 50px;
+  height: 30px !important;
+  min-width: 30px !important;
+  border: none !important;
+  color: #25282a !important;
+  font-weight: 400 !important;
+  font-size: 22px;
+  padding-bottom: 2px !important;
+}
+
+div#product-152 .quantity {
+  align-items: center;
+  column-gap: 10px;
+}
+
+div#product-152 input.plus {
+  background: #b3c7e3 !important;
+  border-radius: 50px;
+  height: 30px !important;
+  min-width: 30px !important;
+  border: none !important;
+  color: #25282a !important;
+  font-weight: 400 !important;
+  font-size: 22px;
+  padding-bottom: 2px !important;
+}
+
+div#product-152 .quantity input[type="number"] {
+  background: #e5e5e5 !important;
+  border: none !important;
+  min-width: 100px !important;
+}

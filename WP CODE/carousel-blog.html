@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <?php  
+    // PAGINATION CODE
+    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $mainarray = array(
+        'post_type' => array('post'),
+        'post_status' => array('publish'),
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'posts_per_page' => 9,
+        'paged'       => $paged,
+    );
+    $q = new WP_Query($mainarray); 
+?>
+
+
+    <div class="custom-main-blog-wrapper">
+        <div class="container">
+            <div class="owl-carousel-blog owl-carousel">
+
+                <!-- LOOP STARTS -->
+
+
+                <?php while ($q->have_posts()) : $q->the_post(); ?>
+                <div class="col-md-12">
+                    <div class="blog-news-wrapper">
+                        <div class="blog-news-image">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if (has_post_thumbnail()):
+$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'large', true);
+?>
+                                <img src="<?php echo $thumbnail[0]; ?>" alt="Picture" class="featured-image">
+                                <?php else: ?>
+                                <img src="<?php echo site_url('PATH'); ?>" alt="Picture" class="featured-image">
+                                <?php endif; ?>
+                            </a>
+                        </div>
+                        <p class="blog-news-date">
+                            <?php echo get_the_date('M d Y'); ?>
+                        </p>
+                        <h3 class="blog-news-title">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h3>
+                        <p class="cb-text">
+
+                            <?php echo strip_tags(substr(get_the_excerpt(), 0, 100)); ?>
+
+                        </p>
+                        <div class="cb-action">
+                            <a href="<?php the_permalink(); ?>">Read <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <?php endwhile; ?>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        jQuery(document).ready(function () {
+            jQuery(".owl-carousel-blog").owlCarousel({
+                loop: true,
+                margin: 35,
+                responsiveClass: true,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                    },
+                    600: {
+                        items: 2,
+                        nav: true,
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                    }
+                }
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

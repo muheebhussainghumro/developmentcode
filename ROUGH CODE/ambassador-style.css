@@ -1,0 +1,135 @@
+.ambassador-section {
+  background: url(https://cdn.shopify.com/s/files/1/0272/2021/3846/files/Rectangle_304.jpg?v=1664451143)
+    no-repeat center;
+  background-size: cover;
+  min-height: 25vh;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: grid;
+  place-items: center;
+}
+main#MainContent {
+  padding: 0 !important;
+}
+.ambassador-title {
+  font-family: "FreightTextProBlack-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  color: #ffffff !important;
+}
+.ambassador-title-text {
+  max-width: 500px;
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.ambassador-box-row {
+  background: #fff;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.custom-info-box {
+  text-align: center;
+}
+.custom-info-box .box-title {
+  font-family: "Roboto";
+  font-weight: 900 !important;
+  font-size: 16px;
+  color: #3d475f !important;
+  text-transform: uppercase;
+}
+.ambassador-box-inner > div:not(:last-child) {
+  border-right: 0.3px solid #3d475f;
+}
+.ambassador-box-inner > div {
+  padding: 25px;
+}
+.ambassador-box-inner {
+  padding: 0 12%;
+}
+.custom-info-box .img-box {
+  min-height: 55px;
+}
+
+.ambassador-img-with-text-section {
+  background: #fff;
+}
+
+.ambassador-section-inner {
+  align-items: center;
+}
+
+.ambassador-section-title {
+  font-family: "FreightTextProBlack-Regular";
+  font-weight: 400;
+  font-size: 42px;
+  color: #3d475f !important;
+  max-width: max-content;
+  position: relative;
+}
+
+.ambassador-content-col {
+  padding: 5%;
+}
+@media (min-width: 992px) {
+  .ambassador-section-title:before {
+    content: "";
+    background: #3d475f !important;
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: -110%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.policy-box {
+  border: 1px solid #3d475f;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 30px;
+  position: relative;
+}
+.row.policy-inner {
+  row-gap: 20px;
+}
+.policy-icon img {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transition: 0.3s ease-in-out;
+}
+.policy-box:hover {
+  background: #3d475f;
+}
+.policy-box:hover .policy-icon img {
+  transform: rotate(180deg);
+  filter: brightness(8.5);
+}
+.policy-title-wrapper h4 {
+  font-size: 26px;
+  color: #3d475f;
+}
+.policy-box:hover .policy-title-wrapper h4,
+.policy-box:hover .policy-content p {
+  color: #fff !important;
+}
+.policy-box .policy-content p {
+  font-size: 14px;
+  color: #3d475f;
+}
+.policy-title-wrapper .policy-box-title {
+  margin-bottom: 0 !important;
+}
+.policy-title-wrapper {
+  margin-bottom: 10px;
+  min-height: 60px;
+}

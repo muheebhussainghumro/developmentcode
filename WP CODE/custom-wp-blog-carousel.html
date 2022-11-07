@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - [CSS] Infinite autoplay carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./autoplayimages.css">
+
+</head>
+
+<body>
+
+
+
+    <?php  
+    // PAGINATION CODE
+    $mainarray = array(
+        'post_type' => array('post'),
+        'post_status' => array('publish'),
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'posts_per_page' => 6,
+        'paged'       => $paged,
+    );
+    $q = new WP_Query($mainarray); 
+?>
+
+    <div class="custom-blog-wrapper">
+        <div class="row">
+            <!-- LOOP STARTS -->
+
+            <?php while ($q->have_posts()) : $q->the_post(); ?>
+
+
+            <div class="col-md-6">
+                <div class="row custom-blog-row">
+                    <div class="col-md-5">
+                        <div class="custom-blog-feature">
+
+                            <?php if (has_post_thumbnail()):  
+		    $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'large', true);
+		?>
+                            <img src="<?php echo $thumbnail[0]; ?>" alt="Picture" class="featured-image">
+                            <?php else: ?>
+                            <img src="<?php echo site_url('PATH'); ?>" alt="Picture" class="featured-image">
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="custom-blog-content">
+                            <h3 class="cb-title">
+
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+
+                            </h3>
+                            <p class="cb-text">
+
+                                <?php echo strip_tags(substr(get_the_excerpt(), 0, 100)); ?>
+
+                            </p>
+                            <div class="cb-action">
+                                <a href="<?php the_permalink(); ?>">Read <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <?php endwhile; ?>
+
+            <!-- LOOP ENDS -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- partial:index.partial.html -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+
+
+
+    <div class="contact-detail">
+        <p>E-mail</p>
+        <p><a href="mailto:ccofhouston@gmail.com">ccofhouston@gmail.com</a></p>
+    </div>
+    <div class="contact-detail">
+        <p>Phone</p>
+        <p><a href="tel:281-403-4030">281-403-4030</a></p>
+    </div>
+
+
+
+    <p style="margin-bottom: 10px;">What are the components of a typical voice lesson?</p>
+    <p style="margin-bottom: 10px; padding-left: 10px;"><strong>1. Getting Started </strong></p>
+    <p style="margin-bottom: 10px;padding-left:20px;">a. Students discuss their progress during at home practice time,
+        upcoming auditions, repertoire requests, and general business.</p>
+    <p style="margin-bottom: 10px; padding-left: 10px;"><strong>2. Warm-Up </strong></p>
+    <p style="margin-bottom: 10px; padding-left: 20px;">a. Warm-ups are tailored to each singer's voice, maturity,
+        technical needs, and repertoire. Students are encouraged to record their warm-ups in lessons and sing along to
+        them during the week.</p>
+    <p style="margin-bottom: 10px; padding-left: 10px;"><strong>3. Repertoire </strong></p>
+    <p style="margin-bottom: 10px; padding-left: 20px;">a. Students workshop pieces technically and dramatically to
+        achieve their desired performance goals. Teachers will assign repertoire designed to work on specific technical
+        goals but students are encouraged to bring in their own selections as well.</p>
+    <p style="margin-bottom: 10px; padding-left: 10px;"><strong>4. Closing </strong></p>
+    <p style="margin-bottom: 10px; padding-left: 20px;">a. Review progress towards goals and assign appropriate practice
+        for the upcoming week.</p>
+</body>
+
+</html>

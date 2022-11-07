@@ -1,0 +1,103 @@
+<div class="faq-container">
+    <div class="faq-icon">
+        <img src="#">
+    </div>
+    <div class="faq-content">
+        <h2>Are they all gray?</h2>
+        <div class="faq-txt">
+            No, though the majority of the British Shorthairs bred in the US are gray. Gray is what we call blue. Half of all British Shorthairs bred in CFA
+            <div class="span readmore-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+        <div class="button-wrapper">
+            <button class="see-more">Read More</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="faq-container">
+    <div class="faq-content">
+        <div class="faq-txt">
+            Every child has the right to discover and achieve their mind’s fullest potential.
+            <br><br><span class="span readmore-text">Our unique model features a STEM (Science, Technology, Engineering and Math) curriculum that utilizes the arts in all its forms to engage and educate students.
+            <br><br>We use a team approach to student progress, behavior, and assessment, and we’re a great fit for gifted and creative students.
+        </span>
+        </div>
+        <div class="button-wrapper">
+            <button class="see-more red-btn">Read More</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="faq-container">
+    <div class="faq-content">
+        <div class="faq-txt">
+            Our fresh philosophy and innovative programming are getting noticed, and we couldn’t be more proud.
+
+            <br><br><span class="span readmore-text">Since our opening in 2020, we’ve been recognized numerous times in local newspapers, on local TV stations, and in education centered publications.
+
+            <br><br>In 2021, after only one year in existence, we received the CR Award for Getting Results.
+
+        </span>
+        </div>
+        <div class="button-wrapper">
+            <button class="see-more orange-btn">Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- read more and less  -->
+
+<div class="faq-container">
+    <div class="faq-content">
+        <div class="faq-txt">
+            Every child has the right to discover and achieve their mind’s fullest potential. <span class="span readmore-text">And many times, that potential is hidden deep within a creative mind. It’s our job, as educators, to find and channel that potential.
+        </span>
+        </div>
+        <div class="button-wrapper">
+            <button class="see-more red-btn">Read More</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    jQuery('.see-more').on('click', function(e) {
+        e.preventDefault();
+        jQuery(this).closest('.button-wrapper').prev().find('.readmore-text').toggle();
+        jQuery(this).closest('.button-wrapper').find('.see-more').text('Read Less');
+
+        var y = jQuery(this).closest('.button-wrapper').find('.see-more');
+        var x = jQuery(this).closest('.button-wrapper').prev().find('.readmore-text');
+
+        if (x.css('display').toLowerCase() == 'block') {
+            y.text('Read Less');
+        } else {
+            y.text('Read More');
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery('.see-more').on('click', function(e) {
+        e.preventDefault();
+        jQuery(this).closest('.button-wrapper').prev().find('.readmore-text').toggle();
+        jQuery(this).closest('.button-wrapper').find('.see-more').text('Read Less');
+
+        var y = jQuery(this).closest('.button-wrapper').find('.see-more');
+        var x = jQuery(this).closest('.button-wrapper').prev().find('.readmore-text');
+
+        if (x.css('display').toLowerCase() == 'block') {
+            y.text('Read Less');
+        } else {
+            y.text('Read More');
+        }
+    });
+</script>
