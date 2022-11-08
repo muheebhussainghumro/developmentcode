@@ -1,30 +1,20 @@
-.login-link {
-  max-width: max-content;
+.contact-form .field {
+  background: #f1eeea !important;
+  border-radius: 5px !important;
+  border: none !important;
 }
-.header-popup .box-icon-wrapper {
-  margin-right: 0 !important;
+.contact-form .cf-field {
+  row-gap: 20px;
 }
-.header-popup .info-box-content {
-  display: none !important;
+.contact-form {
+  max-width: 500px;
+  margin: auto;
 }
-.header-popup .info-box-icon img {
-  max-width: 50px;
-}
-
-.info-box-icon:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f144";
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px !important;
-  font-weight: 900;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #928478 !important;
-}
-
-.info-box-icon {
-  position: relative;
+.contact-form input.submit-btn {
+  background: #fe0000 !important;
+  border-radius: 10px !important;
+  margin: 0 auto !important;
+  max-width: 160px !important;
+  display: block !important;
+  min-width: 180px !important;
 }

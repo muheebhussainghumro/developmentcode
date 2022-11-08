@@ -1,0 +1,9 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-wrapper .vc_pageable-slide-wrapper {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .blog-wrapper .vc_pageable-slide-wrapper > div {
+    flex: 0 0 50% !important;
+  }
+}
