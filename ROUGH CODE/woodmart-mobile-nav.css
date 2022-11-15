@@ -1,0 +1,23 @@
+.mobile-nav {
+  width: 100% !important;
+  display: grid;
+  place-content: center;
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+.mobile-nav ul > li > a {
+  justify-content: center;
+  border: none !important;
+  color: #fff;
+}
+.wd-close-side.woodmart-close-side.wd-close-side-opened {
+  position: relative;
+}
+.wd-side-hidden {
+  z-index: 98;
+}
+.whb-overcontent .whb-main-header {
+  z-index: 99;
+}
+.woodmart-burger-icon a {
+  background: #fff;
+}

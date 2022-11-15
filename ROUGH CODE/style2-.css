@@ -1,20 +1,58 @@
-.contact-form .field {
-  background: #f1eeea !important;
-  border-radius: 5px !important;
-  border: none !important;
+.blog-news-wrapper .blog-image img {
+  height: 260px;
+  object-fit: cover;
 }
-.contact-form .cf-field {
-  row-gap: 20px;
+.blog-news-wrapper .blog-content {
+  padding: 20px;
 }
-.contact-form {
-  max-width: 500px;
-  margin: auto;
+.blog-news-wrapper .blog-title h4 {
+  color: #323531 !important;
+  font-size: 20px;
+  margin-bottom: 0 !important;
 }
-.contact-form input.submit-btn {
-  background: #fe0000 !important;
-  border-radius: 10px !important;
-  margin: 0 auto !important;
-  max-width: 160px !important;
-  display: block !important;
-  min-width: 180px !important;
+.blog-news-wrapper .blog-date p {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  color: #207fa2 !important;
+  margin-bottom: 0 !important;
+}
+.blog-news-wrapper .blog-date {
+  margin-bottom: 10px;
+}
+.blog-news-wrapper .blog-text p {
+  font-size: 18px !important;
+  color: #323531 !important;
+}
+.blog-news-wrapper .blog-btn a {
+  font-size: 16px !important;
+  color: #207fa2 !important;
+  font-weight: 700 !important;
+  padding: 0 !important;
+}
+.blog-news-wrapper .blog-image figure,
+.blog-news-wrapper .blog-image a,
+.blog-news-wrapper .blog-image img {
+  width: 100% !important;
+  border-radius: 10px 10px 0 0;
+}
+.blog-news-wrapper {
+  background: #fff;
+  border: 1px solid #dadcdf;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.blog-news-wrapper .blog-title {
+  min-height: 65px;
+  margin-bottom: 10px;
+}
+.blog-news-wrapper .blog-text {
+  min-height: 70px;
+}
+.blog-news-wrapper .blog-date {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  color: #207fa2 !important;
+  margin-bottom: 0 !important;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="custom-blog-section-wrapper">
+        <div class="container">
+            <div class="row blog-main-row">
+                {% for article in blogs.news.articles limit: 3 %}
+                <div class="col-lg-4">
+                    <div class="blog-wrapper">
+                        <div class="blog-img-wrapper">
+                            <a href="{{ article.url }}">
+                                <img srcset="{% if article.image.width >= 311 %}{{ article.image | img_url: '311x' }} 311w,{% endif %}
+                                {% if article.image.width >= 622 %}{{ article.image | img_url: '622x' }} 622w,{% endif %}
+                                {% if article.image.width >= 503 %}{{ article.image | img_url: '503x' }} 503w,{% endif %}
+                                {% if article.image.width >= 1006 %}{{ article.image | img_url: '1006x' }} 1006w,{% endif %}
+                                {% if article.image.width >= 685 %}{{ article.image | img_url: '685x' }} 685w,{% endif %}
+                                {% if article.image.width >= 1370 %}{{ article.image | img_url: '1370x' }} 1370w{% endif %}"
+                                    sizes="(min-width: 1200px) 1080px, (min-width: 750px) calc(100vw - 12rem), calc(100vw - 6.4rem)"
+                                    src="{{ article.image | img_url: '600x' }}" width="{{ article.image.width }}"
+                                    height="{{ article.image.height }}" loading="lazy" class="blog-item__image"
+                                    alt="{{ article.image.alt | escape }}">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                            <div class="blog-date">
+                                <p>{%- if section.settings.show_date -%}
+                                    {{ article.author }} | {{ article.published_at | date: '%B %d, %Y' }}
+                                    {%- endif -%}</p>
+                            </div>
+                            <div class="blog-text">
+                                <p>{%- if article.excerpt.size > 0 -%}
+                                    {{ article.excerpt }}
+                                    {%- else -%}
+                                    {{ article.content | strip_html | truncate: 150 }}
+                                    {%- endif -%}</p>
+                            </div>
+                            <div class="blog-btn">
+                                <a href="{{ article.url }}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

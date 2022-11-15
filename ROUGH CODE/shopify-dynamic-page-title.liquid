@@ -1,0 +1,35 @@
+<div class="custom-page-title">
+        <div class="container-fluid">
+            <div class="page-title-wrapper">
+                <h4 class="custom-pagetitle">{{ section.settings.pageTitle }}</h4>
+                <p class="custom-pagetitle-text">{{ section.settings.pageText }}</p>
+            </div>
+        </div>
+    </div>
+
+
+
+{% schema %}
+  {
+    "name": "Page Title",
+    "settings": [
+        {
+          "type": "text",
+          "id": "pageTitle",
+          "label": "Page Title",
+          "default": "Enter text here"
+        },
+        {
+          "type": "text",
+          "id": "pageText",
+          "label": "Page Content",
+          "default": "Enter text here"
+        }
+      ]
+  }
+
+{% endschema %}
+
+
+
+Cat Flea & tick prevention

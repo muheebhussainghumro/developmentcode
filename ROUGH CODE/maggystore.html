@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../js/jquery.js">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    {{ content_for_index }}
+
+
+    <header class="custom-header">
+        <div class="container">
+            <div class="row headerinner-row">
+                <div class="col-md-6">
+                    <div class="logo-wrapper">
+                        <div class="site-logo">
+                            <img src="{{ section.settings.site_logo | img_url: 'master' }}">
+                        </div>
+                        <div class="top-bar-text">
+                            <p>{{ section.settings.top_bar_text }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-detail-col">
+                        <div class="currency-wrapper">
+                            <div class="currency-icon">
+                                <img src="https://cdn.shopify.com/s/files/1/0678/3870/5951/files/Arrow_Icon_91697d7f-6be6-40d4-9186-fcfccbc33b8f.png?v=1668514410"
+                                    alt="">
+                            </div>
+                            <div class="currency-text">
+                                <h4>USD</h4>
+                            </div>
+                        </div>
+                        <div class="cart-wrapper">
+                            <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
+                                {% include 'icon-cart' %}
+                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                                <div id="CartCount"
+                                    class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden"
+                                    data-cart-count-bubble>
+                                    <span data-cart-count>{{ cart.item_count }}</span>
+                                    <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t:
+                                        count: cart.item_count }}</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="search-bar">
+                            <form class="search-form search-bar__form" action="{{ routes.search_url }}" method="get"
+                                role="search">
+                                <div class="search-form__input-wrapper">
+                                    <input type="text" name="q" placeholder="{{ 'general.search.placeholder' | t }}"
+                                        role="combobox" aria-autocomplete="list" aria-owns="predictive-search-results"
+                                        aria-expanded="false" aria-label="{{ 'general.search.placeholder' | t }}"
+                                        aria-haspopup="listbox" class="search-form__input search-bar__input"
+                                        data-predictive-search-drawer-input data-base-url="{{ routes.search_url }}" />
+                                    <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
+                                    <div class="predictive-search-wrapper predictive-search-wrapper--drawer"
+                                        data-predictive-search-mount="drawer"></div>
+                                </div>
+
+                                <button class="search-bar__submit search-form__submit" type="submit"
+                                    data-search-form-submit>
+                                    {% include 'icon-search' %}
+                                    <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu-row">
+            <div class="container">
+                <div class="header-menu-wrapper">
+                    <div class="footer-menu">
+                        <ul class="custom-menu">
+                            {% for link in linklists.site-menu.links %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% schema %}
+    {
+    "name": "Footer Section",
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "site_logo",
+    "label": "Logo"
+    },
+    {
+    "type": "text",
+    "id": "top_bar_text",
+    "label": "Text",
+    "default": "Enter text here"
+    }
+    ]
+    }
+
+    {% endschema %}
+
+
+
+
+
+
+    {% schema %}
+    {
+    "name": "Footer Section",
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "site_logo",
+    "label": "Logo"
+    },
+    {
+    "type": "text",
+    "id": "top_bar_text",
+    "label": "Text",
+    "default": "Enter text here"
+    }
+    ]
+    }
+
+    {% endschema %}
+
+
+
+
+    <div class="main-row">
+        <div class="container-fluid">
+            <div class="row main-inner-row">
+                <div class="col-md-4">
+                    <div class="search-box-wrapper dog-main-col info-box-wrapper">
+                        <div class="info-box">
+                            <div class="info-box-content-wrapper">
+                                <div class="info-box-icon">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0678/3870/5951/files/bone_1-min.png?v=1668435080">
+                                </div>
+                                <div class="info-box-subtitle">
+                                    <p class="info-box-subtitle">Search DOG Product</p>
+                                    <div class="info-box-content">
+                                        <h4 class="info-box-title">LOREM ISPUM</h4>
+                                        <div class="info-box-inner">
+                                            <p>LOREM ISPUM DOLOR</p>
+                                        </div>
+                                        <div class="scroll-btn">
+                                            <a href="#about-section"><i class="fas fa-chevron-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="search-box-wrapper cat-main-col info-box-wrapper">
+                        <div class="info-box">
+                            <div class="info-box-content-wrapper">
+                                <div class="info-box-icon">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0678/3870/5951/files/cat_1-min.png?v=1668435081">
+                                </div>
+                                <div class="info-box-subtitle">
+                                    <p class="info-box-subtitle">Search Cat Product</p>
+                                    <div class="info-box-content">
+                                        <h4 class="info-box-title">LOREM ISPUM</h4>
+                                        <div class="info-box-inner">
+                                            <p>LOREM ISPUM DOLOR</p>
+                                        </div>
+                                        <div class="scroll-btn">
+                                            <a href="#about-section"><i class="fas fa-chevron-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="search-box-wrapper fish-main-col info-box-wrapper">
+                        <div class="info-box">
+                            <div class="info-box-content-wrapper">
+                                <div class="info-box-icon">
+                                    <img
+                                        src="https://cdn.shopify.com/s/files/1/0678/3870/5951/files/fish_1-min.png?v=1668435080">
+                                </div>
+                                <div class="info-box-subtitle">
+                                    <p class="info-box-subtitle">Search FISH Product</p>
+                                    <div class="info-box-content">
+                                        <h4 class="info-box-title">LOREM ISPUM</h4>
+                                        <div class="info-box-inner">
+                                            <p>LOREM ISPUM DOLOR</p>
+                                        </div>
+                                        <div class="scroll-btn">
+                                            <a href="#about-section"><i class="fas fa-chevron-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-main-row">
+        <div class="container">
+            <div class="primary-title-wrapper">
+                <h4 class="primary-title">About</h4>
+            </div>
+            <div class="about-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="primary-btn-wrapper">
+                <a class="primary-btn" href="#">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popular-category-main-row">
+        <div class="popular-category-img">
+            <img src="" alt="">
+        </div>
+        <div class="popular-category-inner-row">
+            <div class="primary-title-wrapper primary-title-white">
+                <h4 class="primary-title">About</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+                    <div class="popular-category-box info-box-wrapper">
+                        <div class="info-box-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info-box-title-wrapper">
+                            <h4 class="info-box-title">DOG FOOD</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="category-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="category-card-wrapper">
+                        <div class="info-box-wrapper">
+                            <div class="info-box-content">
+                                <h4 class="info-box-title">Cat Flea &
+                                    tick prevention</h4>
+                                <div class="info-box-inner">
+                                    <p>Shop Cat Flea And Tick</p>
+                                </div>
+                            </div>
+                            <div class="info-box-icon">
+                                <img src="https://cdn.shopify.com/s/files/1/0678/3870/5951/files/Group_15-min.png?v=1668435081"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="category-card-wrapper">
+                        <div class="info-box-wrapper">
+                            <div class="info-box-content">
+                                <h4 class="info-box-title">Cat Flea &
+                                    tick prevention</h4>
+                                <div class="info-box-inner">
+                                    <p>Shop Cat Flea And Tick</p>
+                                </div>
+                            </div>
+                            <div class="info-box-icon">
+                                <img src="https://cdn.shopify.com/s/files/1/0678/3870/5951/files/Group_15-min.png?v=1668435081"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="testimonial-main-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-img-wrapper">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="custom-testimonial-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.</p>
+                                </div>
+                                <div class="testimonial-name-wrapper">
+                                    <h4 class="testimonial-name">John Doe</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.</p>
+                                </div>
+                                <div class="testimonial-name-wrapper">
+                                    <h4 class="testimonial-name">John Doe</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.</p>
+                                </div>
+                                <div class="testimonial-name-wrapper">
+                                    <h4 class="testimonial-name">John Doe</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.</p>
+                                </div>
+                                <div class="testimonial-name-wrapper">
+                                    <h4 class="testimonial-name">John Doe</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="row footer-main-row">
+            <div class="col-xl-6">
+                <div class="title-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer-menu">
+                    <ul class="custom-menu">
+                        {% for link in linklists.site-menu.links %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="payment-method">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="footer-title-wrapper">
+                    <h4 class="footer-title">STAY CONNECTED</h4>
+                </div>
+                <div class="footer-form">
+                    {%- assign formId = 'Contact_' | append: section.id -%}
+                    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form
+                    form-single-field' %}
+                    {%- if form.posted_successfully? -%}
+                    <p class="form-message form-message--success" tabindex="-1" data-form-status>
+                        {{ 'general.newsletter_form.confirmation' | t }}
+                    </p>
+                    {%- endif -%}
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+                        <input type="email" name="contact[email]" id="{{ formId }}-email"
+                            class="input-group__field{% if form.errors %} input--error{% endif %}"
+                            value="{{ form.email }}" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                            aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}" aria-required="true"
+                            autocorrect="off" autocapitalize="off" {% if form.errors %} aria-invalid="true"
+                            aria-describedby="{{ formId }}-email-error" data-form-status {% endif %}>
+                        <span class="input-group__btn">
+                            <button type="submit" class="btn" name="commit">
+                                <span>{{ 'general.newsletter_form.submit' | t }}</span>
+                            </button>
+                        </span>
+                    </div>
+                    {%- if form.errors contains 'email' -%}
+                    <span id="{{ formId }}-email-error" class="input-error-message">
+                        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                        {% include 'icon-error' %}
+                        <span>{{ form.errors.translated_fields['email'] | capitalize }} {{
+                            form.errors.messages['email'] }}.</span>
+                    </span>
+                    {%- endif -%}
+                    {% endform %}
+                </div>
+                <div class="footer-contact-info">
+                    <ul class="footer-list-wrapper">
+                        <li class="footer-list-item"><a href="#"></a><i class="fas fa-map-marker"></i> 101 lorem Ipsum
+                            St, Lorem IP 10101</li>
+                        <li class="footer-list-item"><a href="tel:(101) 010-1010"></a><i class="fas fa-phone"></i>(101)
+                            010-1010</li>
+                        <li class="footer-list-item"><a href="#"></a><i class="fas fa-envelope"></i> Send Us An Email
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright-row">
+            <div class="col-xl-6">
+                <div class="copyright-title-wrapper">
+                    <p class="copyright-text">Copyright @ 2022. MAGGY’S Pet Store</p>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="copyright-title-wrapper">
+                    <p class="copyright-text"><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+
+        jQuery(document).ready(function () {
+            jQuery(".custom-testimonial-carousel").owlCarousel({
+                loop: true,
+                margin: 35,
+                responsiveClass: true,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            });
+        });
+
+
+
+    </script>
+
+
+</body>
+
+</html>

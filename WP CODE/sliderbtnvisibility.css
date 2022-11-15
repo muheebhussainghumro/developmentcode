@@ -103,14 +103,14 @@
 
 /* ======== */
 
-.succes-stories-carousel .owl-carousel .owl-nav > div {
+.owl-carousel .owl-nav > div {
   transform: translateY(0) !important;
   -webkit-transform: translateY(0) !important;
   opacity: 1;
   visibility: visible;
   pointer-events: visible;
 }
-.succes-stories-carousel .owl-prev:after {
+.owl-prev:after {
   content: "" !important;
   font-size: 0;
   background: url(https://fleetwolf.com/wp-content/uploads/2022/08/Arrow-2-min.png);
@@ -119,7 +119,7 @@
   height: 15px;
   background-repeat: no-repeat;
 }
-.succes-stories-carousel .owl-next:after {
+.owl-next:after {
   content: "" !important;
   font-size: 0 !important;
   background: url(https://fleetwolf.com/wp-content/uploads/2022/08/Arrow-2-1-min.png);
@@ -128,7 +128,7 @@
   height: 15px;
   background-repeat: no-repeat;
 }
-.succes-stories-carousel .owl-nav {
+.owl-nav {
   margin: 0 0 0 auto;
   padding: 0 15px;
   width: max-content;
@@ -136,7 +136,7 @@
   justify-content: start !important;
   column-gap: 15px;
 }
-.succes-stories-carousel .owl-nav > div {
+.owl-nav > div {
   position: static;
   opacity: 1;
   transform: none;
@@ -147,36 +147,36 @@
   display: flex;
   justify-content: center !important;
 }
-.succes-stories-carousel .owl-nav > div {
+.owl-nav > div {
   width: 65px !important;
   height: 65px !important;
   background: #dce3e9 !important;
   border-radius: 50%;
   margin: 20px 0 !important;
 }
-.succes-stories-carousel .owl-prev:hover,
-.succes-stories-carousel .owl-next:hover {
+.owl-prev:hover,
+.owl-next:hover {
   background: #01a8e8 !important;
 }
-.succes-stories-carousel .owl-prev:hover:after,
-.succes-stories-carousel .owl-next:hover:after {
+.owl-prev:hover:after,
+.owl-next:hover:after {
   filter: brightness(10);
 }
-.succes-stories-carousel .woodmart-info-box .info-box-content {
+.woodmart-info-box .info-box-content {
   display: flex;
   flex-direction: column-reverse;
 }
-.succes-stories-carousel .woodmart-info-box .info-box-inner {
+.woodmart-info-box .info-box-inner {
   margin-bottom: 15px;
 }
 
 @media (max-width: 767px) {
-  .succes-stories-carousel .owl-nav {
+  .owl-nav {
     margin: auto !important;
   }
 }
 @media (max-width: 1024px) {
-  .succes-stories-carousel .owl-nav {
+  .owl-nav {
     margin: 0 auto;
   }
 }
