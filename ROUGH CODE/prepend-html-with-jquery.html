@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .custom-page-title {
+        min-height: 25vh;
+        background-image: url(https://olivetreetutoring.org/wp-content/uploads/2021/04/shutterstock_87806770-1-1.jpg);
+        background-size: cover;
+        background-position: center center;
+        padding: 0;
+        padding-top: 16%;
+        display: grid;
+        place-items: end;
+    }
+
+    .custom-page-title .custom-title {
+        background: #fff;
+        color: #144d29 !important;
+        width: max-content;
+        margin-left: auto;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding: 15px 45px;
+        font-size: 60px;
+        margin-bottom: 0 !important;
+    }
+
+    @media (min-width: 1200px) {
+        .custom-page-title .custom-title {
+            margin-right: -60px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .custom-page-title .custom-title {
+            font-size: 36px !important;
+            position: absolute !important;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 95%;
+            max-width: 500px;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .custom-page-title .custom-title {
+            font-size: 22px !important;
+            margin: auto !important;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- add this code without line break  -->
+
+    jQuery( ".post-type-archive-tribe_events .main-page-wrapper" ).prepend( "<div class='custom-page-title'>
+        <div class='container'>
+            <div class='col-12'>
+                <div class='page-title-wrapper'>
+                    <h4 class='custom-title'>Calender</h4>
+                </div>
+            </div>
+        </div>
+    </div>" );
+
+</body>
+
+</html>
