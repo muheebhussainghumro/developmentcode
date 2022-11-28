@@ -10,28 +10,13 @@
 
 <body>
 
-    <?php  
-    
-    $mainarray = array(
-        'post_type' => array('POST'),
-        'post_status' => array('publish'),
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'posts_per_page' => 2,
-       
-    );
-    $q = new WP_Query($mainarray); 
-?>
 
 
-    <div class="row blog-main-row">
-        <?php while ($q->have_posts()) : $q->the_post(); ?>
-        <div class="col-md-6 custom-blog-col">
 
-            <!-- blog -->
-            <div class="row custom-blog-wrapper">
 
-                <div class="col-md-6 img-col">
+
+
+    <div class="col-md-6 img-col">
                     <div class="blog-img-wrapper">
                         <?php if (has_post_thumbnail()):  
                             $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'large', true);
@@ -61,11 +46,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <!-- blog end -->
-        </div>
-        <?php endwhile; ?>
-    </div>
 
 
 
