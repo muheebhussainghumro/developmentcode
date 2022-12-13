@@ -180,3 +180,121 @@
     margin: 0 auto;
   }
 }
+
+/* < > arrow btn top right css */
+
+.owl-nav {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: max-content;
+  display: flex;
+  justify-content: start !important;
+  column-gap: 15px;
+}
+.owl-nav > div {
+  position: static;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 0;
+  text-align: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: 4px solid #02a8bc !important;
+  border-radius: 50%;
+  margin: 20px 0 !important;
+  transition: 0.2s ease-in-out !important;
+}
+.owl-prev:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f536" !important;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #02a8bc !important;
+  font-size: 16px !important;
+}
+.owl-next:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f531" !important;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #02a8bc !important;
+  font-size: 16px !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background: #02a8bc !important;
+}
+.owl-prev:hover:after,
+.owl-next:hover:after {
+  color: #fff !important;
+}
+@media (min-width: 768px) {
+  .owl-nav {
+    margin: 0 0 0 auto;
+    padding: 0 15px;
+    width: max-content;
+    display: flex;
+    justify-content: start !important;
+    column-gap: 15px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+  }
+}
+
+/* center bottom square btn */
+
+.testimonial-container .owl-nav {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: max-content;
+  display: flex;
+  justify-content: start !important;
+  column-gap: 10px;
+}
+.testimonial-container .owl-nav > div {
+  position: static;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  margin: 0 auto !important;
+  justify-content: center !important;
+  display: flex;
+  align-item: center !important;
+  width: 55px !important;
+  height: 55px !important;
+  margin: 20px 0 !important;
+  color: #ede8f1 !important;
+  border: 1px solid #ede8f1 !important;
+}
+.testimonial-container .owl-prev:hover,
+.testimonial-container .owl-next:hover {
+  background: #a991ba !important;
+}
+.testimonial-container .owl-prev:hover:after,
+.testimonial-container .owl-next:hover:after {
+  filter: brightness(10);
+}
+.testimonial-container .owl-nav > div:hover:after {
+  color: #fff !important;
+}
+.owl-prev:after {
+  content: "" !important;
+  font-size: 0;
+  background: url(https://eseospace.dev/websites/slenderspa/wp-content/uploads/2022/12/Polygon-2-min.png);
+  background-size: contain;
+  width: 30px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.owl-next:after {
+  transform: scale(-1);
+}

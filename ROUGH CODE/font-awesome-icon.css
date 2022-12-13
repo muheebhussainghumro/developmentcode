@@ -1,8 +1,8 @@
 /* stars */
 
 .testimonial-container .testimonial-content footer:before {
-  font-family: "Font Awesome 5 Free";
   content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
   vertical-align: middle;
   font-weight: 900;
   letter-spacing: 2px;

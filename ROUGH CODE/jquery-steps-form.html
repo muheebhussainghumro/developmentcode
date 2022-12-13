@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* PHOTOGRAPHER FORM */
+
+    .secondary-title {
+        background: #0063aa;
+        padding: 10px;
+        border-radius: 6px 6px 0 0;
+        text-align: center;
+    }
+
+    .secondary-title h2 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 6px 6px 0 0;
+        margin-bottom: 0 !important;
+    }
+
+    .services-title h4 {
+        color: #0063aa;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .selection-services-inner {
+        padding: 30px;
+    }
+
+    .selection-services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 340px;
+        margin: auto;
+    }
+
+    .selection-services>div {
+        flex: 1 1 33.33%;
+        padding: 10px;
+    }
+
+    .selection-services>div a {
+        background: #ebf3fa;
+        padding: 15px 5px !important;
+        width: 100% !important;
+        min-height: 90px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px !important;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 14px;
+        color: #1963a8 !important;
+        font-weight: 900 !important;
+        text-transform: uppercase;
+    }
+
+    .selection-services>div a i {
+        font-size: 30px;
+        color: #1963a8 !important;
+    }
+
+    .selection-services>div a:hover {
+        background: #fae4c2 !important;
+        color: #f89d29 !important;
+    }
+
+    .selection-services>div a:hover i {
+        color: #f89d29 !important;
+    }
+
+
+    /* TABS STYLE */
+
+    div.content>div {
+        width: 100% !important;
+        padding: 30px !important;
+
+    }
+
+    .order-placement-form {
+        background: #fff !important;
+        box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+        padding: 30px 0;
+    }
+
+    .order-placement-form .steps {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 0 30px;
+    }
+
+    .order-placement-form .content {
+        background: none !important;
+        margin: 0;
+    }
+
+    .order-placement-form .steps ul>li>a {
+        border-top: 3px solid #ebebeb !important;
+        background: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        color: #aebac5 !important;
+        text-transform: uppercase;
+        font-weight: 700 !important;
+        padding: 20px 0 !important;
+        text-align: center;
+        min-width: 160px !important;
+    }
+
+    .order-placement-form .steps ul li a>span {
+        display: none;
+    }
+
+    .order-placement-form .wizard>.steps>ul>li {
+        margin-top: -3px;
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .order-placement-form .wizard>.steps>ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .order-placement-form .steps ul {
+        border-top: 3px solid #ebebeb;
+    }
+
+    .order-placement-form .steps ul li.current a {
+        border-color: #2184be !important;
+    }
+
+    /* FORM BTN */
+
+    .order-placement-form .wizard>.actions>ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        padding: 20px 0 !important;
+    }
+
+    .order-placement-form .wizard>.actions>ul li:not(.disabled) a {
+        background: #93bf44 !important;
+    }
+
+    .order-placement-form .wizard>.actions>ul li.disabled a {
+        background: none !important;
+        color: #999999 !important;
+    }
+
+    .order-placement-form .wizard>.actions>ul>li a {
+        text-transform: capitalize !important;
+        min-width: 180px;
+        min-height: 60px;
+        padding: 14px 30px !important;
+        color: #fff !important;
+        border-radius: 10px !important;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .order-placement-form a[href="#finish"] {
+        display: none !important;
+    }
+
+
+    /* FORM CONTENT */
+
+    .form-field-label {
+        font-size: 18px;
+        font-weight: 700 !important;
+        margin-bottom: 20px !important;
+        color: #0063aa !important;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .form-field-title {
+        text-transform: uppercase;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        margin-bottom: 10px !important;
+        color: #0063aa !important;
+    }
+
+    .field-title {
+        text-align: left !important;
+    }
+
+    .select-field label {
+        position: relative;
+        display: inline-block;
+        border-left: 1px solid #ccdae6;
+        padding: 1em 1.125em 1em 1.125em;
+        background: #ebf3fa;
+        color: #0063aa;
+        cursor: pointer;
+        margin-right: -4px;
+    }
+
+    .select-field label:hover {
+        background: #fbe4c0;
+        color: #fc9e10;
+        border-color: #f9d49a;
+    }
+
+    .select-field input:checked+label {
+        color: #fff;
+        background: #95c23d;
+        border-color: #83ab36;
+        z-index: 1;
+    }
+
+    .select-field input[type="radio"]:checked+label {
+        cursor: default;
+    }
+
+    .select-field input[type="checkbox"]:checked:hover+label {
+        background: #fbe4c0;
+        color: #fc9e10;
+        border-color: #f9d49a;
+        background: #9dd039;
+        color: #ffffff;
+        border-color: #8db73b;
+    }
+
+    .select-field .form-field-item input {
+        appearance: none !important;
+    }
+
+    .select-field input {
+        display: none !important;
+    }
+
+    .select-field .select-field-item:first-child label {
+        margin-left: 0 !important;
+        border-left: none !important;
+        border-radius: 4px 0 0 4px !important;
+    }
+
+    .select-field .select-field-item:last-child label {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .select-field-item {
+        display: inline-block !important;
+    }
+
+    .description-field-item textarea {
+        border: none !important;
+        background: #ebf3fa !important;
+        min-height: 140px;
+        font-size: 15px !important;
+        font-weight: 500;
+    }
+
+    .order-placement-form input.field {
+        height: 55px;
+        border: none !important;
+        padding: 10px;
+        font-size: 15px !important;
+        background-color: #ebf3fa !important;
+        border-radius: 4px !important;
+        color: #0063aa !important;
+        font-weight: 500;
+    }
+
+    .order-placement-form input.file-field {
+        background: #ebf3fa;
+        border-radius: 4px;
+        width: 100%;
+        height: 55px;
+        padding: 16px 10px;
+        overflow: hidden;
+        border: none !important;
+    }
+
+    .order-placement-form input.field::placeholder,
+    .order-placement-form textarea::placeholder {
+        color: #93ADC4 !important;
+        font-weight: 500;
+    }
+
+    .form-field-row {
+        row-gap: 20px;
+    }
+
+    .description-field-item {
+        margin-bottom: 20px !important;
+    }
+
+    .order-placement-form textarea.field {
+        color: #3084BC;
+    }
+
+    .form-text p {
+        font-size: 16px;
+        color: #404040 !important;
+    }
+
+    .offer-item-wrapper .offer-item.select-field .select-field-item label {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        min-height: 120px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700 !important;
+        text-align: center;
+        max-width: 140px;
+        border-radius: 10px !important;
+        transition: 0.2s ease-in-out;
+    }
+
+    .offer-item-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .offer-item-wrapper .select-field-item label i {
+        font-size: 35px;
+    }
+
+    .offer-list-wrapper ul li {
+        list-style: none !important;
+        font-size: 16px !important;
+        margin-bottom: 0 !important;
+        color: #404040 !important;
+    }
+
+    .phone-form-wrapper {
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .order-placement-form .content {
+        min-height: 38rem !important;
+    }
+
+
+
+    @media (max-width:1024px) {
+        .order-placement-form .wizard>.steps>ul {
+            overflow: scroll;
+        }
+
+        .order-placement-form .content {
+            min-height: 50rem !important;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .order-placement-form .content {
+            min-height: 66rem !important;
+        }
+    }
+</style>
+
+<body>
+
+
+
+    <div class="order-placement-form">
+        <form action="" id="order-placement-form">
+            <h1 class="order-placement-tab-label">Category</h1>
+            <div class="op-form-step-one">
+                <div class="row form-field-row">
+                    <div class="col-lg-6">
+                        <div class="field-title"><label class="form-field-title">How Would You Like the Photos (multiple
+                                Choice)</label>
+                        </div>
+                        <div class="form-field-item select-field">
+                            <div class="select-field-item">
+                                <input type="checkbox" id="digital" name="digital"><label for="digital">Digital</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="photoAlbum" name="photo-album"><label for="photoAlbum">photo
+                                    album</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="photoBox" name="photo-box"><label for="photoBox">photo
+                                    box</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="canvas" name="canvas"><label for="canvas">canvas</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="field-title"><label class="form-field-title">How Would You Like the Photos(multiple
+                                Choice)</label>
+                        </div>
+                        <div class="form-field-item select-field">
+                            <div class="select-field-item">
+                                <input type="checkbox" id="makeUp" name="make-up"><label for="makeUp">Make up</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="jewelry" name="jewelry"><label for="jewelry">jewelry</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="video" name="video"><label for="video">Video</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="field-title"><label class="form-field-title">Max Duration:</label></div>
+                        <div class="form-field-item select-field">
+                            <div class="select-field-item">
+                                <input type="radio" id="2h" name="max-duration"><label for="2h">2h</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="4Hours" name="max-duration"><label for="4Hours">4 hours</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="6h" name="max-duration"><label for="6h">6h</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="8h" name="max-duration"><label for="8h">8h</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="10am" name="max-duration"><label for="10am">10 a.m</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="12pm" name="max-duration"><label for="12pm">12:00 p.m</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="field-title"><label class="form-field-title">What Is More Important
+                                toThem?</label>
+                        </div>
+                        <div class="form-field-item select-field">
+                            <div class="select-field-item">
+                                <input type="radio" id="quality" name="more-important" value="quality"><label
+                                    for="quality">quality</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="Price" name="more-important" value="Price"><label
+                                    for="Price">quality</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="description-field-item">
+                            <div class="field-title"><label class="form-field-title">Description (at Least 30
+                                    Characters)</label>
+                            </div>
+                            <textarea name="description" id="description" class="field"
+                                placeholder="Your Description..." required></textarea>
+                        </div>
+                        <div class="form-text">
+                            <p>Ideas: Motivation for the pictures? Which style do you like? Expiry of the order?
+                                budget framework? What is important? Individual advice or rough offer? Other wishes?
+                                The more information, the more accurate the offer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                       <h1 class="order-placement-tab-label">Order</h1>
+            <div class="op-form-step-two">
+                <div class="row form-field-row">
+                    <div class="col-lg-6">
+                        <label class="form-field-title">Location/ Address</label>
+                        <input type="text" name="address" class="field" placeholder="street / no. *zip / city" required>
+                    </div>
+                    <div class="col-lg-6"><label class="form-field-title">Date</label><input type="date" name="date"
+                            class="field">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="field-title"><label class="form-field-title">Time Flexibility</label></div>
+                        <div class="form-field-item select-field">
+                            <div class="select-field-item">
+                                <input type="radio" id="1day" name="time-flexibility" value="1day"><label for="1day">1
+                                    day</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="1week" name="time-flexibility" value="1week"><label
+                                    for="1week">1 week</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="1month" name="time-flexibility" value="1month"><label
+                                    for="1month">1month</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="radio" id="no" name="time-flexibility" value="no"><label
+                                    for="no">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                       <h1 class="order-placement-tab-label">When and Where</h1>
+            <div class="op-form-step-three">
+                <div class="row form-field-row">
+                    <div class="col-lg-12">
+                        <label class="form-field-label">Please include an example image so the photographer
+                            understands what style of photo you are looking for. Inquiries with pictures receive up
+                            to
+                            300% more frequent and better offers.</label>
+                        <input type="file" class="file-field" name="example-image" id="exampleImage" required>
+                    </div>
+                </div>
+            </div>
+
+                       <h1 class="order-placement-tab-label">Pictures</h1>
+            <div class="op-form-step-four">
+                <div class="row form-field-row">
+                    <div class="col-12">
+                        <div class="form-title">
+                            <label class="form-field-label">How would you like to get the offer?</label>
+                        </div>
+                        <div class="offer-wrapper">
+                            <div class="offer-item-wrapper">
+                                <div class="offer-item select-field">
+                                    <div class="select-field-item">
+                                        <input type="radio" id="immediateAdvice" name="offers" value="1day"><label
+                                            for="immediateAdvice"><i class="fas fa-phone"></i>Immediate Advice</label>
+                                    </div>
+                                    <div class="offer-list-wrapper">
+                                        <ul>
+                                            <li class="offer-list-item">✔ Direct callback</li>
+                                            <li class="offer-list-item">✔ Free consultation</li>
+                                            <li class="offer-list-item">✔ Exact offer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="offer-item select-field">
+                                    <div class="select-field-item">
+                                        <input type="radio" id="roughOffer" name="offers" value="roughOffer"><label
+                                            for="roughOffer"><i class="fas fa-at"></i>Rough Offer + Advice</label>
+                                    </div>
+                                    <div class="offer-list-wrapper">
+                                        <ul>
+                                            <li class="offer-list-item">✔ Target price</li>
+                                            <li class="offer-list-item">✔ Information in advance</li>
+                                            <li class="offer-list-item">✔ Free consultation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                       <h1 class="order-placement-tab-label">Contact Preferences</h1>
+            <div class="op-form-step-five">
+                <div class="row form-field-row">
+                    <div class="col-lg-12">
+                        <label class="form-field-label">Congratulations, suitable provider found. To whom should
+                            the
+                            offer be made out?</label>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-field-title">First Name</label>
+                        <input type="text" class="field" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-field-title">Surname</label>
+                        <input type="text" class="field" name="surname" placeholder="Surname" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-field-title">E-mail</label>
+                        <input type="email" class="field" name="email" placeholder="E-mail" required>
+                    </div>
+                </div>
+            </div>
+
+
+                       <h1 class="order-placement-tab-label">Contact</h1>
+            <div class="op-form-step-six">
+                <div class="row form-field-row phone-form-wrapper">
+                    <div class="col-12">
+                        <div class="form-title">
+                            <label class="form-field-label">Please enter your phone number.</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-field-title">Phone Number</label>
+                        <input type="tel" class="field" name="phone-number" placeholder="xxxxxxxxx" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-label-wrapper">
+                            <label class="form-field-title">When Are You Available? (multiple Choice)</label>
+                        </div>
+                        <div class="form-field-item select-field">
+                            <div class="select-field-item">
+                                <input type="checkbox" id="8am-12pm" name="8am-12pm"><label
+                                    for="8am-12pm">8am-12pm</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="12-1-pm" name="12-1-pm"><label for="12-1-pm">12-1 p.m</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="1pm-5pm" name="1pm-5pm"><label for="1pm-5pm">1pm-5pm</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="5-8-pm" name="5-8-pm"><label for="5-8-pm">5-8 p.m</label>
+                            </div>
+                            <div class="select-field-item">
+                                <input type="checkbox" id="from-8pm" name="from-8pm"><label for="from-8pm">from 8
+                                    p.m</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 form-button-wrapper">
+                        <input type="submit" class="btn form-register-btn" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+
+        // integration process
+
+        // jquery steps
+
+        function hyperinventive_enqueue_additional_scripts() {
+            wp_enqueue_style('jquery-steps-min-css', get_stylesheet_directory_uri(). '/assets/css/jquery.steps.css', array(), '1.0.0', 'all');
+            wp_enqueue_script('jquery-steps-min-js', get_stylesheet_directory_uri(). '/assets/js/jquery.steps.min.js', array(), '1.0.0', true);
+            wp_enqueue_script('steps-script-handler-js', get_stylesheet_directory_uri(). '/assets/js/steps-script-handler.js', array('jquery-steps-min-js'), '1.0.0', true);
+
+        }
+        add_action('wp_enqueue_scripts', 'hyperinventive_enqueue_additional_scripts');
+
+    </script>
+
+</body>
+
+</html>

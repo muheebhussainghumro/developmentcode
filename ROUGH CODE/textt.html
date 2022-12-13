@@ -11,6 +11,203 @@
 <body>
 
 
+    <video width="100%" height="350"
+        poster="https://eseospace.dev/websites/expertreputation/wp-content/uploads/2022/11/expertreputation-request-demo.png.webp"
+        controls>
+        <source src="https://eseospace.dev/websites/expertreputation/wp-content/uploads/2022/12/teaser.mp4"
+            type="video/mp4">
+    </video>
+
+
+    <video
+        poster="https://eseospace.dev/websites/expertreputation/wp-content/uploads/2022/11/expertreputation-request-demo.png.webp"
+        controls="controls" width="100%" height="350"><span data-mce-type="bookmark"
+            style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
+            class="mce_SELRES_start">﻿</span><br />
+        <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
+            class="mce_SELRES_start">﻿</span>&lt;source
+        src="https://eseospace.dev/websites/expertreputation/wp-content/uploads/2022/12/teaser.mp4" </video></p>
+    <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
+        class="mce_SELRES_start">﻿</span>
+
+
+
+    <input type="file">
+
+    <form id="signup">
+        <div class="row cf-field">
+            <div class="col-md-6">
+                <label>First Name</label>
+                <input type="text" name="first_name" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label>Last Name</label>
+                <input type="text" name="last_name" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label>Email</label>
+                <input type="email" name="email" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label>Password</label>
+                <input type="password" name="password" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Phone">Phone</label>
+                <input type="tel" name="phone" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label>Street</label>
+                <input type="text" name="street" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label>Postcode</label>
+                <input type="text" name="postcode" class="field" required>
+            </div>
+            <div class="col-md-6">
+                <label>Location</label>
+                <input type="text" name="location" class="field" required>
+            </div>
+            <div class="col-md-12">
+                <label>Company Name</label>
+                <input type="text" name="company" class="field" required>
+            </div>
+            <div class="col-md-12">
+                <label>Homepage</label>
+                <input type="text" name="homepage" class="field" required>
+            </div>
+            <div class="checkbox-field col-md-12">
+                <input type="checkbox" id="continuing-policy"><label for="continuing-policy">by continuing
+                    you accept terms and conditions and privacy policy</label>
+            </div>
+            <div class="col-md-12">
+                <div class="form-button-wrapper">
+                    <?php wp_nonce_field( 'nonce' ); ?>
+                    <button type="submit" class="btn form-register-btn">register for free</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--Login-->
+    <form id="login">
+        <div class="row cf-field">
+            <div class="col-md-6">
+                <label>Email</label>
+                <input type="email" name="email" class="field" value="qategyr@mailinator.com" required>
+            </div>
+            <div class="col-md-6">
+                <label>Password</label>
+                <input type="password" name="password" class="field" value="Pa$$w0rd!" required>
+            </div>
+            <div class="col-md-12">
+                <div class="form-button-wrapper">
+                    <?php wp_nonce_field( 'nonce' ); ?>
+                    <button type="submit" class="btn form-login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <div class="photographer-dashboard-section">
+        <div class="container">
+            <div class="tab-wrapper">
+                <div class="tab">
+                    <button class="tablinks" onclick="customTAB(event, 'Sign Up')">Filter</button>
+                    <button class="tablinks" onclick="customTAB(event, 'Login')">Overview</button>
+                </div>
+                <div id="Sign Up" class="tabcontent">
+                    <form id="signup">
+                        <div class="row cf-field">
+                            <div class="col-md-6">
+                                <label>First Name</label>
+                                <input type="text" name="first_name" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Last Name</label>
+                                <input type="text" name="last_name" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <input type="email" name="email" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Password</label>
+                                <input type="password" name="password" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Phone">Phone</label>
+                                <input type="tel" name="phone" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Street</label>
+                                <input type="text" name="street" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Postcode</label>
+                                <input type="text" name="postcode" class="field" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Location</label>
+                                <input type="text" name="location" class="field" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Company Name</label>
+                                <input type="text" name="company" class="field" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Homepage</label>
+                                <input type="text" name="homepage" class="field" required>
+                            </div>
+                            <div class="checkbox-field col-md-12">
+                                <input type="checkbox" id="continuing-policy"><label for="continuing-policy">by
+                                    continuing
+                                    you accept terms and conditions and privacy policy</label>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-button-wrapper">
+                                    <?php wp_nonce_field( 'nonce' ); ?>
+                                    <button type="submit" class="btn form-register-btn">register for free</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="Login" class="tabcontent">
+                    <form id="login">
+                        <div class="row cf-field">
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <input type="email" name="email" class="field" value="qategyr@mailinator.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Password</label>
+                                <input type="password" name="password" class="field" value="Pa$$w0rd!" required>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-button-wrapper">
+                                    <?php wp_nonce_field( 'nonce' ); ?>
+                                    <button type="submit" class="btn form-login-btn">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <div class="row event-main-row">
         <?php while ($q->have_posts()) : $q->the_post(); ?>
         <div class="col-lg-12 custom-blog-col">
@@ -198,6 +395,24 @@
             </div>
         </div>
     </div>
+
+    Mon - Wed 
+    Fri 8:00 AM - 5:00 PM
+
+
+    <div class="opening-hours-wrapper">
+        <div class="opening-hours">
+            <p>Mon - Wed</p>
+            <p>8:00 AM - 6:00 PM</p>
+        </div>
+        <div class="opening-hours">
+            <p>Fri</p>
+            <p>8:00 AM - 5:00 PM</p>
+        </div>
+    </div>
+
+
+
 
 
     <div class="opening-hours-wrapper">

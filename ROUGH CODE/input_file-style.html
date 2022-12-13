@@ -37,10 +37,57 @@
             display: inline-block;
             vertical-align: middle;
         }
+
+        /* profile image css */
+
+        .profile-btn ::-webkit-file-upload-button {
+            display: none;
+        }
+
+        .profile-btn {
+            width: 280px;
+            height: 280px;
+            max-width: 280px;
+            text-transform: uppercase;
+            background-color: #ffffff !important;
+            transition: 0.3s ease-in-out;
+            color: #8a8a8a !important;
+            border: 5px solid #f7f7f7 !important;
+            outline: 1px solid #dddddd;
+            position: relative;
+            font-size: 0 !important;
+        }
+
+        .profile-btn input#import-file {
+            object-fit: cover !important;
+            object-position: center !important;
+        }
+
+        .profile-btn i {
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            font-size: 22px !important;
+            z-index: 5;
+        }
+
+        @media (max-width:1199px) {
+            .profile-image {
+                max-width: max-content;
+                margin: auto;
+            }
+
+            .profile-btn {
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
     </style>
 </head>
 
 <body>
+
+
     <div>
         <label for="import-file" class="af-file-btn">
             <input type="file" id="import-file" name="csv_file" accept=".gif,.jpg,.jpeg,.png,.doc,.docx" />
@@ -48,26 +95,20 @@
         </label>
     </div>
 
-    <!-- <div>
-        <label for="inputTag" class="crm-upload-file">
-            upload team <br />
-            <i class="fa fa-2x fa-camera"></i>
-            <input id="inputTag" type="file" />
-            <br />
-            <span id="imageName"></span>
+
+
+    <!-- input file btn for profile image  -->
+
+
+    <div class="profile-image">
+        <label for="import-file" class="profile-btn">
+            <i class="fas fa-edit"></i>
+            <input type="file" id="import-file" name="csv_file" accept=".gif,.jpg,.jpeg,.png,.doc,.docx" />
+            <img src="<?php echo site_url('wp-content/uploads/2022/12/placeholder.png') ?>" alt="">
         </label>
-    </div> -->
+    </div>
 
-    <script>
-        let input = document.getElementById("inputTag");
-        let imageName = document.getElementById("imageName")
 
-        input.addEventListener("change", () => {
-            let inputImage = document.querySelector("input[type=file]").files[0];
-
-            imageName.innerText = inputImage.name;
-        })
-    </script>
 </body>
 
 </html>

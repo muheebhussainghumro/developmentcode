@@ -1,0 +1,46 @@
+.select-field label {
+  position: relative;
+  display: inline-block;
+  border-left: 1px solid #ccdae6;
+  padding: 1em 1.125em 1em 1.125em;
+  background: #ebf3fa;
+  color: #0063aa;
+  cursor: pointer;
+  margin-right: -2px;
+}
+.select-field label:hover {
+  background: #fbe4c0;
+  color: #fc9e10;
+  border-color: #f9d49a;
+}
+.select-field input:checked + label {
+  color: #fff;
+  background: #95c23d;
+  border-color: #83ab36;
+  z-index: 1;
+}
+.select-field input[type="radio"]:checked + label {
+  cursor: default;
+}
+.select-field input[type="checkbox"]:checked:hover + label {
+  background: #fbe4c0;
+  color: #fc9e10;
+  border-color: #f9d49a;
+  background: #9dd039;
+  color: #ffffff;
+  border-color: #8db73b;
+}
+.select-field .form-field-item input {
+  appearance: none !important;
+}
+.select-field input {
+  display: none !important;
+}
+.select-field .select-field-item:first-child label {
+  margin-left: 0 !important;
+  border-left: none !important;
+  border-radius: 4px 0 0 4px !important;
+}
+.select-field .select-field-item:last-child label {
+  border-radius: 0 4px 4px 0;
+}

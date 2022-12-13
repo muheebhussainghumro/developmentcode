@@ -1,14 +1,70 @@
-.about-boxes-row .woodmart-info-box .info-box-icon img {
-  max-width: 50px;
+.custom-categories-tabs .vc_tta-panel-body {
+  background: none !important;
 }
-.about-boxes-row h4.info-box-title {
-  min-height: 50px;
-  padding-left: 60px;
-  display: flex;
+.custom-categories-tabs .vc_tta-panels {
+  background: none !important;
+  border: none !important;
+}
+.custom-categories-tabs ul.vc_tta-tabs-list > li > a span:after {
+  display: none !important;
+}
+.custom-categories-tabs ul.vc_tta-tabs-list > li.vc_active > a {
+  color: #083d5e !important;
+  font-weight: 700 !important;
+}
+.custom-categories-tabs ul.vc_tta-tabs-list > li > a {
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  text-transform: capitalize;
+  color: #1e1e1e !important;
+  padding: 13px 10px !important;
+  opacity: 1 !important;
+  transition: 0.2s ease-in-out !important;
+  display: block;
+}
+.services-box {
+  background: #eff4f8 !important;
   align-items: center;
+  border: 1px solid #bcbcbc;
 }
-.about-boxes-row .box-icon-wrapper {
-  position: absolute;
-  left: 0;
-  top: 0;
+.services-box .info-box-title {
+  text-transform: uppercase !important;
+}
+.services-box .box-icon-wrapper {
+  flex: 1 0 40%;
+  margin-right: 0 !important;
+}
+.services-box .info-box-content {
+  flex: 1 0 60%;
+  padding: 30px;
+}
+
+@media (min-width:992px){
+  .custom-categories-tabs.vc_tta-container {
+    padding: 0 40px;
+  }
+}
+@media (max-width:991px){
+  .custom-categories-tabs ul.vc_tta-tabs-list {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll !important;
+}
+.custom-categories-tabs ul.vc_tta-tabs-list > li {
+    min-width: 200px !important;
+}
+.custom-categories-tabs ul.vc_tta-tabs-list li a {
+    padding: 20px 10px !important;
+}  
+}
+@media (max-width:767px){ 
+.services-box {
+    flex-direction: column !important;
+}
+.services-box .box-icon-wrapper, 
+.services-box .info-box-icon, 
+.services-box img {
+    width: 100% !important;
+    max-width: 100% !important;
+}
 }

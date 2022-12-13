@@ -80,6 +80,8 @@
         <?php date('h:i A', strtotime('11/12/2020 02:20 PM')); ?>
         <?php date('d', strtotime('11/12/2020 02:20 PM')); ?>
 
+
+        <?php get_the_author();?>
 	<?php endwhile; ?>
 
 <!-- PAGINATION CODE -->

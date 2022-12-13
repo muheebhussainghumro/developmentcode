@@ -8,8 +8,94 @@
     <title>Document</title>
 </head>
 
+<style>
+    .order-step-main {
+        min-height: 100vh;
+    }
+</style>
+
 <body>
 
+    <!-- photographer multi step form -->
+
+
+    <div class="services-selection-wrapper">
+        <div class="secondary-title">
+            <h2>Compare online photographer offers</h2>
+        </div>
+        <div class="selection-services-inner">
+            <div class="services-title">
+                <h4>What kind of photos do you want?</h4>
+            </div>
+            <div class="selection-services">
+                <div class="services-item-wrapper">
+                    <a href="#" id="wedding"><i class="fas fa-ring"></i>wedding</a>
+                </div>
+                <div class="services-item-wrapper">
+                    <a href="#" id="infant"><i class="fas fa-baby"></i>infant</a>
+                </div>
+                <div class="services-item-wrapper">
+                    <a href="#" id="studio"><i class="fas fa-building"></i>studio</a>
+                </div>
+                <div class="services-item-wrapper">
+                    <a href="#" id="business"><i class="fas fa-industry"></i>business</a>
+                </div>
+                <div class="services-item-wrapper">
+                    <a href="#" id="outdoor"><i class="fas fa-cloud"></i>outdoors</a>
+                </div>
+                <div class="services-item-wrapper">
+                    <a href="#" id="wedding"><i class="fas fa-question"></i>wedding</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        jQuery("#order-placement-form").steps({
+            headerTag: "h5",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true
+        });
+    </script>
+
+
+    <h3>Effects</h3>
+    <section>
+        <p>Wonderful transition effects.</p>
+    </section>
+    <h3>Pager</h3>
+    <section>
+        <p>The next and previous buttons help you to navigate through your content.</p>
+    </section>
+
+
+    <div class="ms-form">
+        <h4>Personal Information</h4>
+        <div class="ms-box">
+            <div class="col-12"><label>Full Name*</label>[text* full-name]</div>
+            <div class="col-6"><label>Email*</label>[email* email-address]</div>
+            <div class="col-6"><label>Phone*</label>[tel* your-phone]</div>
+            <div class="col-12"><label>Please list your sports</label>[textarea your-sports]</div>
+            <div class="col-12"><label>Are you presently at your goal weight?</label>[checkbox your-weight
+                use_label_element exclusive "Yes" "No"]</div>
+            <div class="col-12"><label>Are you following any special diet?</label>[checkbox your-diet
+                use_label_element
+                exclusive "Yes" "No"]</div>
+            <div class="col-12"><label>Where did you hear about Barbara?</label>[checkbox hear-about-us
+                use_label_element exclusive "Google Search
+                " "Referral" "Other"]</div>
+            <div class="col-12"><label>Comments/Message</label>[textarea your-message]</div>
+            <div class="col-12">
+                <div class="gCap">
+                    [recaptcha]
+                </div>
+            </div>
+            <div class="col-12">[submit "Submit"]</div>
+        </div>
+    </div>
 
 
     <div class="form-section">
@@ -68,6 +154,66 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <div class="gcf-form">
+        <div class="row cf-field">
+            <div class="col-md-12 form-sec-title">
+                <p style="margin: bottom 40px;">This free trial will enroll you in a <strong>14-Day Free Trial</strong>
+                    of Expert Reputation's
+                    <strong><span style="color: #207FA2;">ReviewIQ</span></strong> service. You will be emailed your
+                    Online Review Report Card, New Review Alerts, and you will have the ability to request reviews from
+                    your clients.
+                </p>
+                <h4>Personal Details</h4>
+            </div>
+            <div class="col-md-12">
+                <label>Your Name<span class="label-star">*</span></label>[text* your-name class:field]
+            </div>
+            <div class="col-md-12">
+                <label>PMS system<span class="label-star">*</span></label>[text* pms-system class:field]
+            </div>
+            <div class="col-md-12">
+                <label>Email - for notifications & login credentials<span class="label-star">*</span></label>[email*
+                email-for-notifications-login class:field]
+            </div>
+            <div class="col-md-12">
+                <label>Email - for communication<span class="label-star">*</span></label>[email* email-for-communication
+                class:field]
+            </div>
+            <div class="col-md-12 form-sec-title">
+                <h4>Business Details</h4>
+            </div>
+            <div class="col-md-12">
+                <label>Company Name or Your Name<span class="label-star">*</span></label>[text*
+                company-name-or-your-name class:field]
+            </div>
+            <div class="col-md-12">
+                <label>Business Phone Number<span class="label-star">*</span></label>[text* business-phone-number
+                class:field]
+            </div>
+            <div class="col-md-12">
+                <label>Street Address<span class="label-star">*</span></label>[text* street-address class:field]
+            </div>
+            <div class="col-md-4">
+                <label>Suite / Floor / Unit</label>[text* suite-floor-Unit
+                class:field]
+            </div>
+            <div class="col-md-12 field-col">
+                <label>State<span class="label-star">*</span></label>[text* state class:field]
+            </div>
+            <div class="col-md-12 field-col">
+                <label>Zip Code<span class="label-star">*</span></label>[text* zip-Code class:field]
+            </div>
+            <div class="col-md-12">
+                [submit class:submit-btn "Submit"]
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- request counter -->
@@ -293,7 +439,8 @@
                 "Last name"]
             </div>
             <div class="col-md-12">
-                <label>Phone Number<span class="label-star">*</span></label>[tel* phone-number class:field placeholder
+                <label>Phone Number<span class="label-star">*</span></label>[tel* phone-number class:field
+                placeholder
                 "E.g. 123-456-789"]
             </div>
             <div class="col-md-12">
@@ -324,7 +471,8 @@
                 "Last name"]
             </div>
             <div class="col-md-12">
-                <label>Phone Number<span class="label-star">*</span></label>[tel* phone-number class:field placeholder
+                <label>Phone Number<span class="label-star">*</span></label>[tel* phone-number class:field
+                placeholder
                 "123-456-789"]
             </div>
             <div class="col-md-12">
@@ -339,7 +487,8 @@
                 placeholder "E.g. Expert Reputation"]
             </div>
             <div class="col-md-12">
-                <label>Referral Practice<span class="label-star">*</span></label>[text* referral-last-name class:field
+                <label>Referral Practice<span class="label-star">*</span></label>[text* referral-last-name
+                class:field
                 placeholder "E.g. Expert Reputation"]
             </div>
             <div class="col-md-12">
@@ -354,7 +503,8 @@
             <div class="col-md-12 field-col">
                 <label>I would like to receive:<span class="label-star">*</span></label>
                 <div class="interested-in">
-                    [checkbox* would-like-to-receive class:checkbox-field use_label_element "Visa GIft Card" "Ulta gift
+                    [checkbox* would-like-to-receive class:checkbox-field use_label_element "Visa GIft Card" "Ulta
+                    gift
                     card" "Target
                     gift card" "Lululemon gift card" "REI gift card"]
                 </div>
@@ -371,7 +521,8 @@
     <div class="gcf-form">
         <div class="row cf-field">
             <div class="col-md-12">
-                <label>Your Name<span class="label-star">*</span></label>[text* your-name class:field placeholder "First
+                <label>Your Name<span class="label-star">*</span></label>[text* your-name class:field placeholder
+                "First
                 name Last name"]
             </div>
             <div class="col-md-12">
@@ -379,7 +530,8 @@
                 "E.g. Jonathan@gmail.com"]
             </div>
             <div class="col-md-12">
-                <label>Phone Number<span class="label-star">*</span></label>[tel* phone-number class:field placeholder
+                <label>Phone Number<span class="label-star">*</span></label>[tel* phone-number class:field
+                placeholder
                 "123-456-789"]
             </div>
             <div class="col-md-12">
@@ -392,7 +544,8 @@
             <div class="col-md-12 field-col">
                 <label>I am interested in:*</label>
                 <div class="interested-in">
-                    [checkbox* interest class:checkbox-field use_label_element "Review IQ" "Listings Manager" "Practice
+                    [checkbox* interest class:checkbox-field use_label_element "Review IQ" "Listings Manager"
+                    "Practice
                     Pulse" "Custom Website Design"]
                 </div>
             </div>
@@ -428,7 +581,8 @@
                 "Student’s address"]
             </div>
             <div class="col-md-6 saps-field-wrapper">
-                <label>* Electronically entered by the student</label>[file* student-and-parents-signature-2 limit:2mb
+                <label>* Electronically entered by the student</label>[file* student-and-parents-signature-2
+                limit:2mb
                 filetypes:png|jpg|pdf| class:signature-field]
             </div>
             <div class="col-md-6">
@@ -536,7 +690,8 @@
     </div>
     <div class="contact-infobox">
         <ul>
-            <li><img src="https://hyperinventive.net/websites/travelhome/wp-content/uploads/2022/09/email-min.png"></li>
+            <li><img src="https://hyperinventive.net/websites/travelhome/wp-content/uploads/2022/09/email-min.png">
+            </li>
             <li>
                 <h4>Call now</h4>
                 <p><a href="mailto:email@gmail.com">Send Us Email</a></p>
@@ -633,62 +788,73 @@
     <div class="umrah-form-main-wrapper">
         <div class="form-field-row">
             <div class="field-col">
-                <label class="form-label">Departure Airport</label>[select* departure-airport class:field
+                <label class="form-field-label">Departure Airport</label>[select* departure-airport class:field
                 "Select Airport" "London Heathrow" "London Gatwick" "Manchester" "London Stansted" "London
-                Luton" "Edinburgh" "Birmingham" "Glasgow" "Bristol" "Liverpool" "Newcastle" "East Midlands" "Aberdeen"
+                Luton" "Edinburgh" "Birmingham" "Glasgow" "Bristol" "Liverpool" "Newcastle" "East Midlands"
+                "Aberdeen"
                 "London City" "Leeds Bradford" "Cardiff" "Norwich" "Humberside"]
             </div>
             <div class="field-col">
-                <label class="form-label">Departure Date</label>[date* departure-date class:field]
+                <label class="form-field-label">Departure Date</label>[date* departure-date class:field]
             </div>
             <div class="field-col">
-                <label class="form-label">Nights in Makkah</label>[select* nights-in-makkah class:field "3" "4" "5" "6"
+                <label class="form-field-label">Nights in Makkah</label>[select* nights-in-makkah class:field "3"
+                "4" "5" "6"
                 "7"
                 "8" "9" "10"]
             </div>
             <div class="field-col">
-                <label class="form-label">Nights in Madinah</label>[select* nights-in-madinah class:field "3" "4" "5"
+                <label class="form-field-label">Nights in Madinah</label>[select* nights-in-madinah class:field "3"
+                "4" "5"
                 "6"
                 "7" "8" "9" "10"]
             </div>
             <div class="field-col">
-                <label class="form-label">No. of Travellers</label>
-                <div class="travellers-fields-wrapper">[select* No-of-adults class:travellers-field "Adults" "01" "02"
+                <label class="form-field-label">No. of Travellers</label>
+                <div class="travellers-fields-wrapper">[select* No-of-adults class:travellers-field "Adults" "01"
+                    "02"
                     "03"
-                    "04" "05" "06" "07" "08" "09"][select* No-of-childs class:travellers-field "Child" "01" "02" "03"
+                    "04" "05" "06" "07" "08" "09"][select* No-of-childs class:travellers-field "Child" "01" "02"
+                    "03"
                     "04"
                     "05" "06" "07"
-                    "08" "09"][select* No-of-infant class:travellers-field "Infant" "01" "02" "03" "04" "05" "06" "07"
+                    "08" "09"][select* No-of-infant class:travellers-field "Infant" "01" "02" "03" "04" "05" "06"
+                    "07"
                     "08"
                     "09"]</div>
             </div>
             <div class="field-col">
-                <label class="form-label">Preferred Hotel Type</label>[select* preferred-hotel-type class:field "Adults"
+                <label class="form-field-label">Preferred Hotel Type</label>[select* preferred-hotel-type
+                class:field "Adults"
                 "03" "04" "05"]
             </div>
             <div class="field-col">
-                <label class="form-label">Lead Passenger Name</label>[text* lead-passenger-name class:field placeholder
+                <label class="form-field-label">Lead Passenger Name</label>[text* lead-passenger-name class:field
+                placeholder
                 "Name"]
             </div>
             <div class="field-col">
-                <label class="form-label">Email Address</label>[email* email-address class:field placeholder
+                <label class="form-field-label">Email Address</label>[email* email-address class:field placeholder
                 "Email"]
             </div>
             <div class="field-col">
-                <label class="form-label">Contact No.</label>[tel* phone class:field placeholder "Phone"]
+                <label class="form-field-label">Contact No.</label>[tel* phone class:field placeholder "Phone"]
             </div>
             <div class="field-col">
-                <label class="form-label">Best Time To Contact</label>[select* best-time-to-contact class:field "Select"
+                <label class="form-field-label">Best Time To Contact</label>[select* best-time-to-contact
+                class:field "Select"
                 "Just Now" "Any Time" "After Zuhar" "After Asar" "After Magharib" "After Isha"]
             </div>
             <div class="field-col">
-                <label class="form-label">Transfers required</label>[radio transfers-required class:radio-field
+                <label class="form-field-label">Transfers required</label>[radio transfers-required
+                class:radio-field
                 use_label_element default:1 "Yes" "No"]
             </div>
         </div>
         <div class="form-agreement-row">
             <div class="agrrement-field">
-                [checkbox* checkbox-63 class:field use_label_element "By clicking, you agree to receive travel updates,
+                [checkbox* checkbox-63 class:field use_label_element "By clicking, you agree to receive travel
+                updates,
                 product information, promotional offers and discount deals from I'timaar."]
             </div>
         </div>
@@ -706,42 +872,44 @@
     <div class="umrah-enquiry-form">
         <div class="form-field-row">
             <div class="field-col">
-                <label class="form-label">Departure Airport</label>[select* departure-airport class:drop-down-field
+                <label class="form-field-label">Departure Airport</label>[select* departure-airport
+                class:drop-down-field
                 include_blank "Select Airport" "London Heathrow" "London Gatwick" "Manchester" "London Stansted" "London
                 Luton" "Edinburgh" "Birmingham" "Glasgow" "Bristol" "Liverpool" "Newcastle" "East Midlands" "Aberdeen"
                 "London City" "Leeds Bradford" "Cardiff" "Norwich" "Humberside"]
             </div>
             <div class="field-col">
-                <label class="form-label">Departure Date</label>
+                <label class="form-field-label">Departure Date</label>
             </div>
             <div class="field-col">
-                <label class="form-label">Nights in Makkah</label>
+                <label class="form-field-label">Nights in Makkah</label>
             </div>
             <div class="field-col">
-                <label class="form-label">Nights in Madinah</label>
+                <label class="form-field-label">Nights in Madinah</label>
             </div>
             <div class="field-col">
-                <label class="form-label">No. of Travellers</label>
+                <label class="form-field-label">No. of Travellers</label>
             </div>
             <div class="field-col">
-                <label class="form-label">Preferred Hotel Type</label>
+                <label class="form-field-label">Preferred Hotel Type</label>
             </div>
             <div class="field-col">
-                <label class="form-label">Lead Passenger Name</label>[text* lead-passenger-name class:field placeholder
+                <label class="form-field-label">Lead Passenger Name</label>[text* lead-passenger-name class:field
+                placeholder
                 "Name"]
             </div>
             <div class="field-col">
-                <label class="form-label">Email Address</label>[email* email-address class:field placeholder
+                <label class="form-field-label">Email Address</label>[email* email-address class:field placeholder
                 "Email"]
             </div>
             <div class="field-col">
-                <label class="form-label">Contact No.</label>[tel* phone class:field placeholder "Phone"]
+                <label class="form-field-label">Contact No.</label>[tel* phone class:field placeholder "Phone"]
             </div>
             <div class="field-col">
-                <label class="form-label">Best Time To Contact</label>
+                <label class="form-field-label">Best Time To Contact</label>
             </div>
             <div class="field-col">
-                <label class="form-label">Transfers required</label>
+                <label class="form-field-label">Transfers required</label>
             </div>
         </div>
         <div class="form-agreement-row">
@@ -880,21 +1048,27 @@
 
 
     <div class="gcf-form">
+        <div class="form-title-wrapper">
+            <h4>Book Your Free Consultation</h4>
+        </div>
         <div class="row cf-field">
             <div class="col-md-12">
-                [text* your-name class:field placeholder "First Name"]
+                [text* your-name class:field placeholder "*Name"]
             </div>
             <div class="col-md-12">
-                [email* your-email class:field placeholder "Email"]
+                [tel* phone-number class:field placeholder "*Phone Number"]
             </div>
             <div class="col-md-12">
-                [tel* phone-number class:field placeholder "Phone"]
+                [email* your-email class:field placeholder "*Email Address"]
             </div>
             <div class="col-md-12">
-                [textarea your-message class:field placeholder "Message"]
+                [select treatment class:dropdown-field "Choose Treatment" "option 1" "option 2"
+                "option 3"]
             </div>
             <div class="col-md-12">
-                [submit class:submit-btn "Submit"]
+                <div class="submit-btn-wrapper">
+                    [submit class:submit-btn "Book Now"]
+                </div>
             </div>
         </div>
     </div>
@@ -915,7 +1089,7 @@
                 [tel* phone-number class:field placeholder "Phone"]
             </div>
             <div class="col-md-12">
-                [textarea your-message class:field placeholder "Message"]
+                [textarea* your-message class:field placeholder "Message"]
             </div>
             <div class="col-md-12">
                 [submit class:submit-btn "Submit"]
@@ -963,15 +1137,15 @@
     <div class="gcf-form">
         <div class="row cf-field">
             <div class="col-md-12">
-                <label class="form-label">First Name</label>
+                <label class="form-field-label">First Name</label>
                 [text* first-name class:field placeholder "Gottfried"]
             </div>
             <div class="col-md-12">
-                <label class="form-label">Last Name</label>
+                <label class="form-field-label">Last Name</label>
                 [text* last-name class:field placeholder "Maulhardt"]
             </div>
             <div class="col-md-12">
-                <label class="form-label">Email</label>
+                <label class="form-field-label">Email</label>
                 [email* your-email class:field placeholder "Email"]
             </div>
             <div class="col-md-12">
@@ -2635,33 +2809,41 @@
 
         <div class="gcf-7">
             <div class="row cf-field">
+                <div class="col-md-4">
+                    [text* fname class:field placeholder "First Name"]
+                </div>
+                <div class="col-md-4">
+                    [text* lname class:field placeholder "Last Name"]
+                </div>
+                <div class="col-md-4">
+                    [text* business-Name class:field placeholder "Business Name"]
+                </div>
+                <div class="col-md-4">
+                    [text* professional-title class:field placeholder "Professional Title"]
+                </div>
+                <div class="col-md-4">
+                    [email* your-email class:field placeholder "Email"]
+                </div>
+                <div class="col-md-4">
+                    [tel* phone-number class:field placeholder "Phone Number"]
+                </div>
+                <div class="col-md-4">
+                    [text* job-title class:field placeholder "Job Title"]
+                </div>
+                <div class="col-md-4">
+                    [text* job-pay class:field placeholder "Job Pay"]
+                </div>
+                <div class="col-md-4">
+                    [text* full-time-or-part-time class:field placeholder "Full Time or Part Time"]
+                </div>
+                <div class="col-md-9">
+                    [text* job-title class:field placeholder "Job Title"]
+                </div>  
+                <div class="col-md-3">
+                    [text* Setting-Hospital class:field placeholder "Setting (ex. Hospital)"]
+                </div>
                 <div class="col-md-12">
-                    I, [text* fname class:field placeholder "Name"] , the parent or legal guardian of [text*
-                    child's-full-name class:field placeholder "Child's Full Name"] , grant CREATE
-                    Conservatory
-                    my
-                    permission to use photographs that are taken on campus or during field
-                    trips for any legal use, including (but not limited to): publicity, illustration,
-                    advertising, web
-                    content, and research publications.</div>
-                <div class="col-md-6">
-                    [text* parent/guardian-name class:field placeholder "Parent/Guardian Name"]
-                </div>
-                <div class="col-md-6">
-                    [text* date class:field placeholder "Date"]
-                </div>
-                <div class="col-md-6">
-                    [file attatch-parent-guardian-signature limit:2mb filetypes:png|jpg|
-                    class:signature-field]
-                </div>
-                <div class="col-md-6">
-                    [text* phone-number class:field placeholder "Phone number"]
-                </div>
-                <div class="col-md-6">
-                    [text* child’s-name class:field placeholder "Child’s name"]
-                </div>
-                <div class="col-md-6">
-                    [text* grade class:field placeholder "Grade"]
+                    [text* job-description class:field placeholder "Job Description"]
                 </div>
                 <div class="col-md-12">
                     [submit class:submit "Submit"]
