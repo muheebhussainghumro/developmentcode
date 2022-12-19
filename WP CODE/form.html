@@ -5,16 +5,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <style>
-    .order-step-main {
-        min-height: 100vh;
+    .form-main-wrapper {
+        max-width: 500px;
+        margin: auto;
+        background: rgb(255 255 255 / 90%);
+        box-shadow: 0px 0px 50px rgb(61 61 61 / 10%);
+        backdrop-filter: blur(6px);
+        border-radius: 10px;
+        padding: 35px;
+    }
+
+    .form-main-wrapper .cf-field>div {
+        padding: 0 5px;
+    }
+
+    .form-main-wrapper .cf-field {
+        row-gap: 15px;
+        margin: 0 !important;
+    }
+
+    .form-heading h2 {
+        font-family: 'Helvetica';
+        font-weight: 700;
+        font-size: 26px;
+        color: #494949;
+        margin-bottom: 10px;
+    }
+
+    .form-heading p {
+        font-family: 'Helvetica';
+        font-weight: 400;
+        font-size: 16px;
+        color: #5C5C5C;
+    }
+
+    .form-heading {
+        border-bottom: 1px solid #CDCDCD;
+        margin-bottom: 20px;
+    }
+
+    .cf-field label {
+        display: block !important;
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: #5C5C5C;
+    }
+
+    .cf-field .field {
+        width: 100% !important;
+        min-height: 46px !important;
+        background: #FFFFFF;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        transition: 0.25s ease-in-out;
+        padding: 10px 20px 10px 35px;
+    }
+
+    .cf-field .field:focus,
+    .cf-field .field:hover {
+        border-color: #BB4915 !important;
+        box-shadow: 2px 2px 12px rgb(255 0 131 / 12%);
+        outline: none !important;
+    }
+
+    .field-wrapper {
+        position: relative;
+    }
+
+    .cf-field .field:focus+img.field-icon,
+    .cf-field .field:hover+img.field-icon {
+        filter: brightness(0.8);
+    }
+
+    .field-wrapper .field-icon {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        height: 18px;
+        width: 18px;
+        object-fit: contain;
+        transition: 0.2s ease-in-out;
+    }
+
+    .checkbox-wrapper label {
+        display: inline-block !important;
+    }
+
+    .checkbox-wrapper input#terms_condition {
+        margin: 0 5px 2px 0;
+        accent-color: #BB4915;
+        width: 17px;
+        min-height: 16px;
+        vertical-align: middle;
+    }
+
+    .checkbox-wrapper input.submit-btn {
+        background: #12514C !important;
+        border-radius: 6px !important;
+        width: 100% !important;
+        display: block !important;
+        color: #fff !important;
+        padding: 12px 20px;
+        outline: none !important;
+        border: none !important;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        text-transform: capitalize;
+        height: 46px;
+        font-family: 'Helvetica';
     }
 </style>
 
 <body>
+
+
+    <div class="form-dummy-wrapper">
+        <div class="form-main-wrapper">
+            <div class="form-heading">
+                <h2>Try it Now!</h2>
+                <p>Sign up for a 30 day free trial</p>
+            </div>
+            <form action="/action_page.php">
+                <div class="row cf-field">
+                    <div class="col-md-12">
+                        <label>User Name</label>
+                        <div class="field-wrapper">
+                            <input type="text" name="user_name" class="field" placeholder="Louise Manon99">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/user.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Email</label>
+                        <div class="field-wrapper">
+                            <input type="email" name="your_email" class="field" placeholder="info@gmail.com">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/Email.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Phone No</label>
+                        <div class="field-wrapper">
+                            <input type="tel" name="phone" class="field" placeholder="0305-44810-302">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/Phone.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>First Name</label>
+                        <div class="field-wrapper">
+                            <input type="text" name="First_name" class="field" placeholder="Louise ">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/user.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Last Name</label>
+                        <div class="field-wrapper">
+                            <input type="text" name="last_name" class="field" placeholder="Manon">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/user.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Password</label>
+                        <div class="field-wrapper">
+                            <input type="password" name="password" class="field" placeholder="Axde75asd">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/Password.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Repeat Password</label>
+                        <div class="field-wrapper">
+                            <input type="password" name="retype_password" class="field" placeholder="Axde75asd">
+                            <img src="https://ompix.no/wp-content/uploads/2022/12/Password.svg" class="field-icon">
+                        </div>
+                    </div>
+                    <div class="col-md-12 checkbox-wrapper">
+                        <input type="checkbox" name="terms_condition" id="terms_condition" class="checkbox-field"><label
+                            for="terms_condition">I agree with the terms and
+                            conditions</label>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-button-wrapper">
+                            <input type="submit" value="Start my free Trial" class="submit-btn">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 
     <?php if($q->have_posts()): while ($q->have_posts()) : $q->the_post(); ?>
