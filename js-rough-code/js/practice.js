@@ -42,7 +42,6 @@ if (!a >= 12) {
 }
 
 // if else statement
-
 var x = 15;
 if (x > 30) {
   console.log("x is greater");
@@ -81,7 +80,7 @@ if (gender == "male") {
 
 // Example
 
-/*var per = prompt("Enter your percentage");
+var per = prompt("Enter your percentage");
 if (per >= 80 && per <= 100) {
   alert("you're in first division");
 } else if (per >= 60 && per < 80) {
@@ -94,9 +93,9 @@ if (per >= 80 && per <= 100) {
   alert("you're fail");
 } else {
   alert("enter valid percentage");
-}*/
+}
 
-/*var weight = prompt("first value");
+var weight = prompt("first value");
 var height = prompt("second value ");
 if (weight >= height) {
   alert(weight);
@@ -104,7 +103,7 @@ if (weight >= height) {
   alert(height);
 } else {
   alert("value is same");
-}*/
+}
 
 const myobj = {
   name: "John",
@@ -154,14 +153,14 @@ function sum(math, eng, chem) {
   return s;
 }
 
-// var total = sum(80, 60, 70);
-// function percentage(tt) {
-//   var per = (tt / 300) * 100;
-//   document.write(per);
-// }
-// percentage(total);
+var total = sum(80, 60, 70);
+function percentage(tt) {
+  var per = (tt / 300) * 100;
+  document.write(per);
+}
+percentage(total);
 
-// Events (onclick)
+Events(onclick);
 
 /*var time = prompt("Hey Whats the time: ");
 if (time > 5 && time < 17) {
@@ -174,18 +173,18 @@ if (time > 5 && time < 17) {
 
 /* ====== new js practice code ======= */
 
-/* ======= old js code ======
+/* ======= old js code ====== */
 
 // IF ELSE --------
 
- var time = prompt("Hey Whats the time: ");
+var time = prompt("Hey Whats the time: ");
 if (time > 5 && time < 17) {
-    alert("Good Morning");
+  alert("Good Morning");
 } else if (time > 12 && time < 21) {
-    alert("Good afternoon")
+  alert("Good afternoon");
 } else {
-    alert("Good Evening")
-} 
+  alert("Good Evening");
+}
 
 // GETTING VALUE IN BUTTON -------------
 
@@ -199,25 +198,25 @@ function InputMsg() {
 
 // SITCH CASE ------------
 
- var fruittype = prompt(" which fruit do you want?")
+var fruittype = prompt(" which fruit do you want?");
 switch (fruittype) {
-    case 'Orange':
-        console.log('Orange is 60rs per dozen.');
-        break;
-    case 'Apple':
-        console.log('Apple is 120rs per kg.');
-        break;
-    case 'Banana':
-        console.log('Banana is 50rs per dozen.');
-        break;
-    case 'Mango':
-        console.log('Mango is 160res per kg.');
-        break;
-    case 'Guava':
-        console.log('Guava is 100rs per kg.');
-        break;
-    default:
-        console.log(`${fruittype} has been sold.`);
+  case "Orange":
+    console.log("Orange is 60rs per dozen.");
+    break;
+  case "Apple":
+    console.log("Apple is 120rs per kg.");
+    break;
+  case "Banana":
+    console.log("Banana is 50rs per dozen.");
+    break;
+  case "Mango":
+    console.log("Mango is 160res per kg.");
+    break;
+  case "Guava":
+    console.log("Guava is 100rs per kg.");
+    break;
+  default:
+    console.log(`${fruittype} has been sold.`);
 }
 console.log("anything else?");
 
@@ -274,7 +273,7 @@ let animal = {
 };
 
 for (let key in animal) {
-    console.log(animal.name)
+  console.log(animal.name);
 }
 
 // get varible and its value --------
@@ -339,4 +338,108 @@ x.forEach((item) => {
 console.log("ZeroCount: " + zeroCount);
 console.log("PositiveCount: " + posCount);
 console.log("NegativeCount: " + negativeCount);
-*/
+
+// ==== STRING ====
+
+function hideText() {
+  document.getElementById("text").style.visibility = "hidden";
+}
+function showText() {
+  document.getElementById("text").style.visibility = "visible";
+}
+
+var txt1 = "Hello World";
+document.getElementById("demo").innerHTML = txt1.indexOf("World");
+
+var txt2 = "Hello World";
+document.getElementById("demo").innerHTML = txt2.replace("World");
+
+var txt3 = "Hello World";
+document.getElementById("demo").innerHTML = txt3.replace("World", "Universe");
+
+var txt4 = "Hello World";
+document.getElementById("demo").innerHTML = txt.toLowerCase();
+
+var txt5 = "Hello World";
+document.getElementById("demo").innerHTML = txt.toUpperCase();
+
+let text1 = "sea";
+let text2 = "food";
+let result = text1.concat(text2);
+
+document.getElementById("concatText").innerHTML = result;
+
+// ==== ARRAY ====
+
+var cars = ["Saab", "Volvo", "BMW"]; // Create the array here
+document.getElementById("demo").innerHTML = cars;
+
+// Use the length property to add a new item to cars: Mercedes.
+var cars = ["Saab", "Volvo", "BMW"];
+cars[cars.length] = "Mercedes";
+document.getElementById("demo").innerHTML = cars;
+
+// separated by '|'
+var cars = ["Saab", "Volvo", "BMW"];
+console.log("join = " + cars.join(" | "));
+
+// Push And Pop
+fruits.push("kiwi"); // add value
+console.log("push = " + fruits);
+fruits.pop("kiwi"); // Remove value (from last)
+console.log("pop = " + fruits);
+
+// Shift And Unshift
+fruits.shift(); // remove value (from start)
+console.log("shift = " + fruits);
+fruits.unshift("kiwi"); // add value (from start)
+console.log("unshift = " + fruits);
+
+// Change element
+fruits[0] = "apple";
+console.log("change = " + fruits);
+
+// Change last element
+fruits[fruits.length] = "pineapple";
+console.log("change last element = " + fruits);
+
+// Delete element
+delete fruits[0];
+console.log("Delete = " + fruits); // It will leave undefined holes in the array so its better to use "pop" or "Shift"
+
+// Splice
+var fruits = ["banana", "apple", "kiwi"];
+fruits.splice(2, 0, "lemon", "mango"); // add element in any position
+console.log("Splice = " + fruits);
+
+fruits.splice(0, 1); // remove first and second element
+console.log("Splice Remove = " + fruits);
+
+// Join
+var girls = ["Cecilie", "Lone"];
+var boys = ["Emil", "Tobias", "Linus"];
+var children = girls.concat(boys);
+document.getElementById("demo").innerHTML = children;
+
+// Join (more than 2 element )
+var array1 = ["Tom", "John"];
+var array2 = ["Smith", "Jessi"];
+var array3 = ["Bob", "Rocky"];
+var myArray = array1.concat(array2, array3);
+console.log(myArray);
+
+// Slice
+fruits = ["banana", "apple", "kiwi", "mango"];
+// eg : 1
+var fruits2 = fruits.slice(1); // everything from (1)orange will be a new array
+console.log(fruits2);
+// eg : 2
+var fruits3 = fruits.slice(1, 3); // it will give value from 1 to 2
+console.log(fruits3);
+
+// Sort
+var fruits = ["banana", "apple", "kiwi"];
+console.log("Sort = " + fruits.sort()); // asscending order
+
+// Reverse
+console.log("Sort = " + fruits.reverse()); // Descending order
