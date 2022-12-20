@@ -10,6 +10,67 @@
 
 <body>
 
+    <?php  
+    // PAGINATION CODE
+    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $mainarray = array(
+        'post_type' => array('post'),
+        'post_status' => array('publish'),
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'posts_per_page' => 9,
+        'paged'       => $paged,
+    );
+    $q = new WP_Query($mainarray); 
+?>
+
+
+
+    <div class="blog-wrapper">
+        <div class="blog-contents">
+            <div class="container">
+                <?php while ($q->have_posts()) : $q->the_post(); ?>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <h4 class="blog-title"><a href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h4>
+                        <p class="blog-content">
+                            <?php echo strip_tags(substr(get_the_excerpt(), 0, 100)); ?>
+                        </p>
+                        <div class="blog-date">
+                            <p class="blog-text">
+                                <?php echo get_the_date('M d Y'); ?>
+                            </p>
+                            <p class="blog-text">
+                                <?php get_field(); ?>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="blog-featured-image">
+                            <a href="#">
+                                <?php if (has_post_thumbnail()):  
+                                $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'large', true);
+                            ?>
+                                <img src="<?php echo $thumbnail[0]; ?>" alt="Picture" class="featured-image">
+                                <?php else: ?>
+                                <img src="<?php echo site_url('/wp-content/uploads/2022/12/placeholder.png'); ?>"
+                                    alt="Picture" class="featured-image">
+                                <?php endif; ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
     <?php  
