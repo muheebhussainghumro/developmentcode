@@ -3,6 +3,7 @@ body {
   place-content: center !important;
   height: 100vh;
   background: #94d8ff;
+  text-align: center;
 }
 button {
   background: #0a8fad;
