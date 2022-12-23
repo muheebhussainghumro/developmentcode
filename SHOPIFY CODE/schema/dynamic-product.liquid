@@ -1,0 +1,66 @@
+<div class="solar-products-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="general-title-style text-center">
+                    <h2>{{ section.settings.solar_product_title }}</h2>
+                </div>
+                <div class="row solar-products-row">
+                    {% for product in collections.frontpage.products limit: 3 %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="solar-product-card">
+                            <a href="{{ product.url }}" class="product-card-link"></a>
+                            <div class="solar-feature-image">
+                                <img src="{{ product.featured_image | product_img_url: 'large' }}"
+                                    alt="{{ product.featured_image.alt }}">
+                            </div>
+                            <div class="solar-content">
+                                <h4 class="solar-product-title">{{ product.title | escape }}</h4>
+                                {% render 'price', product: product %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="solar-more-product text-center">
+                    <a href="{{ section.settings.solar_product_btn_link }}" class="primary-btn">{{
+                        section.settings.solar_product_btn_text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Products",
+"settings": [
+{
+"type": "text",
+"id": "solar_product_title",
+"label": "Section Heading"
+},
+{
+"type": "text",
+"id": "solar_product_btn_text",
+"label": "Section Button Text"
+},
+{
+"type": "url",
+"id": "solar_product_btn_link",
+"label": "Section Button Link"
+}
+],
+"presets": [
+{
+"name": "Solar Products"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

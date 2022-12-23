@@ -1,0 +1,155 @@
+<footer class="cusotm-footer-wrap">
+    <div class="container">
+        <div class="footer-top-bar">
+            <div class="footer-menu">
+                <ul>
+                    {% for link in linklists.footer.links %}
+                    <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="footer-middle-bar">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-col-title">
+                        <h6>Contact Information</h6>
+                    </div>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <a href="tel:{{ section.settings.phone_number }}">
+                                <i class="fas fa-phone"></i> {{ section.settings.phone_number }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:{{ section.settings.email_address }}">
+                                <i class="fas fa-envelope"></i> {{ section.settings.email_address }}
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social-wrap">
+                        {% if section.settings.facebook_url != blank %}
+                        <a href="{{ section.settings.facebook_url }}" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        {% endif %}
+                        {% if section.settings.twitter_url != blank %}
+                        <a href="{{ section.settings.twitter_url }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                        {% endif %}
+                        {% if section.settings.instagram_url != blank %}
+                        <a href="{{ section.settings.instagram_url }}" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        {% endif %}
+                        {% if section.settings.youtube_url != blank %}
+                        <a href="{{ section.settings.youtube_url }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-col-title">
+                        <h6>Location</h6>
+                    </div>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-map-marker"></i> {{ section.settings.physical_Address }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="footer-col-title">
+                        <h6>Newsletter</h6>
+                    </div>
+                    <div class="newsletter-form-wrap">
+                        {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter-form__field-wrapper">
+                            <div class="field-wrapper">
+                                <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]"
+                                    class="subs-field" value="{{ form.email }}" aria-required="true" autocorrect="off"
+                                    autocapitalize="off" autocomplete="email" placeholder="Email Address" {% if
+                                    form.errors %} autofocus aria-invalid="true" aria-describedby="ContactFooter-error"
+                                    {% elsif form.posted_successfully? %} aria-describedby="ContactFooter-success" {%
+                                    endif %} placeholder="{{ 'newsletter.label' | t }}" required>
+                                <button type="submit" class="submit-btn" name="commit" id="Subscribe"
+                                    aria-label="{{ 'newsletter.button_label' | t }}">
+                                    Subscribe
+                                </button>
+                            </div>
+                            {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render
+                                'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{
+                                form.errors.messages['email'] }}</small>
+                            {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                        <h3 class="newsletter-form__message newsletter-form__message--success form__message"
+                            id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{
+                            'newsletter.success' | t }}</h3>
+                        {%- endif -%}
+                        {%- endform -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p class="copyright-text">{{ section.settings.copyright_text }}</p>
+        </div>
+    </div>
+</footer>
+
+{% schema %}
+{
+"name": "Footer",
+"settings": [
+{
+"type": "text",
+"id": "phone_number",
+"label": "Phone Number"
+},
+{
+"type": "text",
+"id": "email_address",
+"label": "Email Address"
+},
+{
+"type": "text",
+"id": "physical_Address",
+"label": "Physical Address"
+},
+{
+"type": "html",
+"id": "copyright_text",
+"label": "Copyright Text"
+},
+{
+"type": "url",
+"id": "facebook_url",
+"label": "Facebook https://www.facebook.com/example"
+},
+{
+"type": "url",
+"id": "twitter_url",
+"label": "Twitter https://twitter.com/example"
+},
+{
+"type": "url",
+"id": "instagram_url",
+"label": "Instagram https://www.instagram.com/example"
+},
+{
+"type": "url",
+"id": "youtube_url",
+"label": "YouTube https://www.youtube.com/@example"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

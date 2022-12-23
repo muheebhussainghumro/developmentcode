@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Direct Hardware</title>
+</head>
+
+<body>
+
+    <section id="banner-section">
+        <div class="container">
+            <div class="banner-row">
+                <div class="banner-content-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="">Direct Hardware:</h2>
+                        <h4>Architectural Door Hardware</h4>
+                    </div>
+                    <div class="content-inner">
+                        <p>Direct Hardware is committed to delivering the highest quality commercial door hardware
+                            products at the most competitive prices. We are your one-stop shop for all store-front and
+                            hollow metal door needs.</p>
+                    </div>
+                    <div class="primary-button-wrapper">
+                        <a href="#" class="btn primary-btn">Learn More <i class="fas fa-greater-than"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="popular-product">
+        <div class="container">
+            <div class="popular-product-row">
+                <div class="title-wrapper">
+                    <h4 class="primary-title">{{ section.settings.product_title }}</h4>
+                    <div class="content-inner">
+                        <p>{{ section.settings.product_text }}</p>
+                    </div>
+                </div>
+                <div class="popular-products">
+                    <div class="row products-row">
+                        <div class="owl-carousel-blog owl-carousel">
+                            {% for product in collections.frontpage.products limit: 3 %}
+                            <div class="item">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="product-wrapper">
+                                        <a href="{{ product.url }}" class="product-card-link"></a>
+                                        <div class="product-img">
+                                            <img src="{{ product.featured_image | product_img_url: 'large' }}"
+                                                alt="{{ product.featured_image.alt }}">
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-title">
+                                                <h4 class="solar-product-title">{{ product.title | escape }}</h4>
+                                            </div>
+                                            <div class="pricing-wrapper">
+                                                <div class="list-price">
+                                                    <p>list price</p>
+                                                </div>
+                                                <div class="cart-btn">
+                                                    <a href="#">Add To Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="secondary-btn-wrapper">
+                        <a href="{{ section.settings.product_btn_link }}" class="btn secondary-btn">{{
+                            section.settings.product_btn_text }}</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========= -->
+
+    <div class="row solar-products-row">
+        {% for product in collections.frontpage.products limit: 3 %}
+        <div class="col-md-4 col-sm-6">
+            <div class="solar-product-card">
+                <a href="{{ product.url }}" class="product-card-link"></a>
+                <div class="solar-feature-image">
+                    <img src="{{ product.featured_image | product_img_url: 'large' }}"
+                        alt="{{ product.featured_image.alt }}">
+                </div>
+                <div class="solar-content">
+                    <h4 class="solar-product-title">{{ product.title | escape }}</h4>
+                    {% render 'price', product: product %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="solar-more-product text-center">
+        <a href="{{ section.settings.solar_product_btn_link }}" class="primary-btn">{{
+            section.settings.solar_product_btn_text }}</a>
+    </div>
+
+    <!-- ========= -->
+
+
+    <section id="about-us">
+        <div class="container">
+            <div class="row about-row">
+                <div class="col-md-5">
+                    <div class="about-img">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0696/6676/7124/files/Group_9032-min.png?v=1671619091">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="about-content">
+                        <div class="title-wrapper">
+                            <div class="title-subtitle">
+                                <p>About Us</p>
+                            </div>
+                            <div class="primary-title">
+                                <h4>Why Choose Us For Your Door Needs</h4>
+                            </div>
+                            <div class="content-inner">
+                                <p>Our focus is on providing outstanding customer service, maintaining an extensive
+                                    inventory and being the leader in the import door hardware sector. Out of our
+                                    warehouse in Chicago any order received before 3:00 pm central will ship same day
+                                    and be at your dock in a day or two.</p>
+
+                                <p><strong>Direct Hardware is looking to partner with you and to grow with you in this
+                                        highly competitive market.</strong></p>
+                            </div>
+                        </div>
+                        <div class="primary-button-wrapper">
+                            <a href="#" class="btn primary-btn">Learn More <i class="fas fa-greater-than"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specials">
+        <div class="container">
+            <div class="special-row">
+                <div class="title-wrapper">
+                    <div class="primary-title">
+                        <h4>Specials this month</h4>
+                    </div>
+                    <div class="content-inner">
+                        <p>Save over 60% on all Cylindrical Locks, Mortise Locks, and Exit Device.</p>
+                    </div>
+                </div>
+                <div class="primary-button-wrapper">
+                    <a href="#" class="btn primary-btn">Learn More <i class="fas fa-greater-than"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="handicap-operators">
+        <div class="container">
+            <div class="handicaped-operator-row">
+                <div class="title-wrapper">
+                    <div class="title-subtitle">
+                        <p>{{ section.settings.handicap_subtitle }}</p>
+                    </div>
+                    <div class="primary-title">
+                        <h4>{{ section.settings.handicap_title }}</h4>
+                    </div>
+                    <div class="content-inner">
+                        {{ section.settings.handicap_content }}
+                    </div>
+                </div>
+
+                <div class="handicaped-row">
+                    <div class="row handicaped-inner-row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="handicaped-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ section.settings.handicap_service_img | img_url: 'master' }}">
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-title">
+                                        <h4>{{ section.settings.handicaped_service_title }}</h4>
+                                    </div>
+                                    <div class="content-inner">
+                                        <p>{{ section.settings.handicaped_service_text }}</p>
+                                    </div>
+                                    <div class="product-btn">
+                                        <p><a href="{{ section.settings.handicap_service_btn_url }}"></a>Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="handicaped-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ section.settings.handicap_service_img | img_url: 'master' }}">
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-title">
+                                        <h4>{{ section.settings.handicaped_service_title }}</h4>
+                                    </div>
+                                    <div class="content-inner">
+                                        <p>{{ section.settings.handicaped_service_text }}</p>
+                                    </div>
+                                    <div class="product-btn">
+                                        <p><a href="{{ section.settings.handicap_service_btn_url }}"></a>Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="handicaped-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ section.settings.handicap_service_img | img_url: 'master' }}">
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-title">
+                                        <h4>{{ section.settings.handicaped_service_title }}</h4>
+                                    </div>
+                                    <div class="content-inner">
+                                        <p>{{ section.settings.handicaped_service_text }}</p>
+                                    </div>
+                                    <div class="product-btn">
+                                        <p><a href="{{ section.settings.handicap_service_btn_url }}"></a>Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primary-button-wrapper">
+                    <a href="{{ section.settings.handicap_btn_url }}" class="btn primary-btn">{{
+                        section.settings.handicaped_btn_text }}</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="title-wrapper">
+                <div class="title-subtitle">
+                    <p>{{ section.settings.testimonial_subtitle }}</p>
+                </div>
+                <div class="primary-title">
+                    <h4>{{ section.settings.testimonial_title }}</h4>
+                </div>
+            </div>
+
+            <div class="testimonial-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial-wrapper">
+                            <div class="testimonial-content">
+                                <p>{{ section.settings.testimonial_content }}</p>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">{{ section.settings.testimonial_name }}</h4>
+                                <p class="text-after-title">{{ section.settings.testimonial_role }}</p>
+                            </div>
+                            <div class="testimonial-avatar-img">
+                                <img src="{{ section.settings.testimonial_avatar_img | img_url: 'master' }}">
+                            </div>
+                        </div>
+                        <div class="testimonial-wrapper">
+                            <div class="testimonial-content">
+                                <p>{{ section.settings.testimonial_content }}</p>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">{{ section.settings.testimonial_name }}</h4>
+                                <p class="text-after-title">{{ section.settings.testimonial_role }}</p>
+                            </div>
+                            <div class="testimonial-avatar-img">
+                                <img src="{{ section.settings.testimonial_avatar_img | img_url: 'master' }}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prefooter">
+        <div class="container">
+            <div class="get-in-touch-row">
+                <div class="title-wrapper">
+                    <div class="title-subtitle">
+                        <p>About Us</p>
+                    </div>
+                    <div class="primary-title">
+                        <h4>Why Choose Us For Your Door Needs</h4>
+                    </div>
+                    <div class="content-inner">
+                        <p>Our focus is on providing outstanding customer service, maintaining an extensive
+                            inventory and being the leader in the import door hardware sector. Out of our
+                            warehouse in Chicago any order received before 3:00 pm central will ship same day
+                            and be at your dock in a day or two.</p>
+
+                        <p><strong>Direct Hardware is looking to partner with you and to grow with you in this
+                                highly competitive market.</strong></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-boxes-row">
+                    <div class="contact-box">
+                        <div class="box-icon">
+                            <i class="far fa-phone-alt"></i>
+                        </div>
+                        <div class="box-title">
+                            <h4>Oder by Phone</h4>
+                        </div>
+                        <div class="box-link">
+                            <a href="tel:800-449-1462">800-449-1462</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="box-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="box-title">
+                            <h4>Oder by Email</h4>
+                        </div>
+                        <div class="box-link">
+                            <a href="mailto:info@direct-hardware.info">info@direct-hardware.info</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="box-icon">
+                            <i class="far fa-phone-office"></i>
+                        </div>
+                        <div class="box-title">
+                            <h4>Order by Fax</h4>
+                        </div>
+                        <div class="box-link">
+                            <a href="tel:224-241-8050">224-241-8050</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row newsletter-row">
+                <div class="col-lg-5">
+                    <div class="newsletter-title">
+                        <div class="title-wrapper">
+                            <div class="primary-title">
+                                <h4>Join Our Newsletter</h4>
+                            </div>
+                            <div class="content-inner">
+                                <p>Sign up for our monthly newsletter for the latest news, discounts, and promotions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="newsletter-form">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row menu-row">
+                <div class="col-lg-4">
+                    <div class="footer-col-inner">
+                        <div class="title-wrapper">
+                            <div class="primary-title">
+                                <h4>About Us</h4>
+                            </div>
+                            <div class="content-inner">
+                                <p>Direct Hardware is committed to delivering the highest quality commercial door
+                                    hardware
+                                    products at the most competitive prices. We are your one-stop shop for all
+                                    store-front
+                                    and hollow metal door needs. We specialize in grade one ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="footer-col-inner">
+                        <div class="title-wrapper">
+                            <div class="primary-title">
+                                <h4>Most Popular</h4>
+                            </div>
+                        </div>
+                        <div class="footer-menu popular-menu">
+                            <ul class="custom-menu">
+                                {% for link in linklists.most-popular.links %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="footer-col-inner">
+                        <div class="title-wrapper">
+                            <div class="primary-title">
+                                <h4>Automatic Operators</h4>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <ul class="custom-menu">
+                                {% for link in linklists.automated-operator.links %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row copyright-row">
+                <div class="col-lg-6">
+                    <div class="copyright-content">
+                        <p>© Copyright 2022. Direct Hardware. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-menu conditions-menu">
+                        <ul class="custom-menu">
+                            {% for link in linklists.site-menu.links %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    ,
+    "presets": [
+    {
+    "name": "About Section"
+    }
+    ]
+
+
+</body>
+
+</html>

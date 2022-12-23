@@ -1,0 +1,81 @@
+/* ======= logo + menu + btn (jquery appended btn) ===== */
+
+
+<style>
+    .header-wrapper {
+        background: none !important;
+    }
+
+    header {
+        height: 110px !important;
+    }
+
+    header.header .header__icons {
+        display: none !important;
+    }
+
+    .header-btn {
+        background: #019EFE;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+
+    .header-button-wrapper {
+        text-align: right;
+    }
+
+    header.header--middle-left {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1320px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    header ul.list-menu li a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff !important;
+    }
+
+    header ul.list-menu li a span.header__active-menu-item,
+    header ul.list-menu li a span.header__active-menu-item:hover {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: line-through !important;
+        color: #a0ce4e;
+    }
+
+    header ul.list-menu li a:hover span {
+        text-decoration: none !important;
+    }
+
+    header svg.icon.icon-hamburger {
+        color: #fff !important;
+    }
+
+    @media (max-width:1024px) {
+        .header-button-wrapper {
+            display: none;
+        }
+
+        .header__heading-logo {
+            max-width: 140px !important;
+        }
+    }
+</style>
+
+
+<script>
+
+    $(document).ready(function () {
+        $(".header--middle-left").append(" <div class='header-button-wrapper'><a href='#' class='btn header-btn'>contact Us</a></div>");
+    });
+
+</script>

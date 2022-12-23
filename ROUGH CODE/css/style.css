@@ -1,24 +1,12 @@
-.blog-title {
-  color: #292929;
-  font-size: 24px;
-  margin-bottom: 5px;
-  font-weight: 700 !important;
+.footer-img,
+.footer-title,
+.footer-list li,
+.social-media-icons,
+.footer-menu li {
+  text-align: center !important;
+  justify-content: center !important;
 }
-.blog-content,
-.blog-text {
-  color: #757575;
-  font-size: 16px;
-}
-.blog-date {
-  display: flex;
-  column-gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.blog-date p:not(:last-child):after {
-  content: "•";
-  padding-left: 6px;
-}
-.blog-date p {
-  position: relative;
+form#mc4wp-form-1 {
+  max-width: 500px;
+  margin: auto;
 }

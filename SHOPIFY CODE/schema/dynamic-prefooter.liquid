@@ -1,0 +1,59 @@
+<div class="prefooter-wrapper" style="background-image: url({{ section.settings.prefooter_bg | img_url: 'master' }});">
+    <div class="container">
+        <div class="prefooter-content">
+            <div class="prefooter-title">
+                <h3>{{ section.settings.prefooter_title }}</h3>
+            </div>
+            <div class="prefooter-text">
+                <p>{{ section.settings.prefooter_content }}</p>
+            </div>
+            <div class="prefooter-action text-center">
+                <a href="{{ section.settings.prefooter_btn_url }}">{{ section.settings.prefooter_btn_text }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Pre-footer",
+"settings": [
+{
+"type": "image_picker",
+"id": "prefooter_bg",
+"label": "Background Image"
+},
+{
+"type": "text",
+"id": "prefooter_title",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "prefooter_content",
+"label": "Content"
+},
+{
+"type": "text",
+"id": "prefooter_btn_text",
+"label": "Button Text"
+},
+{
+"type": "url",
+"id": "prefooter_btn_url",
+"label": "Button URL"
+}
+],
+"presets": [
+{
+"name": "Contact Section"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

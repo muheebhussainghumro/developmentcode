@@ -1,0 +1,116 @@
+<div class="solar-about-wrapper" style="background-color: {{ section.settings.section_color }}">
+    <div class="container">
+        <div class="section-rows-control {% if section.settings.row_reverse %}row--reverse{% endif %}">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="solar-company-logo">
+                        {% for block in section.blocks %}
+                        {% case block.type %}
+                        {% when 'bullet_list' %}
+                        <a href="javascript:void(0)">
+                            <img src="{{ block.settings.company_logo_list | img_url: 'master' }}" alt="">
+                        </a>
+                        {% endcase %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="solar-about-image">
+                        <img src="{{ section.settings.SA_section_img | img_url: 'master' }}" alt="About Us">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="general-title-style">
+                        <h2>{{ section.settings.SA_section_title }}</h2>
+                    </div>
+                    <div class="solar-about-desc">
+                        {{ section.settings.SA_section_desc }}
+                    </div>
+                    {% if section.settings.show_cta %}
+                    <div class="solar-about-action">
+                        <a href="{{ section.settings.SA_btn_url }}">{{ section.settings.SA_btn_text }}</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "About Us",
+"max_blocks": 8,
+"settings": [
+{
+"type": "image_picker",
+"id": "SA_section_img",
+"label": "Section Image"
+},
+{
+"type": "text",
+"id": "SA_section_title",
+"label": "Section Heading"
+},
+{
+"type": "html",
+"id": "SA_section_desc",
+"label": "Section Content"
+},
+{
+"type": "text",
+"id": "SA_btn_text",
+"label": "Section Button Text"
+},
+{
+"type": "url",
+"id": "SA_btn_url",
+"label": "Section Button Link"
+},
+{
+"type": "color",
+"id": "section_color",
+"label": "Background Color",
+"default": "#FFFFFF"
+},
+{
+"type": "checkbox",
+"id": "row_reverse",
+"label": "Make Row Reverse",
+"default": false
+},
+{
+"type": "checkbox",
+"id": "show_cta",
+"label": "Show CTA",
+"default": true
+}
+],
+"blocks": [
+{
+"name": "Logo",
+"type": "bullet_list",
+"settings": [
+{
+"type": "image_picker",
+"id": "company_logo_list",
+"label": "Logo"
+}
+]
+}
+],
+"presets": [
+{
+"name": "About Section"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

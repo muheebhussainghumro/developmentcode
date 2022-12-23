@@ -1,0 +1,106 @@
+<section id="prefooter">
+    <div class="container">
+        <div class="get-in-touch-row">
+            <div class="title-wrapper">
+                <div class="title-subtitle">
+                    <p>{{ section.settings.section_subtitle }}</p>
+                </div>
+                <div class="primary-title">
+                    <h4>{{ section.settings.section_title }}</h4>
+                </div>
+                <div class="content-inner">
+                    {{ section.settings.section_content }}                        
+                </div>
+            </div>
+
+            <div class="contact-info-boxes-row">
+                <div class="contact-box">
+                    <div class="box-icon">
+                        <img src="https://cdn.shopify.com/s/files/1/0696/6676/7124/files/call.svg?v=1671702640">
+                    </div>
+                    <div class="box-title">
+                        <h4>Oder by Phone</h4>
+                    </div>
+                    <div class="box-link">
+                        <a href="tel:{{ section.settings.phone_number }}">{{ section.settings.phone_number }}</a>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div class="box-icon">
+                        <img src="https://cdn.shopify.com/s/files/1/0696/6676/7124/files/mail.svg?v=1671703084">
+                    </div>
+                    <div class="box-title">
+                        <h4>Oder by Email</h4>
+                    </div>
+                    <div class="box-link">
+                        <a href="mailto:{{ section.settings.email_address }}">{{ section.settings.email_address }}</a>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div class="box-icon">
+                        <img src="https://cdn.shopify.com/s/files/1/0696/6676/7124/files/fax.svg?v=1671702640">
+                    </div>
+                    <div class="box-title">
+                        <h4>Order by Fax</h4>
+                    </div>
+                    <div class="box-link">
+                        <a href="tel:{{ section.settings.fax_number }}">{{ section.settings.fax_number }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "Pre Footer",
+"settings": [
+{
+"type": "text",
+"id": "section_title",
+"label": "Section Title"
+},
+{
+"type": "text",
+"id": "section_subtitle",
+"label": "Section Subtitle"
+},
+{
+"type": "html",
+"id": "section_content",
+"label": "Section Content"
+},
+{
+"type": "text",
+"id": "phone_number",
+"label": "Phone Number"
+},
+{
+"type": "text",
+"id": "email_address",
+"label": "Email Address"
+},
+{
+"type": "text",
+"id": "fax_number",
+"label": "Fax Number"
+}
+]
+,
+"presets": [
+{
+"name": "Pre Footer"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
