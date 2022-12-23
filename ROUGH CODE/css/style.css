@@ -1,12 +1,24 @@
-.footer-img,
-.footer-title,
-.footer-list li,
-.social-media-icons,
-.footer-menu li {
-  text-align: center !important;
-  justify-content: center !important;
+.gcf-form {
+  max-width: 750px;
+  margin: auto;
 }
-form#mc4wp-form-1 {
-  max-width: 500px;
+.gcf-form .field {
+  border: none !important;
+  border-bottom: 3px solid #373b4d !important;
+  height: 60px;
+  font-size: 16px;
+  color: #333 !important;
+}
+.gcf-form .field::placeholder {
+  font-size: 16px;
+}
+.gcf-form .submit-btn {
+  background: #fef7e6 !important;
+  color: #333 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  min-width: 180px;
+  min-height: 55px;
+  display: block;
   margin: auto;
 }

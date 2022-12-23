@@ -466,7 +466,123 @@
         </div>
     </footer>
 
+    <!-- about page  -->
 
+    <div class="custom-page-title">
+        <div class="container-fluid">
+            <div class="page-title-wrapper">
+                <h4 class="custom-pagetitle">{{ section.settings.page-title }}</h4>
+            </div>
+        </div>
+    </div>
+
+    {% schema %}
+    {
+    "name": "Page Title",
+    "settings": [
+    {
+    "type": "text",
+    "id": "page-title",
+    "label": "Page Title",
+    "default": "Enter text here"
+    }
+    ]
+    ,
+    "presets": [
+    {
+    "name": "About Page"
+    }
+    ]
+    }
+
+    {% endschema %}
+
+    <!-- product  -->
+
+    <div class="custom-page-title">
+        <div class="container-fluid">
+            <div class="page-title-wrapper">
+                <h4 class="custom-pagetitle">{{ section.settings.page-title }}</h4>
+            </div>
+        </div>
+    </div>
+
+    <section class="popular-product-section">
+        <div class="container">
+            <div class="shop-title-wrapper">
+                <h4>{{ section.settings.shop-title }}</h4>
+                <div class="content-inner">
+                    {{ section.settings.shop-content }}
+                </div>
+            </div>
+        </div>
+        <div class="row products-row">
+            <div class="col-lg-4">
+                <div class="category-sidebar">
+                    <div class="category-title-wrapper">
+                        <h4>{{ section.settings.category-title }}</h4>
+                    </div>
+                    <div class="categories-main-wrapper">
+                        <ul class="categories-wrapper">
+                            <li class="categories-item"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </section>
+
+    {% schema %}
+    {
+    "name": "Page Title",
+    "settings": [
+    {
+    "type": "text",
+    "id": "page-title",
+    "label": "Page Title",
+    "default": "Enter text here"
+    },
+    {
+    "type": "text",
+    "id": "shop-title",
+    "label": "Shop Title",
+    "default": "Enter text here"
+    }
+    },
+    {
+    "type": "html",
+    "id": "shop-content",
+    "label": "Shop Content",
+    "default": "Enter text here"
+    }
+    },
+    {
+    "type": "text",
+    "id": "category-title",
+    "label": "Category Title",
+    "default": "Enter text here"
+    }
+    ]
+    ,
+    "presets": [
+    {
+    "name": "Product Page"
+    }
+    ]
+    }
+    {% endschema %}
+
+
+    <!-- ====================================== -->
+
+
+    <div class="inner-page-banner">
+        <div class="page-title-wrapper">
+            <h2 class="page-title"></h2>
+        </div>
+    </div>
 
     ,
     "presets": [
