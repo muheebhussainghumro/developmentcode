@@ -1,0 +1,66 @@
+<section id="banner-section">
+    <div class="container">
+        <div class="banner-row">
+            <div class="banner-content-wrapper">
+                <div class="title-wrapper">
+                    <h2>{{ section.settings.banner_title }}</h2>
+                    <h4>{{ section.settings.banner_subtitle }}</h4>
+                </div>
+                <div class="content-inner">
+                    {{ section.settings.banner_content }}
+                </div>
+                <div class="primary-button-wrapper">
+                    <a href="{{ section.settings.banner_btn_url }}" class="btn primary-btn">{{
+                        section.settings.banner_btn_text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+"name": "Banner",
+"settings": [
+{
+"type": "text",
+"id": "banner_title",
+"label": "Banner Title"
+},
+{
+"type": "text",
+"id": "banner_subtitle",
+"label": "Banner Subtitle"
+},
+{
+"type": "html",
+"id": "banner_content",
+"label": "banner Content"
+},
+{
+"type": "text",
+"id": "banner_btn_text",
+"label": "Btn Text"
+},
+{
+"type": "url",
+"id": "banner_btn_url",
+"label": "Btn URL"
+}
+],
+"presets": [
+{
+"name": "Banner Section"
+}
+]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

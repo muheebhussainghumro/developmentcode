@@ -1,24 +1,3 @@
-.gcf-form {
-  max-width: 750px;
-  margin: auto;
-}
-.gcf-form .field {
-  border: none !important;
-  border-bottom: 3px solid #373b4d !important;
-  height: 60px;
-  font-size: 16px;
-  color: #333 !important;
-}
-.gcf-form .field::placeholder {
-  font-size: 16px;
-}
-.gcf-form .submit-btn {
-  background: #fef7e6 !important;
-  color: #333 !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  min-width: 180px;
-  min-height: 55px;
-  display: block;
-  margin: auto;
+header ul.list-menu li a span.header__active-menu-item,
+header ul.list-menu li a:hover span.header__active-menu-item {
 }

@@ -1,0 +1,105 @@
+<section id="popular-product">
+        <div class="container">
+            <div class="popular-product-row">
+                <div class="title-wrapper">
+                  <div class="primary-title">
+                    <h4>{{ section.settings.product_title }}</h4>
+                  </div>
+                    <div class="content-inner">
+                        <p>{{ section.settings.product_text }}</p>
+                    </div>
+                </div>
+
+                <div class="popular-products">
+                    <div class="row products-row">
+                        <div class="owl-carousel-blog owl-carousel owl-theme">
+                            {% for product in collections.featured-products.products limit: 6 %}
+                            <div class="item">
+                               
+                                    <div class="product-wrapper">
+                                        <a href="{{ product.url }}" class="product-card-link"></a>
+                                        <div class="product-img">
+                                            <img src="{{ product.featured_image | product_img_url: 'large' }}"
+                                                alt="{{ product.featured_image.alt }}">
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-title">
+                                                <h4 class="product-title">{{ product.title | escape }}</h4>
+                                            </div>
+                                            <div class="pricing-wrapper">
+                                              
+                                                    <div class="list-price">
+                                                        <p>list price</p>
+                                                    </div>
+                                                    <form action="/cart/add" method="post">
+                                                        {% if product.variants.size == 1 %}
+                                                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                                                        <div class="add-to-cart-wrapper">
+                                                            <button type="submit" name="add" class="palm-add-to-cart">
+                                                                Add To Cart
+                                                            </button>
+                                                        </div>
+                                                        {% else %}
+                                                        <div class="add-to-cart-wrapper">
+                                                            <a href="{{ product.url | within: collection }}" class="palm-add-to-cart">Show
+                                                                Details</a>
+                                                        </div>
+                                                        {% endif %}
+                                                    </form>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="secondary-btn-wrapper">
+                        <a href="{{ section.settings.product_btn_link }}" class="btn secondary-btn">{{
+                            section.settings.product_btn_text }}</a>
+                    </div>
+                </div>
+              
+            </div>
+      </div>
+    </section>
+
+    
+{% schema %}
+{
+"name": "Products",
+"settings": [
+{
+"type": "text",
+"id": "product_title",
+"label": "Section Heading"
+},
+{
+"type": "text",
+"id": "product_text",
+"label": "Section Button Text"
+},
+{
+"type": "text",
+"id": "product_btn_text",
+"label": "Section Button Text"
+},
+{
+"type": "url",
+"id": "product_btn_link",
+"label": "Section Button Link"
+}
+],
+"presets": [
+{
+"name": "Popular Products"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

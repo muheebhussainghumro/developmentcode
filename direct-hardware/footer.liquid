@@ -1,0 +1,184 @@
+1st row = title + newsletter
+2nd row = title content + title menu + title menu
+3rd row = copyright text + copyeighttext
+
+
+<footer>
+    <div class="container">
+        <div class="row newsletter-row">
+            <div class="col-xl-5">
+                <div class="newsletter-title">
+                    <div class="title-wrapper">
+                        <div class="primary-title">
+                            <h4> {{ section.settings.newsletter_title }}</h4>
+                        </div>
+                        <div class="content-inner">
+                            <p> {{ section.settings.newsletter_text }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <div class="newsletter-form">
+                    <div class="newsletter-form-wrap">
+                        {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter-form__field-wrapper">
+                            <div class="field-wrapper">
+                                <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]"
+                                    class="subs-field" value="{{ form.email }}" aria-required="true" autocorrect="off"
+                                    autocapitalize="off" autocomplete="email" placeholder="Email Address" {% if
+                                    form.errors %} autofocus aria-invalid="true" aria-describedby="ContactFooter-error"
+                                    {% elsif form.posted_successfully? %} aria-describedby="ContactFooter-success" {%
+                                    endif %} placeholder="{{ 'newsletter.label' | t }}" required>
+                                <button type="submit" class="submit-btn" name="commit" id="Subscribe"
+                                    aria-label="{{ 'newsletter.button_label' | t }}">
+                                    Subscribe
+                                </button>
+                            </div>
+                            {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render
+                                'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{
+                                form.errors.messages['email'] }}</small>
+                            {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                        <h3 class="newsletter-form__message newsletter-form__message--success form__message"
+                            id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{
+                            'newsletter.success' | t }}</h3>
+                        {%- endif -%}
+                        {%- endform -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row menu-row">
+            <div class="col-xl-4">
+                <div class="footer-col-inner">
+                    <div class="title-wrapper">
+                        <div class="primary-title">
+                            <h4>{{ section.settings.content_title }}</h4>
+                        </div>
+                        <div class="content-inner">
+                            <p>{{ section.settings.footer_content }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="footer-col-inner">
+                    <div class="title-wrapper">
+                        <div class="primary-title">
+                            <h4> {{ section.settings.menu_title }}</h4>
+                        </div>
+                    </div>
+                    <div class="footer-menu popular-menu">
+                        <ul class="custom-menu">
+                            {% for link in linklists.most-popular.links %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="footer-col-inner">
+                    <div class="title-wrapper">
+                        <div class="primary-title">
+                            <h4> {{ section.settings.menu_title_2 }}</h4>
+                        </div>
+                    </div>
+                    <div class="footer-menu">
+                        <ul class="custom-menu">
+                            {% for link in linklists.automatic-operators.links %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row copyright-row">
+            <div class="col-xl-6">
+                <div class="copyright-content">
+                    <p>© Copyright 2022. Direct Hardware. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="footer-menu conditions-menu">
+                    <ul class="custom-menu">
+                        {% for link in linklists.terms-and-conditions.links %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+{% schema %}
+{
+"name": "Footer",
+"settings": [
+{
+"type": "text",
+"id": "newsletter_title",
+"label": "Enter Title"
+},
+{
+"type": "text",
+"id": "newsletter_text",
+"label": "Enter Text"
+},
+{
+"type": "text",
+"id": "content_title",
+"label": "Enter Title"
+},
+{
+"type": "text",
+"id": "footer_content",
+"label": "Enter Text"
+},
+{
+"type": "text",
+"id": "menu_title",
+"label": "Menu Title"
+},
+{
+"type": "text",
+"id": "menu_title_2",
+"label": "Menu Title 2"
+},
+{
+"type": "html",
+"id": "copyright_text",
+"label": "Copyright Text"
+}
+]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

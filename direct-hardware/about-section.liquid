@@ -1,0 +1,79 @@
+<section id="about-us">
+        <div class="container">
+            <div class="row about-row">
+                <div class="col-lg-5">
+                    <div class="about-img">
+                        <img src="{{ section.settings.about_img | img_url: 'master' }}" alt="About Us">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <div class="title-wrapper">
+                            <div class="title-subtitle">
+                                <p>{{ section.settings.about_subtitle }}</p>
+                            </div>
+                            <div class="primary-title">
+                                <h4>{{ section.settings.about_title }}</h4>
+                            </div>
+                            <div class="content-inner">
+                                {{ section.settings.about_content }}
+                            </div>
+                        </div>
+                        <div class="primary-button-wrapper">
+                            <a href="{{ section.settings.about_btn_url }}" class="btn primary-btn">{{ section.settings.about_btn_text }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    {% schema %}
+  {
+    "name": "About Section",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "about_img",
+      "label": "About Image"
+      },
+      {
+      "type": "text",
+      "id": "about_subtitle",
+      "label": "Enter Subtitle"
+      },
+      {
+      "type": "text",
+      "id": "about_title",
+      "label": "Enter Title"
+      },
+      {
+      "type": "html",
+      "id": "about_content",
+      "label": "Enter Text"
+      },
+      {
+      "type": "text",
+      "id": "about_btn_text",
+      "label": "Enter Button Text"
+      },
+      {
+      "type": "url",
+      "id": "about_btn_url",
+      "label": "Enter Button Link"
+      }
+          ],
+      "presets": [
+      {
+      "name": "About Section"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,95 @@
+<section id="testimonials">
+    <div class="container">
+        <div class="testimonial-main-row">
+            <div class="title-wrapper">
+                <div class="title-subtitle">
+                    <p>{{ section.settings.testimonial_subtitle }}</p>
+                </div>
+                <div class="primary-title">
+                    <h4>{{ section.settings.testimonial_title }}</h4>
+                </div>
+            </div>
+
+            <div class="testimonial-container">
+                <div class="owl-carousel-testimonial owl-carousel owl-theme">
+                    {% for block in section.blocks %}
+                    {% case block.type %}
+                    {% when 'testimonial_slide' %}
+                    <div class="item">
+                        <div class="testimonial-wrapper">
+                            <div class="testimonial-content">
+                                <p>{{ block.settings.testimonial_content }}</p>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">{{ block.settings.testimonial_name }}</h4>
+                                <p class="text-after-title">{{ block.settings.testimonial_role }}</p>
+                            </div>
+                            <div class="testimonial-avatar-img">
+                                <img src="{{ block.settings.testimonial_avatar_img | img_url: 'master' }}">
+                            </div>
+                        </div>
+                    </div>
+                    {% endcase %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+</section>
+
+{% schema %}
+{
+"name": "Testimonial Section",
+"max_blocks": 5,
+"settings": [
+{
+"type": "text",
+"id": "testimonial_title",
+"label": "Testimonial Title"
+},
+{
+"type": "text",
+"id": "testimonial_subtitle",
+"label": "Testimonial Subtitle"
+}
+],
+"blocks": [
+{
+"name": "Testimonial Slide",
+"type": "testimonial_slide",
+"settings": [
+{
+"type": "text",
+"id": "testimonial_content",
+"label": "Testimonial Content"
+},
+{
+"type": "text",
+"id": "testimonial_name",
+"label": "Testimonial Name"
+},
+{
+"type": "text",
+"id": "testimonial_role",
+"label": "Testimonial Role"
+},
+{
+"type": "image_picker",
+"id": "testimonial_avatar_img",
+"label": "Testimonial Avatar"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Testimonials"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

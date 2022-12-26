@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Magnific Popup/magnific-popup.css">
+    <title>Document</title>
+
+</head>
+
+
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn:hover {
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .white-popup {
+        position: relative;
+        background: #FFF;
+        padding: 40px;
+        width: auto;
+        max-width: 500px;
+        margin: 20px auto;
+        transition: 1s all;
+    }
+
+    .mfp-fade.mfp-bg {
+        opacity: 0;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+    }
+
+    /* overlay animate in */
+
+    .mfp-fade.mfp-bg.mfp-ready {
+        opacity: 0.8;
+    }
+
+    /* overlay animate out */
+
+    .mfp-fade.mfp-bg.mfp-removing {
+        opacity: 0;
+    }
+
+    .mfp-fade.mfp-wrap .mfp-content {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+    }
+
+    .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+        opacity: 1;
+    }
+
+    .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+        opacity: 0;
+    }
+</style>
+
+<body>
+
+
+
+
+
+    <div id="test-popup" class="white-popup mfp-hide">
+        <h2>Popup content</h2>
+        <p>Some text here..</p>
+    </div>
+    <a href="#test-popup" class="btn open-popup-link">Show inline popup</a>
+
+
+    <div id="cross-reference" class="product-cross-reference white-popup mfp-hide">
+        <div class="cross-reference-table">
+            <div class="title-wrapper">
+                <div class="primary-title">
+                    <h4>Item Cross Reference</h4>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DH</th>
+                            <th>DORMA</th>
+                            <th>HAGER</th>
+                            <th>LCN</th>
+                            <th>NORTON</th>
+                            <th>PARKER</th>
+                            <th>SARGENT</th>
+                            <th>YALE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>181-6BC</td>
+                            <td>640/7300/7400</td>
+                            <td>5300</td>
+                            <td>1070/1370</td>
+                            <td>1600</td>
+                            <td>900</td>
+                            <td>1130</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DESCRIPTION </th>
+                            <th>DIMENSIONS</th>
+                            <th>DESCRIPTION</th>
+                            <th>DIMENSIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A. Length of Closer</td>
+                            <td>Body9-3/4″ (248 mm)</td>
+                            <td>D. Closer Body Height</td>
+                            <td>1-13/16″ (46 mm)</td>
+                        </tr>
+                        <tr>
+                            <td>B. Horizontal Mounting</td>
+                            <td>Holes9-1/16″ (230 mm)</td>
+                            <td>E. Projection from Door</td>
+                            <td>2-3/4″ (70 mm)</td>
+                        </tr>
+                        <tr>
+                            <td>C. Vertical Mounting Holes</td>
+                            <td>3/4″ (19 mm)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <a href="#cross-reference" class="btn open-popup-link">Show table popup</a>
+
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="./Magnific Popup/jquery.magnific-popup.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $$(".open-popup-link").magnificPopup({
+                type: "inline",
+                midClick: true,
+                mainClass: "mfp-fade",
+            });
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

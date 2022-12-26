@@ -1,0 +1,63 @@
+<!-- background img + title + text + btn -->
+
+
+<section id="specials">
+    <div class="container">
+        <div class="special-row">
+            <div class="title-wrapper">
+                <div class="primary-title">
+                    <h4>{{ section.settings.specials_title }}</h4>
+                </div>
+                <div class="content-inner">
+                    <p>{{ section.settings.specials_text }}</p>
+                </div>
+            </div>
+            <div class="primary-button-wrapper">
+                <a href="{{ section.settings.about_btn_url }}" class="btn primary-btn">{{
+                    section.settings.about_btn_text }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+"name": "Specials Section",
+"settings": [
+{
+"type": "text",
+"id": "specials_title",
+"label": "Enter Title"
+},
+{
+"type": "text",
+"id": "specials_text",
+"label": "Enter Text"
+},
+{
+"type": "text",
+"id": "about_btn_text",
+"label": "Enter Button Text"
+},
+{
+"type": "url",
+"id": "about_btn_url",
+"label": "Enter Button Link"
+}
+],
+"presets": [
+{
+"name": "Specials Section"
+}
+]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
