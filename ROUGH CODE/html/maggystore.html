@@ -15,7 +15,67 @@
 
 </head>
 
+
+<style>
+    #section {
+        width: 500px;
+        height: 400px;
+        word-wrap: break-word;
+    }
+
+    .moretext {
+        display: none;
+    }
+</style>
+
+
 <body>
+
+
+    <p>Maggie's Pet Store is a one-stop shop for all of your pet needs. We have a wide selection of products that caters
+        to
+        both cats and dogs, as well as fish. With our team of knowledgeable staff and a vast inventory, you won't need
+        to go
+        anywhere else for all of your pet needs.</p>
+
+    <p class="moretext">For those who are looking for supplies for their cats and dogs, we offer everything from food to
+        toys and more. We
+        carry top-of-the-line items such as high quality kibble, organic treats, fun toys that your dog or cat will love
+        playing with, cozy beds to keep them comfortable, durable leashes and collars, accessories like fun hats or
+        bandanas
+        to dress up your pup, grooming products to keep them in tip-top shape, and much more.</p>
+
+    <p class="moretext">For those who prefer aquatic companionship, we also stock plenty of supplies for fish tanks
+        ranging from natural
+        gravels to decorative rocks. Plus we have filters that can help maintain tank water cleanliness and fish bowls
+        that
+        come in different shapes and sizes perfect for any home decor. We also provide food especially formulated for
+        the
+        specific kinds of fish you may have such as tropical flakes or pellets specifically designed for cichlids.</p>
+
+    <p class="moretext">At Maggie's Pet Store we make it our priority to provide the best customer service while also
+        offering quality brand
+        name products at an affordable price! We guarantee you'll be able to find something that fits perfectly into
+        your
+        budget while making sure your beloved pet is happy and healthy!</p>
+
+
+
+
+
+    <div class="about-text">
+        <p>Bacon ipsum dolor amet sirloin jowl turducken pork loin pig pork belly, chuck cupim tongue beef doner
+            tri-tip pancetta spare ribs porchetta.
+        </p>
+        <p class="moretext">
+            Brisket ball tip cow sirloin. Chuck porchetta kielbasa pork chop doner sirloin, bacon beef brisket ball
+            tip short ribs.
+        </p>
+    </div>
+    <a class="moreless-button" href="#">Read more</a>
+
+
+
 
     {{ content_for_index }}
 
@@ -587,6 +647,15 @@
             });
         });
 
+        // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
+        $('.moreless-button').click(function () {
+            $('.moretext').slideToggle();
+            if ($('.moreless-button').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
 
 
     </script>

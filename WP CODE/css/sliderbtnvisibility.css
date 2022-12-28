@@ -1,3 +1,63 @@
+/* <> top right/  responsive center */
+
+.owl-nav {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: max-content;
+  display: flex;
+  justify-content: start !important;
+  column-gap: 15px;
+}
+.owl-nav > div {
+  position: static;
+  opacity: 1;
+  visibility: visible !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 0;
+  text-align: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: 4px solid #d3a42e !important;
+  border-radius: 50%;
+  margin: 20px 0 !important;
+  transition: 0.2s ease-in-out !important;
+  background: #d3a42e;
+  transform: none !important;
+}
+.owl-prev:after,
+.owl-next:after {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #fff !important;
+  font-size: 16px !important;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  background: #d3a42e !important;
+}
+.owl-prev:hover:after,
+.owl-next:hover:after {
+  color: #fff !important;
+}
+@media (min-width: 991px) {
+  .owl-nav {
+    margin: 0 0 0 auto;
+    padding: 0 15px;
+    width: max-content;
+    display: flex !important;
+    justify-content: start !important;
+    column-gap: 15px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+  }
+}
+
+/* arrow style  */
+
 .testimonial-container .owl-carousel .owl-nav > div {
   visibility: visible !important;
   opacity: 1 !important;

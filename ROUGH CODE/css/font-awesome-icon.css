@@ -68,3 +68,12 @@ header .my-account-with-icon .wd-tools-icon:before {
   font-weight: 900;
   padding-right: 10px;
 }
+
+/* greater  */
+
+.header-btn:before {
+  content: "\3e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}

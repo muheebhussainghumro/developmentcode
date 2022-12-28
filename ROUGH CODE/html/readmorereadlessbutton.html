@@ -1,103 +1,68 @@
-<div class="faq-container">
-    <div class="faq-icon">
-        <img src="#">
-    </div>
-    <div class="faq-content">
-        <h2>Are they all gray?</h2>
-        <div class="faq-txt">
-            No, though the majority of the British Shorthairs bred in the US are gray. Gray is what we call blue. Half of all British Shorthairs bred in CFA
-            <div class="span readmore-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        </div>
-        <div class="button-wrapper">
-            <button class="see-more">Read More</button>
-        </div>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .moretext {
+        display: none;
+    }
+</style>
+
+<body>
+    <p>Maggie's Pet Store is a one-stop shop for all of your pet needs. We have a wide selection of products that caters
+        to
+        both cats and dogs, as well as fish. With our team of knowledgeable staff and a vast inventory, you won't need
+        to go
+        anywhere else for all of your pet needs.</p>
+
+    <p class="moretext">For those who are looking for supplies for their cats and dogs, we offer everything from food to
+        toys and more. We
+        carry top-of-the-line items such as high quality kibble, organic treats, fun toys that your dog or cat will love
+        playing with, cozy beds to keep them comfortable, durable leashes and collars, accessories like fun hats or
+        bandanas
+        to dress up your pup, grooming products to keep them in tip-top shape, and much more.</p>
+
+    <p class="moretext">For those who prefer aquatic companionship, we also stock plenty of supplies for fish tanks
+        ranging from natural
+        gravels to decorative rocks. Plus we have filters that can help maintain tank water cleanliness and fish bowls
+        that
+        come in different shapes and sizes perfect for any home decor. We also provide food especially formulated for
+        the
+        specific kinds of fish you may have such as tropical flakes or pellets specifically designed for cichlids.</p>
+
+    <p class="moretext">At Maggie's Pet Store we make it our priority to provide the best customer service while also
+        offering quality brand
+        name products at an affordable price! We guarantee you'll be able to find something that fits perfectly into
+        your
+        budget while making sure your beloved pet is happy and healthy!</p>
 
 
 
 
 
-<div class="faq-container">
-    <div class="faq-content">
-        <div class="faq-txt">
-            Every child has the right to discover and achieve their mind’s fullest potential.
-            <br><br><span class="span readmore-text">Our unique model features a STEM (Science, Technology, Engineering and Math) curriculum that utilizes the arts in all its forms to engage and educate students.
-            <br><br>We use a team approach to student progress, behavior, and assessment, and we’re a great fit for gifted and creative students.
-        </span>
-        </div>
-        <div class="button-wrapper">
-            <button class="see-more red-btn">Read More</button>
-        </div>
-    </div>
-</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
+        $('.moreless-button').click(function () {
+            $('.moretext').slideToggle();
+            if ($('.moreless-button').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+    </script>
+
+</body>
 
 
 
-<div class="faq-container">
-    <div class="faq-content">
-        <div class="faq-txt">
-            Our fresh philosophy and innovative programming are getting noticed, and we couldn’t be more proud.
-
-            <br><br><span class="span readmore-text">Since our opening in 2020, we’ve been recognized numerous times in local newspapers, on local TV stations, and in education centered publications.
-
-            <br><br>In 2021, after only one year in existence, we received the CR Award for Getting Results.
-
-        </span>
-        </div>
-        <div class="button-wrapper">
-            <button class="see-more orange-btn">Read More</button>
-        </div>
-    </div>
-</div>
-
-<!-- read more and less  -->
-
-<div class="faq-container">
-    <div class="faq-content">
-        <div class="faq-txt">
-            Every child has the right to discover and achieve their mind’s fullest potential. <span class="span readmore-text">And many times, that potential is hidden deep within a creative mind. It’s our job, as educators, to find and channel that potential.
-        </span>
-        </div>
-        <div class="button-wrapper">
-            <button class="see-more red-btn">Read More</button>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript">
-    jQuery('.see-more').on('click', function(e) {
-        e.preventDefault();
-        jQuery(this).closest('.button-wrapper').prev().find('.readmore-text').toggle();
-        jQuery(this).closest('.button-wrapper').find('.see-more').text('Read Less');
-
-        var y = jQuery(this).closest('.button-wrapper').find('.see-more');
-        var x = jQuery(this).closest('.button-wrapper').prev().find('.readmore-text');
-
-        if (x.css('display').toLowerCase() == 'block') {
-            y.text('Read Less');
-        } else {
-            y.text('Read More');
-        }
-    });
-</script>
-
-<script type="text/javascript">
-    jQuery('.see-more').on('click', function(e) {
-        e.preventDefault();
-        jQuery(this).closest('.button-wrapper').prev().find('.readmore-text').toggle();
-        jQuery(this).closest('.button-wrapper').find('.see-more').text('Read Less');
-
-        var y = jQuery(this).closest('.button-wrapper').find('.see-more');
-        var x = jQuery(this).closest('.button-wrapper').prev().find('.readmore-text');
-
-        if (x.css('display').toLowerCase() == 'block') {
-            y.text('Read Less');
-        } else {
-            y.text('Read More');
-        }
-    });
-</script>
+</html>

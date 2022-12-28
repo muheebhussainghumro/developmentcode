@@ -1,3 +1,6 @@
-header ul.list-menu li a span.header__active-menu-item,
-header ul.list-menu li a:hover span.header__active-menu-item {
+.testimonial-container .woodmart-info-box:hover .info-box-inner {
+  background-color: #fff;
+}
+.testimonial-container .woodmart-info-box:hover .info-box-inner:before {
+  opacity: 0;
 }
