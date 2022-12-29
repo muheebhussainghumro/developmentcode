@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>For Loops</h2>
+
+
+
+
+
+    <script>
+
+        // syntax 
+        for (let i = 0; i < 5; i++) {
+            console.log(i)
+        }
+
+        // program to add number "n" natural number  
+
+        let sum = 0
+        let n = prompt("Enter value to add")
+        n = Number.parseInt(n)
+        for (let i = 0; i < n; i++) {
+            sum += (i + 1)
+            console.log((i + 1), "+")
+        }
+        console.log("Sum of " + n + " natural number is " + sum)
+
+        // print array 
+        let array = ["a", "b", "c"];
+        for (let a = 0; a < array.length; a++) {
+            console.log(array[a]);
+        }
+
+        // for in loops
+        let marks = {
+            john: 50,
+            quan: 41,
+            doe: 40,
+            nick: 65
+        }
+        for (let a in marks) {
+            console.log("marks of " + a + " are " + marks[a])
+        }
+
+        // for of loop
+        for (let b of "john") {
+            console.log(b)
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
