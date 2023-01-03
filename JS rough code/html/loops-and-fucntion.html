@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Loops and Function</h2>
+
+
+
+
+
+    <script>
+
+        let marks = {
+            john: 50,
+            pablo: 20,
+            quan: 55,
+            doe: 34
+        }
+
+        // print array for loop
+        for (let i = 0; i < Object.keys(marks).length; i++) {
+            // console.log("the marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)])
+        }
+
+        // print array for in loop
+        for (let key in marks) {
+            console.log("The marks of " + key + " are " + marks[key])
+        }
+
+        /* ====== these both condition will print this ======
+        The marks of john are 50
+        The marks of pablo are 20
+        The marks of quan are 55
+        The marks of doe are 34 */
+
+
+
+        // condition 
+        let cn = 43
+        let i
+        while (i != cn) {
+            console.log("Try Again")
+            i = prompt("Enter a number")
+        }
+        console.log("you have entered a correct number")
+
+
+        // condition 2
+        const mean = (a, b, c, d) => {
+            return (a + b + c + d) / 4
+        }
+        console.log(mean(4, 5, 6, 7))
+
+    </script>
+
+</body>
+
+</html>

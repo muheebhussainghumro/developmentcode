@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>String</h2>
+
+
+
+    <script>
+
+        let toyotacar = "corolla"
+        let hondacar = "civic"
+
+        // backtick allows us to use double quote or single quotes as well 
+        let sentense = `toyota produces ${toyotacar} car`
+        let sentense2 = `toyota produces ${hondacar} car`
+        console.log(sentense)
+        console.log(sentense2)
+
+        let fruit = 'banana\'s' // using quote inside and string can cause an error try using [ \ ] 
+        console.log(fruit)
+
+        console.log(toyotacar.length)
+        console.log(toyotacar.toUpperCase())
+        console.log(toyotacar.toLowerCase())
+        console.log(toyotacar.replace("ban", "ana")) // replace ban with ana
+        console.log(toyotacar.slice(2, 4)) // print from 2 till 3
+        console.log(toyotacar.trim()) // remove spaces
+
+
+        // print string in for loop
+        let str = "Buzz";
+        for (let i = 0; i < str.length; i++) {
+            console.log(str[i]);
+        }
+
+
+        // slice string and convert into Number
+        let str2 = "please give Rs 1000"
+        let amount = Number.parseInt(str2.slice(15))
+        console.log(amount)
+        console.log(typeof amount)
+
+
+        const sentense3 = "the quick brown fox jumps over the dog.";
+        const word = "fox";
+        console.log(`the word "${word}" ${sentense3.includes(word) ? 'is' : 'is not'} in the sentence`)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
