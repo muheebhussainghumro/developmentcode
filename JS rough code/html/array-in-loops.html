@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Arrays in loops</h2>
+
+    <script>
+
+        // print arrays in loop
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        for (i = 0; i < numbers.length; i++)
+            console.log(numbers[i])
+
+        // for each loop in array / square of array values
+        numbers.forEach((arrayElements) => {
+            console.log(arrayElements * arrayElements)
+        })
+
+        // array in for of loop 
+        let cars = ["tesla", "merc", "bmw"]
+        for (let a of cars) {
+            console.log(a)
+        }
+
+        // array in for in loop
+        for (let i in cars) {
+            console.log(cars[i])
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

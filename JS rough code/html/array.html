@@ -29,7 +29,52 @@
         console.log(studentsMarks2[5]);
         console.log("the length of studentsMarks2 array is", studentsMarks2.length)
 
+        // printing array 
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let num_more = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+        let num_even_more = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+        console.log(num, num_more)
 
+        // adding and printing new array 
+        let newArray = num.concat(num_more, num_even_more)
+        console.log(newArray)
+
+        // sorting
+        let sortNumber = [614, 51, 64, 316, 16, 6, 8]
+        sortNumber.sort()
+        console.log(sortNumber)
+
+        // for ascending order
+        let compare = (a, b) => {
+            return a - b
+        }
+        sortNumber.sort(compare)
+        console.log(sortNumber)
+
+        // for descending order
+        let compare2 = (a, b) => {
+            return b - a
+        }
+        sortNumber.sort(compare2)
+        console.log(sortNumber)
+
+        // Splice 
+        let num3 = [4, 19, 41, 94, 1, 35, 6, 4, 8, 58]
+        num3.splice(2, 3, 6, 591, 9, 65, 195)  // start from array index 2 and cut 3 arrays and paste all values
+        console.log(num3)
+
+        // deleted values 
+        let num3deletedvalues = num3.splice(2, 3, 6, 591, 9, 65, 195)  // print deleted values of num3 array
+        console.log(num3deletedvalues)
+
+        // slice 
+        let num4 = num3.slice(3, 5)
+        console.log(num4)
+
+        // convert into array 
+        let name = "john"
+        let arr = Array.from(name)
+        console.log(arr)
 
 
     </script>
