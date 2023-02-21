@@ -16,6 +16,9 @@
 .footer-column {
   margin-bottom: 0;
 }
+.screen-reader-response {
+  display: none;
+}
 
 /* RESPONSIVE */
 
@@ -115,4 +118,41 @@ div#product-152 .quantity input[type="number"] {
   background: #e5e5e5 !important;
   border: none !important;
   min-width: 100px !important;
+}
+
+/* btn border style  */
+
+.primary-btn {
+  border: 3px solid #295a90 !important;
+  min-width: 200px;
+  min-height: 75px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #225a92 !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.primary-btn:before,
+.primary-btn:after {
+  content: "";
+  background: #fff !important;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 40%;
+  height: 3px;
+  display: block;
+  z-index: 5;
+  transition: 0.2s ease-in-out;
+}
+.primary-btn:after {
+  right: 0;
+  bottom: -3px;
+  left: unset;
+  top: unset;
+}
+.primary-btn:hover:before,
+.primary-btn:hover:after {
+  width: 0;
 }

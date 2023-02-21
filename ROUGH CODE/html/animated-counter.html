@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Counter</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+
+    <div class="number-counter-wrapper">
+        <div class="stat-wrap">
+            <div class="custom-number-counter">
+                <span class="stat-number">6,7899</span>
+                <p>Websites Launched</p>
+            </div>
+            <div class="custom-number-counter">
+                <span class="stat-number">8,000</span>
+                <p>Marketing Experts</p>
+            </div>
+            <div class="custom-number-counter">
+                <span class="stat-number">12</span>
+                <p>Hours of Dedicated Work</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.stat-number').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text().replace(/,/g, '')
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now).toLocaleString('en'));
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

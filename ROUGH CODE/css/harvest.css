@@ -1,0 +1,2122 @@
+/*
+ Theme Name:   Woodmart Child
+ Description:  Woodmart Child Theme
+ Author:       XTemos
+ Author URI:   http://xtemos.com
+ Template:     woodmart
+ Version:      1.0.0
+ Text Domain:  woodmart
+*/
+
+/* ***** Header (Start) ***** */
+
+header .wd-nav[class*="wd-style-"] > li > a {
+  font-family: sf !important;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #252525;
+  opacity: 0.7;
+  text-transform: capitalize;
+  padding: 0 23px;
+}
+.wd-nav[class*="wd-style-"]
+  > li:is(.current-menu-item, .wd-active, .active)
+  > a {
+  font-weight: 600 !important;
+  color: #029837 !important;
+}
+header .right-btn a {
+  background: #006176;
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 27px 40px !important;
+  color: #fff !important;
+}
+/* header .container {
+    background: white;
+    border-radius: 60px;
+    padding: 0 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(50px);
+} */
+
+/* ***** Header (End) ***** */
+
+/* ***** Slider Sec(Start) ***** */
+
+#slider-sec .flickity-enabled.is-draggable .flickity-viewport {
+  height: 997px !important;
+}
+#slider-8 .wd-slide {
+  min-height: 100%;
+}
+#empower-sec2 .info-box-subtitle {
+  font-family: sf;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px !important;
+  color: #ffffff !important;
+  margin-bottom: 0 !important;
+}
+#empower-sec2 h4.info-box-title {
+  font-family: better;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 128px !important;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+#empower-sec2 p {
+  font-family: sf;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px !important;
+  color: #ffffff !important;
+}
+#empower-sec2 a.btn {
+  background: #4cbb17 !important;
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 16px 35px 18px 35px !important;
+  color: #fff !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "sf";
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+#empower-sec2 a.btn {
+  position: relative;
+}
+#empower-sec2 a.btn::before {
+  font-family: "FontAwesome" !important;
+  content: "\f879";
+  padding-right: 10px;
+}
+
+#empower-sec2 {
+  padding-top: 110px;
+  padding-bottom: 100px;
+  background-size: 100% 100% !important;
+  margin-bottom: -100px;
+  z-index: 1;
+}
+
+/* ***** Slider Sec(End) ***** */
+
+/* ***** Empower-sec(Start) ***** */
+
+#empower-sec {
+  padding-top: 110px;
+  padding-bottom: 100px;
+  background-size: 100% 100% !important;
+}
+
+#empower-sec img {
+  width: 100%;
+}
+#empower-sec .info-box-subtitle {
+  font-family: sf;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px !important;
+  color: #333333 !important;
+  margin-bottom: 0 !important;
+}
+
+#empower-sec h4.info-box-title {
+  font-family: better;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 128px !important;
+  letter-spacing: -0.01em;
+  color: #4cbb17;
+}
+
+#empower-sec p {
+  font-family: sf;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px !important;
+  color: #333333 !important;
+}
+
+#empower-sec a.btn {
+  background: #4cbb17 !important;
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 17px 40px !important;
+  color: #fff !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "sf";
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+
+#empower-sec img {
+  transition: 0.8s;
+}
+
+#empower-sec img:hover {
+  filter: brightness(0.85);
+}
+
+/* ***** Empower-sec(End) ***** */
+
+/* ***** About Harvest (Start) ***** */
+
+#about-harvest {
+  padding-top: 60px;
+  z-index: 2;
+  padding-bottom: 160px;
+}
+#inr-about-harvest p {
+  text-align: justify !important;
+  padding: 0 30px;
+}
+#empower-sec {
+  margin-bottom: -100px;
+  z-index: 1;
+}
+
+#about-harvest h2.info-box-title {
+  font-weight: 400;
+}
+
+#about-harvest .abt-img {
+  margin-bottom: 20px !important;
+}
+
+#inr-about-harvest h4.info-box-title {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #6c503c;
+}
+
+#inr-about-harvest p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+#inr-about-harvest {
+  padding-bottom: 60px;
+}
+
+#inr-about2-harvest p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+#inr-about2-harvest a.btn {
+  background: #4cbb17 !important;
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 17px 40px !important;
+  color: #fff !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "sf";
+  text-transform: initial;
+  margin-top: 15px;
+}
+
+#about-harvest {
+  margin-bottom: -100px;
+}
+
+#inr-about2-harvest img {
+  transition: 0.8s;
+}
+
+#inr-about2-harvest img:hover {
+  filter: brightness(0.85);
+}
+
+/* ***** About Harvest (End) ***** */
+
+/* ***** Services Harvest (Start) ***** */
+
+#services-harvester {
+  background-size: 100% 100% !important;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+#services-harvester h2 {
+  font-weight: 400;
+}
+
+#inr-services-harvester img {
+  width: 90%;
+  transition: 0.8s;
+}
+
+#inr-services-harvester img:hover {
+  filter: brightness(0.85);
+}
+
+#services-harvester h4.info-box-title {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  color: #333333;
+}
+
+#services-harvester .info-box-inner p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+#services-harvester .info-btn-wrapper a {
+  background: #4cbb17 !important;
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 17px 40px !important;
+  color: #fff !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "sf";
+  text-transform: initial;
+  margin-top: 15px;
+}
+
+/* ***** Services Harvest (End) ***** */
+
+/* ***** Client Harvest (Start) ***** */
+
+#what-client-say .client-servc .client-say {
+  background: #ffffff;
+  box-shadow: 0px -2px 60px rgba(0, 0, 0, 0.12),
+    0px 80px 120px -50px rgba(41, 47, 83, 0.15);
+  border-radius: 30px;
+  width: 80%;
+  float: right;
+  padding: 20px 26px;
+  position: relative;
+}
+
+#what-client-say .client-servc .client-say h4.info-box-title {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#what-client-say .client-servc .client-say p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6c503c;
+}
+
+#what-client-say h2 {
+  font-weight: 400;
+  color: #fff;
+}
+
+#what-client-say .md-servc-iner p {
+  font-family: "sf";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+#what-client-say .md-servc-iner a.btn {
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 17px 40px !important;
+  color: #000 !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "sf";
+  text-transform: initial;
+  margin-top: 15px;
+  background: #fff !important;
+}
+
+#what-client-say {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 40px;
+}
+
+#what-client-say::after {
+  content: "";
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 180px;
+  z-index: 1;
+  display: block;
+  background: #006176;
+  border-radius: 40px;
+}
+
+#what-client-say .vc_col-sm-6 {
+  z-index: 12;
+}
+
+#what-client-say .client-servc .client-say::after {
+  content: url("https://eseospace.dev/websites/harvest-health/wp-content/uploads/2023/01/Vector-2.png");
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#what-client-say .client-servc .client-say2 {
+  transform: translateX(-100px);
+}
+
+/* ***** Client Harvest (End) ***** */
+
+/* ***** Consultation Harvest (Start) ***** */
+
+#consultation {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  background-size: 100% 100% !important;
+}
+
+#consultation h2 {
+  color: #fff;
+}
+
+#consultation p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #f7f6f8;
+}
+
+#consultation a {
+  border-radius: 50px;
+  opacity: 1 !important;
+  padding: 17px 40px !important;
+  color: #000 !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "sf";
+  text-transform: capitalize;
+  margin-top: 15px;
+  background: #fff !important;
+}
+
+/* ***** Consultation Harvest (End) ***** */
+
+/* ***** Footer Harvest (Start) ***** */
+
+.home .site-content {
+  margin: 0;
+}
+
+footer h5 {
+  font-family: "sf" !important;
+  font-style: normal !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
+  color: #fff3f3 !important;
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "sf";
+  color: #fff;
+}
+
+footer .menu li a {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff3f3;
+}
+
+footer .contacttz li,
+footer .contacttz li a {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff3f3;
+  list-style: none;
+}
+
+footer .contacttz li {
+  margin-bottom: 19px;
+  position: relative;
+  left: 30px;
+}
+
+footer .contacttz li i {
+  position: absolute;
+  left: -30px;
+  top: 2px;
+}
+
+footer .socialz li {
+  display: inline-block;
+  margin: 0 16px 0 0px;
+}
+
+footer .socialz li a i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.copyrights-centered .min-footer > div:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "sf";
+  color: #fff;
+}
+
+.copyrights-wrapper {
+  border: 0px !important;
+}
+
+.min-footer {
+  padding-top: 40px !important;
+}
+
+/* ***** Footer Harvest (End) ***** */
+
+/* ***** About Us (Start) ***** */
+
+.site-content {
+  margin-bottom: 0px !important;
+}
+.page-id-78 #about-harvest {
+  padding-top: 220px;
+}
+.page-id-78 #about-harvest h2 {
+  margin-bottom: 50px;
+}
+
+/* ***** About Us (End) ***** */
+
+/* ***** Our Wellness (Start) ***** */
+
+#our-wellness {
+  padding-top: 22%;
+  padding-bottom: 11%;
+  background-size: 100% 100% !important;
+}
+
+/* ***** Our Wellness (End) ***** */
+
+/* ***** Our Services (Start) ***** */
+
+.page-id-93 #about-harvest {
+  padding-top: 260px !important;
+}
+.page-id-93 #about-harvest .about-title-harvest {
+  margin-bottom: 60px !important;
+}
+
+/* ***** Our Services (End) ***** */
+
+/* ***** Contact Us (Start) ***** */
+
+#form-sec {
+  padding-top: 240px;
+  padding-bottom: 120px !important;
+}
+#form-sec .form-clm {
+  background: #4cbb17;
+  border-radius: 40px;
+  padding: 45px 50px;
+}
+#form-sec .form-clm input {
+  border: 0 !important;
+  border-bottom: 1px solid #e9e9e9 !important;
+  height: unset;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #cae7d4;
+  padding: 8px 0;
+}
+#form-sec .form-clm textarea {
+  border: 0 !important;
+  border-bottom: 1px solid #e9e9e9 !important;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #cae7d4;
+  padding: 8px 0;
+  min-height: 150px !important;
+  height: 150px !important;
+}
+#form-sec .form-clm input#Submit {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background: #fff;
+  margin: 0px auto;
+  display: table;
+  padding: 16px 60px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+#form-sec .screen-reader-response {
+  display: none !important;
+}
+
+/* ***** Contact Us (End) ***** */
+
+/* ***** Intake-form (Start) ***** */
+
+#intake-form {
+  padding-top: 14%;
+}
+
+#intake-form .info-box-title {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#intake-form .forminator-custom-form {
+  padding: 90px 90px !important;
+  background: #006176 !important;
+  border-radius: 40px !important;
+}
+
+#intake-form .forminator-custom-form input {
+  background: #fff0 !important;
+  border: 0px !important;
+  border-bottom: 1px solid !important;
+  border-radius: 0px !important;
+  padding: 10px 0 !important;
+  border-color: #e9e9e9 !important;
+  width: 100% !important;
+}
+
+#intake-form .forminator-custom-form ::placeholder {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9 !important;
+}
+
+div#address-1 label {
+  display: none;
+}
+
+div#html-2 p {
+  margin-bottom: 0px !important;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9;
+}
+
+div#checkbox-1 label {
+  display: -webkit-inline-box;
+  width: 25% !important;
+  font-family: "sf" !important;
+  font-style: normal;
+  font-size: 18px !important;
+  line-height: 30px;
+  color: #e9e9e9 !important;
+  font-weight: 400 !important;
+}
+
+.other-fild input {
+  width: 40% !important;
+  float: right;
+}
+
+.others-apply {
+  width: 86%;
+  flex: unset !important;
+}
+
+.forminator-ui.forminator-custom-form[data-design="default"]
+  .forminator-checkbox:not(.forminator-checkbox-inline):first-child {
+  margin-top: 20px;
+}
+
+.forminator-ui.forminator-custom-form[data-design="default"]
+  .forminator-checkbox:not(.forminator-checkbox-inline):last-child {
+  margin-bottom: 20px !important;
+}
+
+div#checkbox-1 input[type="checkbox"] {
+  position: relative !important;
+  cursor: pointer;
+}
+div#checkbox-1 input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -11px;
+  left: 12px;
+  background-color: #e9e9e9;
+}
+div#checkbox-1 input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: #1e80ef;
+}
+div#checkbox-1 input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-checkbox
+  .forminator-checkbox-box {
+  background: #fff0 !important;
+  border: 1px solid #fff !important;
+  border-radius: 0px !important;
+}
+
+.forminator-ui.forminator-custom-form[data-design="default"]
+  .forminator-checkbox
+  .forminator-checkbox-box:before {
+  color: #fff !important;
+}
+
+.excsiz-txt p {
+  margin-bottom: 0px;
+  font-family: "sf" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9;
+}
+
+div#forminator-custom-form-110--page-0
+  .forminator-row:last-child
+  .forminator-col-6:nth-child(1) {
+  width: 73% !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(5) .select2 {
+  background: #fff0;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 2px 0 !important;
+  height: unset;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(11),
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(12) {
+  margin-bottom: 0px !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(12) {
+  display: flex;
+  align-items: end;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(12) {
+  position: relative;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(12) .other-fild {
+  position: absolute;
+  bottom: 17px;
+  right: 250px;
+}
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(13) {
+  margin-top: 5px !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(13) {
+  margin-bottom: 10px;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(14) {
+  align-items: end;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(14) input {
+  width: 100% !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(14) .excrsz-othr {
+  position: absolute;
+  right: 60%;
+  bottom: 20px;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(14) {
+  position: relative;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(15) {
+  margin-bottom: 10px !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(15) p {
+  margin-bottom: 0px !important;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(16) label {
+  font-family: "sf" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #e9e9e9 !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(16) {
+  margin-bottom: 0px !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(18) p {
+  margin-bottom: 0px !important;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(18) {
+  margin-bottom: 5px !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(19) label {
+  display: inline-flex;
+  width: 16%;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(19) label {
+  font-family: "sf" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #e9e9e9 !important;
+  margin-right: 60px;
+}
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(20) {
+  margin-bottom: 0px !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(20) p {
+  margin-bottom: 5px !important;
+  font-family: "sf" !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #e9e9e9 !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+  display: -webkit-inline-box;
+  width: 22%;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(22) p {
+  margin-bottom: 0px !important;
+  font-family: "sf";
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #e9e9e9 !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(22) {
+  margin-bottom: 0px;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(23) label {
+  display: -webkit-inline-box;
+  width: 22%;
+  margin-bottom: 0px;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(24) p {
+  margin-bottom: 0px !important;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(24) {
+  margin-bottom: 5px;
+}
+
+#forminator-custom-form-110--page-0 .forminator-row:nth-child(25) label {
+  display: -webkit-inline-box;
+  width: 25%;
+  margin-right: 40px;
+}
+
+#checkbox-2 label {
+  width: 32% !important;
+  font-family: "sf" !important;
+  font-style: normal;
+  font-size: 18px !important;
+  line-height: 30px;
+  color: #e9e9e9 !important;
+  font-weight: 400 !important;
+  display: flex;
+}
+
+span.forminator-checkbox-label {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 16px !important;
+  color: #e9e9e9;
+}
+
+.et-db
+  #et-boc
+  .et_pb_module
+  .forminator-ui.forminator-custom-form[data-design="default"]
+  .forminator-checkbox
+  .forminator-checkbox-box,
+.forminator-ui.forminator-custom-form[data-design="default"]
+  .forminator-checkbox
+  .forminator-checkbox-box {
+  padding: 0px 11px;
+  width: 30px;
+  height: 28px;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-select2
+  + .forminator-select
+  .selection
+  .select2-selection--single[role="combobox"] {
+  background: #fff0 !important;
+  border: 0px !important;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  select.forminator-select2
+  + .forminator-select
+  .selection
+  .select2-selection--single[role="combobox"]
+  .select2-selection__rendered {
+  padding-left: 0px !important;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #e9e9e9;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-select2
+  + .forminator-select
+  .selection
+  .select2-selection--single[role="combobox"]
+  .select2-selection__arrow {
+  opacity: 0;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-select2
+  + .forminator-select.select2-container--open
+  .selection
+  .select2-selection--single[role="combobox"]
+  .select2-selection__rendered {
+  color: #fff !important;
+}
+
+div#forminator-custom-form-110--page-0 .forminator-row:last-child {
+  display: block;
+  position: relative;
+}
+
+div#forminator-custom-form-110--page-0
+  .forminator-row:last-child
+  .miscellaneous-inpt {
+  width: 30%;
+  position: absolute;
+  bottom: 10px;
+  left: 110px;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-is_hover
+  .forminator-input {
+  background: #fff0 !important;
+  color: #ffff !important;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-input {
+  color: #fff !important;
+}
+
+#forminator-custom-form-110--page-0 .forminator-pagination-footer {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.forminator-ui.forminator-custom-form[data-design="default"]:not(
+    .forminator-size--small
+  )
+  .forminator-pagination-footer {
+  margin-top: 0px;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-button-next {
+  font-family: "sf" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+  color: #333333 !important;
+  background: #fff !important;
+  border-radius: 30px !important;
+  padding: 13px 30px !important;
+  text-transform: capitalize !important;
+}
+.client-history p {
+  text-align: center;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff3f3;
+}
+
+.agreement-txt p strong {
+  text-align: center;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff3f3;
+  margin: 0px auto;
+  display: table;
+}
+
+.agreement-txt p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e9e9e9;
+}
+
+.forminator-merge-tags ol li {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #e9e9e9;
+}
+
+span.forminator-icon-calendar::before {
+  display: none;
+}
+
+#upload-1 .forminator-label {
+  display: none;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-button-back {
+  opacity: 0 !important;
+  z-index: -1 !important;
+}
+
+div#forminator-custom-form-110--page-1 .forminator-row:nth-child(2) {
+  margin: 0 120px;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-button-upload,
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-button-upload:hover {
+  background: #a5896a !important;
+  background-color: #a5896a !important;
+  border-radius: 30px;
+  padding: 12px 40px;
+  text-transform: capitalize;
+  color: #795f4c;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-file-upload
+  > span {
+  color: #fff !important;
+}
+
+.procedures-lbl p {
+  text-align: center;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff3f3;
+  margin: 0px auto;
+  display: table;
+}
+
+div#html-10 ol li {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #e9e9e9;
+}
+
+#upload-2 .forminator-label {
+  display: none;
+}
+
+div#forminator-custom-form-110--page-2 .forminator-row:last-child {
+  margin: 0 120px;
+}
+
+.forminator-ui#forminator-module-110.forminator-design--default
+  .forminator-button-submit {
+  background: #fcebd5 !important;
+  background-color: #fcebd5 !important;
+  font-family: "sf" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+  color: #b99976 !important;
+  text-transform: capitalize !important;
+  padding: 16px 25px !important;
+  border-radius: 30px !important;
+}
+
+/* ***** Intake-form (End) ***** */
+
+/* ***** One on One Wellness Consultation (Start) ***** */
+
+.page-id-115 #what-client-say::after {
+  background: #fef5ea;
+}
+
+.page-id-115 #what-client-say .md-servc-iner p {
+  color: #795f4c;
+}
+#wellness-consultaion {
+  padding-top: 18%;
+  padding-bottom: 5%;
+}
+
+.welness-prd h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 85px;
+  text-align: right;
+  color: #029837;
+  margin-bottom: 0px;
+}
+
+.welness-prd p {
+  font-family: "sf";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  text-align: right;
+  padding-left: 320px;
+}
+
+#inr-wellness-consultaion {
+  position: relative;
+}
+
+.welness-prd {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.welness-prd p br {
+  display: none;
+}
+
+#inr-wellness-consultaion .info-box-title {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+#wellness-consultaion .wellness-prd-desp p {
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+#wellness-consultaion .btn {
+  background: #4cbb17;
+  border-radius: 30px;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 15px 35px;
+  margin-top: 15px;
+}
+
+/* ***** One on One Wellness Consultation (End) ***** */
+
+/* ***** Favorite Item (Start) ***** */
+
+#fvrt-item {
+  padding-top: 18%;
+}
+
+#fvrt-item .info-box-title {
+  margin-bottom: 30px !important;
+}
+
+div#inr-fvrt .info-box-content .info-box-title {
+  font-weight: 400;
+  margin-bottom: 10px !important;
+}
+
+div#inr-fvrt .btn {
+  background: #4cbb17;
+  border-radius: 50px;
+  font-family: "sf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  padding: 16px 30px;
+}
+
+#inr-fvrt {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#fvrt-item {
+  padding-bottom: 3%;
+}
+.page-id-125 {
+  position: relative;
+}
+
+.page-id-125::after {
+  content: "";
+  background: url("https://eseospace.dev/websites/harvest-health/wp-content/uploads/2023/01/olive-tree-01-2-1.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  visibility: visible;
+  display: block;
+}
+
+#fvrt-item {
+  z-index: 99999 !important;
+  position: relative;
+}
+
+/* ***** Favorite Item (End) ***** */
+
+/* ***** Testimonial Page (Start) ***** */
+
+#testimonial-sec .test-imgg {
+  margin-bottom: 15px;
+  width: 100% !important;
+}
+#testimonial-harvest {
+  padding-top: 20%;
+  padding-bottom: 4%;
+}
+#testimonial-harvest .info-box-title {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#testimonial-harvest .about-title-harvest {
+  margin-bottom: 0px;
+}
+#testimonial-harvest .wd-text-block {
+  font-style: italic;
+}
+#testimonial-sec .test-imgg img {
+  width: 100%;
+}
+#inr-testimonial {
+  background: #ffffff;
+  box-shadow: 0px -2px 60px rgba(0, 0, 0, 0.12),
+    0px 80px 120px -50px rgba(41, 47, 83, 0.15);
+  border-radius: 30px;
+  margin-bottom: 70px;
+  padding: 40px 30px 20px 30px;
+}
+#testimonial-sec {
+  padding-bottom: 60px;
+}
+.page-id-150 {
+  position: relative;
+}
+.page-id-150::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url("https://eseo.space/websites/harvest-health/wp-content/uploads/2023/02/olive-tree-01-2-2.png");
+}
+.page-id-150 .site-content {
+  z-index: 12;
+}
+#inr-testimonial {
+  position: relative;
+}
+#inr-testimonial::before {
+  content: url("https://eseo.space/websites/harvest-health/wp-content/uploads/2023/02/Vector-10.png");
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+/* ***** Testimonial Page (End) ***** */
+
+form.checkout.woocommerce-checkout.row {
+  padding-bottom: 60px !important;
+}
+
+/* ***** Responsive Harvest (Start) ***** */
+
+@media (max-width: 1600px) {
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1336px) {
+  #slider-sec .flickity-enabled.is-draggable .flickity-viewport {
+    height: 757px !important;
+  }
+  #consultation {
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+  #testimonial-harvest {
+    padding-top: 15%;
+    padding-bottom: 2%;
+  }
+  #inr-testimonial .wd-text-block br {
+    display: none;
+  }
+  #inr-testimonial {
+    padding: 50px 50px 20px 30px;
+  }
+  #inr-testimonial .testt-content {
+    font-size: 14px !important;
+    line-height: 23px !important;
+  }
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(12)
+    .other-fild {
+    right: 150px;
+  }
+
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(14)
+    .excrsz-othr {
+    right: 53%;
+  }
+
+  div#forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+    margin-right: 30px;
+  }
+  #form-sec {
+    padding-top: 160px !important;
+    padding-bottom: 120px !important;
+  }
+  .page-id-93 #about-harvest {
+    padding-top: 150px !important;
+  }
+
+  .page-id-93 #about-harvest .about-title-harvest .info-box-title {
+    font-size: 80px !important;
+  }
+  #our-wellness .info-box-title {
+    font-size: 80px !important;
+    line-height: 88px !important;
+  }
+  #about-harvest .info-box-title {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  #about-harvest .info-box-inner {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  #our-wellness {
+    padding-top: 18%;
+    padding-bottom: 7%;
+  }
+  .page-id-78 #about-harvest {
+    padding-top: 130px;
+  }
+  #empower-sec2 .info-box-subtitle {
+    font-family: sf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px !important;
+    margin-bottom: 0 !important;
+  }
+  #empower-sec2 h4.info-box-title {
+    font-family: better;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 98px !important;
+    letter-spacing: -0.01em;
+  }
+  #empower-sec2 p {
+    font-family: sf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px !important;
+  }
+  #empower-sec .info-box-subtitle {
+    font-family: sf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px !important;
+    color: #333333 !important;
+    margin-bottom: 0 !important;
+  }
+  #empower-sec p {
+    font-family: sf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px !important;
+    color: #333333 !important;
+  }
+  #empower-sec h4.info-box-title {
+    font-family: better;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 98px !important;
+    letter-spacing: -0.01em;
+    color: #4cbb17;
+  }
+  #inr-about2-harvest p {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
+  }
+  #services-harvester .info-box-inner p {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #333333;
+  }
+  #what-client-say .client-servc .client-say {
+    width: 100%;
+  }
+  #what-client-say h2 {
+    font-size: 80px !important;
+  }
+  #what-client-say .md-servc-iner p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  #consultation {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .wd-toolbar {
+    display: none !important;
+  }
+
+  .sticky-toolbar-on {
+    padding-bottom: 0px !important;
+  }
+}
+@media (max-width: 800px) {
+  #testimonial-sec .vc_col-sm-8 {
+    width: 85%;
+  }
+  #testimonial-sec .vc_col-sm-2 {
+    width: 7.5%;
+  }
+  #testimonial-harvest {
+    padding-top: 21%;
+    padding-bottom: 2%;
+  }
+  #inr-wellness-consultaion .vc_col-sm-6 {
+    width: 100%;
+  }
+
+  .welness-prd p {
+    padding-left: 510px;
+  }
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(12)
+    .other-fild {
+    right: 0px;
+  }
+
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(14)
+    .excrsz-othr {
+    right: 35%;
+  }
+
+  div#forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+    margin-right: 30px;
+  }
+
+  .others-apply {
+    width: 100% !important;
+  }
+
+  #intake-form .forminator-custom-form input {
+    width: 90% !important;
+  }
+
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(19) label {
+    width: 20% !important;
+  }
+
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(25) label {
+    width: 40% !important;
+  }
+  #form-sec .form-clm {
+    width: 77% !important;
+    margin: 0px auto;
+    display: table;
+    float: unset;
+  }
+  #about-harvest .info-box-inner br {
+    display: none;
+  }
+  #empower-sec2 h4.info-box-title {
+    font-family: better;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 78px !important;
+    letter-spacing: -0.01em;
+  }
+  #empower-sec h4.info-box-title {
+    font-family: better;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 78px !important;
+    letter-spacing: -0.01em;
+    color: #4cbb17;
+  }
+  #inr-about-harvest p {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+  }
+  #what-client-say h2 {
+    font-size: 70px !important;
+    line-height: 80px !important;
+  }
+  .client-servc {
+    width: 100% !important;
+  }
+
+  #what-client-say .client-servc .client-say2 {
+    transform: unset !important;
+  }
+
+  #what-client-say::after {
+    top: 70px;
+  }
+  #consultation h2 {
+    font-size: 80px !important;
+    line-height: 80px !important;
+  }
+  #services-harvester h4.info-box-title {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 32px;
+    color: #333333;
+  }
+}
+@media (max-width: 768px) {
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(12)
+    .other-fild {
+    right: 0px;
+    bottom: 38px;
+  }
+
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(14)
+    .excrsz-othr {
+    right: 40%;
+    bottom: 0px;
+  }
+
+  div#forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+    margin-right: 30px;
+  }
+
+  .others-apply {
+    width: 100% !important;
+  }
+
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(19) label {
+    width: 20% !important;
+  }
+
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(25) label {
+    width: 50% !important;
+  }
+
+  #intake-form .forminator-custom-form {
+    padding: 50px 50px !important;
+  }
+
+  #intake-form .forminator-custom-form input {
+    width: 100% !important;
+  }
+
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+    width: 30%;
+  }
+
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(23) label {
+    width: 25% !important;
+  }
+  #about-harvest .info-box-title br {
+    display: none;
+  }
+  #slider-sec .flickity-enabled.is-draggable .flickity-viewport {
+    height: 597px !important;
+  }
+  #empower-sec .info-box-subtitle,
+  #empower-sec2 .info-box-subtitle {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  #empower-sec p,
+  #empower-sec2 p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  #inr-about-harvest h4.info-box-title {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #6c503c;
+  }
+  #inr-about-harvest p br {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  #testimonial-harvest {
+    padding-top: 34%;
+    padding-bottom: 2%;
+  }
+  #testimonial-harvest .info-box-title {
+    font-size: 70px !important;
+    line-height: 78px !important;
+  }
+  #testimonial-sec .vc_col-sm-8 {
+    width: 80% !important;
+    margin: 0px auto;
+  }
+  #inr-testimonial {
+    padding: 30px 20px 20px 20px;
+  }
+  .scrollToTop {
+    z-index: 999999999 !important;
+  }
+  #inr-fvrt {
+    padding-bottom: 0px !important;
+  }
+  #fvrt-item {
+    padding-top: 35%;
+  }
+
+  #fvrt-item .info-box-title {
+    font-size: 60px !important;
+    line-height: 68px !important;
+    margin-bottom: 0px !important;
+  }
+
+  div#inr-fvrt .info-box-content .info-box-title {
+    font-size: 23px !important;
+    line-height: 38px !important;
+  }
+
+  div#inr-fvrt .btn {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 16px 40px;
+  }
+  .welness-prd h3 {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  #inr-wellness-consultaion .info-box-title {
+    font-size: 45px !important;
+    line-height: 53px !important;
+  }
+
+  .welness-prd p {
+    padding-left: 170px;
+  }
+
+  .welness-prd {
+    top: -10px;
+  }
+  #intake-form {
+    padding-top: 25%;
+  }
+  div#checkbox-1 label {
+    width: 60% !important;
+  }
+  #checkbox-2 label {
+    width: 100% !important;
+  }
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(14)
+    .excrsz-othr {
+    position: unset !important;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(19) label {
+    width: 50% !important;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+    width: 50% !important;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(23) label {
+    width: 100% !important;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(25) label {
+    width: 100% !important;
+  }
+  div#forminator-custom-form-110--page-0
+    .forminator-row:last-child
+    .miscellaneous-inpt {
+    width: 60%;
+  }
+  div#html-2 p {
+    font-size: 14px !important;
+  }
+  #form-sec .form-clm {
+    background: #4cbb17;
+    border-radius: 40px;
+    padding: 45px 10px;
+  }
+  #form-sec .form-clm {
+    width: 88% !important;
+    margin: 0px auto;
+    display: table;
+    float: unset;
+  }
+  .page-id-93 #about-harvest {
+    padding-top: 150px !important;
+  }
+  .page-id-93 #about-harvest .about-title-harvest .info-box-title {
+    font-size: 80px !important;
+  }
+  .page-id-93 #about-harvest .about-title-desp .info-box-title {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  .page-id-93 #about-harvest .about-title-desp .info-box-inner {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+  .page-id-93 #about-harvest .about-title-desp {
+    margin-bottom: 0px !important;
+  }
+
+  #our-wellness .info-box-title {
+    font-size: 50px !important;
+    line-height: 58px !important;
+  }
+  .page-id-85 #about-harvest h2.info-box-title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+  #our-wellness {
+    padding-top: 28%;
+    padding-bottom: 7%;
+    background-size: cover !important;
+  }
+  .page-id-78 #about-harvest h2 {
+    margin-bottom: 0px !important;
+  }
+  #empower-sec .info-box-subtitle,
+  #empower-sec2 .info-box-subtitle {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  #empower-sec2 h4.info-box-title,
+  #empower-sec h4.info-box-title {
+    font-size: 60px !important;
+    line-height: 68px !important;
+  }
+  #empower-sec p,
+  #empower-sec2 p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  #empower-sec2 a.btn {
+    font-size: 13px !important;
+    padding: 12px 25px 13px 25px !important;
+  }
+  #empower-sec a.btn {
+    font-size: 13px !important;
+    padding: 12px 30px !important;
+  }
+  .flickity-button {
+    opacity: 0 !important;
+  }
+  #slider-sec .flickity-enabled.is-draggable .flickity-viewport {
+    height: 527px !important;
+  }
+  #empower-sec2 {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  #empower-sec {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  #inr-about-harvest p {
+    text-align: center !important;
+  }
+  #about-harvest h2.info-box-title {
+    font-size: 40px !important;
+    line-height: 45px !important;
+  }
+  #about-harvest h2.info-box-title br {
+    display: none;
+  }
+  #inr-about-harvest p {
+    padding: 0 70px !important;
+  }
+  #services-harvester {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  #what-client-say .client-servc .client-say h4.info-box-title {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #consultation {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  #consultation p {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #f7f6f8;
+  }
+  #wellness-consultaion {
+    padding-top: 37%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 414px) {
+  #testimonial-harvest {
+    padding-top: 45%;
+    padding-bottom: 2%;
+  }
+  #inr-testimonial .testt-content {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+  #inr-testimonial::before {
+    transform: scale(0.7);
+    right: 20px;
+    bottom: 10px;
+  }
+  #inr-testimonial {
+    margin-bottom: 40px !important;
+    padding: 20px 10px 20px 10px;
+  }
+  #fvrt-item {
+    padding-top: 45%;
+  }
+  .welness-prd {
+    position: unset !important;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 20px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .welness-prd h3,
+  .welness-prd p {
+    text-align: left !important;
+    padding: 0px;
+  }
+
+  #inr-wellness-consultaion .info-box-title {
+    border: 0px !important;
+    margin: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  #wellness-consultaion {
+    padding-top: 37%;
+    padding-bottom: 5%;
+  }
+  #intake-form .forminator-custom-form {
+    padding: 30px 30px !important;
+  }
+  #forminator-custom-form-110--page-0
+    .forminator-row:nth-child(12)
+    .other-fild {
+    position: unset !important;
+    margin-bottom: 30px !important;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(18) p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(19) label {
+    width: 90% !important;
+  }
+  #forminator-custom-form-110--page-0 .forminator-row:nth-child(21) label {
+    width: 80% !important;
+  }
+  div#forminator-custom-form-110--page-0
+    .forminator-row:last-child
+    .forminator-col-6:nth-child(1) {
+    width: 100% !important;
+  }
+  div#forminator-custom-form-110--page-0
+    .forminator-row:last-child
+    .miscellaneous-inpt {
+    position: unset !important;
+    width: 100% !important;
+  }
+  #form-sec .info-box-title {
+    font-size: 60px !important;
+    line-height: 68px !important;
+    margin-bottom: 0px !important;
+  }
+  #consultation p br {
+    display: none;
+  }
+  #consultation h2 {
+    font-size: 50px !important;
+    line-height: 40px !important;
+  }
+  #what-client-say .client-servc .client-say {
+    display: block !important;
+  }
+  #what-client-say h2 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+  }
+  #services-harvester h4.info-box-title {
+    font-family: "sf";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    color: #333333;
+  }
+  #services-harvester h2 {
+    font-weight: 400;
+    font-size: 70px !important;
+    line-height: 60px !important;
+  }
+  #empower-sec .info-box-subtitle {
+    font-family: sf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px !important;
+    color: #333333 !important;
+    margin-bottom: 0 !important;
+  }
+  #empower-sec p {
+    font-family: sf;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px !important;
+    color: #333333 !important;
+  }
+  #empower-sec h4.info-box-title {
+    font-family: better;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 48px !important;
+    letter-spacing: -0.01em;
+    color: #4cbb17;
+  }
+  #inr-about-harvest p {
+    padding: 0 20px !important;
+  }
+  #about-harvest h2.info-box-title {
+    font-size: 35px !important;
+    line-height: 36px !important;
+  }
+}
+@media (max-width: 375px) {
+  #slide-62.woodmart-loaded .wd-slide-bg {
+    background-position: unset !important;
+  }
+
+  #slide-57.woodmart-loaded .wd-slide-bg {
+    background-position: -277px 0px;
+  }
+}
+@media (max-width: 360px) {
+}
+
+/* ***** Responsive Harvest (End) ***** */

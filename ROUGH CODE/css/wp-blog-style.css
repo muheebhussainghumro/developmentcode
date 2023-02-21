@@ -1,0 +1,64 @@
+.article-row {
+  background-size: 100% 40%;
+}
+.blog-container .vc_gitem_row {
+  min-height: 680px;
+  display: grid;
+  place-items: end;
+}
+.blog-img img {
+  border-radius: 10px !important;
+  height: 450px;
+  object-fit: cover;
+}
+.blog-date p {
+  margin-bottom: 0 !important;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+.blog-title h4,
+.blog-title h4 a {
+  font-family: "Gelasio";
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff !important;
+}
+.blog-btn a.vc_general {
+  box-shadow: none !important;
+  padding: 10px 0 !important;
+  background: none !important;
+  color: #fff !important;
+  border: none !important;
+  text-transform: uppercase;
+}
+.blog-btn a.vc_general:after {
+  content: "";
+  background: url(https://eseo.space/websites/pattyssealing/wp-content/uploads/2023/02/article-arrow-min.png);
+  width: 18px !important;
+  height: 18px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-left: 10px;
+  transition: 0.2s ease-in-out;
+  filter: brightness(74.5);
+  display: inline-block;
+}
+.blog-btn a.vc_general:hover:after {
+  transform: translateX(5px);
+}
+.blog-btn a.vc_general {
+  opacity: 0;
+  margin-bottom: -20px !important;
+  transition: 0.2s ease-in-out;
+}
+.blog-container .vc_gitem_row:hover .blog-btn a.vc_general {
+  opacity: 1;
+  margin-bottom: 50px !important;
+}
+.blog-title,
+.blog-title h4 {
+  margin-bottom: 10px !important;
+}

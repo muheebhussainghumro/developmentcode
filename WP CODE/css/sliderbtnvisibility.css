@@ -327,7 +327,7 @@
   margin: 0 auto !important;
   justify-content: center !important;
   display: flex;
-  align-item: center !important;
+  align-items: center !important;
   width: 55px !important;
   height: 55px !important;
   margin: 20px 0 !important;
@@ -357,4 +357,89 @@
 }
 .owl-next:after {
   transform: scale(-1);
+}
+
+/* center bottom */
+
+.hp-testimonial-container .testimonial-inner {
+  position: relative !important;
+}
+.hp-testimonial-container .testimonial-content {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px !important;
+  padding: 20px;
+}
+.hp-testimonial-container .testimonial-avatar {
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px !important;
+}
+.hp-testimonial-container .testimonial-content footer {
+  padding-left: 75px;
+  min-height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.hp-testimonial-container .testimonial-content footer:after {
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  vertical-align: middle;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #ffa800;
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.hp-testimonial-container .testimonial-content {
+  font-size: 16px;
+  color: #333333;
+}
+
+.hp-testimonial-container .owl-nav {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: max-content;
+  display: flex;
+  justify-content: start !important;
+  column-gap: 10px;
+}
+.hp-testimonial-container .owl-nav > div {
+  position: static;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  display: flex;
+  justify-content: center !important;
+}
+.hp-testimonial-container .owl-nav > div {
+  width: 55px !important;
+  height: 55px !important;
+  margin: 20px 0 !important;
+  color: #fe0000 !important;
+  border: 1px solid #fe0000 !important;
+}
+.hp-testimonial-container .owl-prev:hover,
+.hp-testimonial-container .owl-next:hover {
+  background: #fe0000 !important;
+  border-radius: 5px !important;
+}
+.hp-testimonial-container .owl-prev:hover:after,
+.hp-testimonial-container .owl-next:hover:after {
+  filter: brightness(10);
+}
+.hp-testimonial-container .owl-nav > div:after {
+  font-size: 18px !important;
+}
+.hp-testimonial-container .owl-nav > div:hover:after {
+  color: #fff !important;
 }

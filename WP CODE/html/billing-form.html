@@ -1,0 +1,118 @@
+<!-- sign up form  -->
+
+<?php /* Template Name: Signup Billing */  get_header(); ?>
+
+<div class="col-md-12">
+
+    <!-- sign up form  -->
+
+    <section id="sign-up-form" class="sign-up-form-main">
+        <div class="su-inner-row">
+            <div class="container">
+                <div class="form-title-wrapper">
+                    <h4 class="form-title">What’s your payment information?</h4>
+                </div>
+                <form action="">
+                    <div class="row form-row">
+                        <div class="col-md-6 form-col">
+                            <div class="form-col-inner">
+
+                                <form action="">
+                                    <div class="su-form-wrapper">
+                                        <div class="su-form-inner">
+                                            <!-- Billing Information -->
+                                            <div class="su-form-wrapper personal-details">
+                                                <div class="row cf-field">
+                                                    <div class="col-md-6 su-form-title-wrapper">
+                                                        <h4>Billing Information</h4>
+                                                    </div>
+                                                    <div class="col-md-6 su-form-img-wrapper">
+                                                        <img
+                                                            src="https://expertreputation.com/wp-content/uploads/2023/01/billing-img-min.png">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label>Name on card<span class="required-icon">*</span></label>
+                                                        <input type="text" name="name_on_card" class="field" required>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label>Card number<span class="required-icon">*</span></label>
+                                                        <input type="text" name="card_number" class="field" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label>Expiration date<span
+                                                                class="required-icon">*</span></label>
+                                                        <input type="date" name="expiration_date" class="field"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label>Security code<span class="required-icon">*</span></label>
+                                                        <input type="text" name="security_code" class="field"
+                                                            placeholder="CVV" required>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label>Billing ZIP code<span
+                                                                class="required-icon">*</span></label>
+                                                        <input type="email" name="billing_zip_code" class="field"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-md-12 su-btn-wrapper">
+                                                        <input type="submit" class="btn primary-btn" value="Continue">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-col">
+                            <div class="form-col-inner">
+                                <!-- Plan Summary -->
+                                <div class="plan-summary-box">
+                                    <div class="summary-title-wrapper">
+                                        <h2 class="summary-title">Plan Summary</h2>
+                                    </div>
+                                    <div class="summary-checkout-wrapper">
+                                        <div class="summary-checkout-row">
+                                            <div class="sc-title-wrapper">
+                                                <p class="sc-title">Listing Manager</p>
+                                            </div>
+                                            <div class="sc-price-wrapper">
+                                                <h4 class="sc-price">$39 USD / Month</h4>
+                                            </div>
+                                        </div>
+                                        <div class="sc-discount-wrapper">
+                                            <div class="sc-discount">
+                                                <label for="annual_discount"><input type="checkbox"
+                                                        name="annual_discount" id="annual_discount">Pay annually and
+                                                    receive a <strong>10%</strong> discount
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-summary-row">
+                                        <div class="os-title-wrapper">
+                                            <h4 class="os-title">
+                                                Order Summary
+                                            </h4>
+                                        </div>
+                                        <div class="sc-price-wrapper">
+                                            <h4 class="sc-price">$39 USD / Month</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Plan Summary End -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<?php get_footer(); ?>

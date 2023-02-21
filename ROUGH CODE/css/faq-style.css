@@ -1,0 +1,79 @@
+/* faq sytle // aspenwhitestar */
+
+.vc_tta-panels {
+  border: none !important;
+}
+.vc_tta-panels {
+  background: none !important;
+}
+.vc_tta-panel {
+  background: none !important;
+}
+.vc_tta-panel-heading {
+  background: none !important;
+}
+.vc_tta-panel-body {
+  background: none !important;
+}
+.vc_tta-panel.vc_active {
+  border: 2px solid rgba(34, 90, 146, 1) !important;
+  padding: 30px 50px !important;
+}
+.vc_tta-panel {
+  border: none !important;
+}
+h4.vc_tta-panel-title,
+h4.vc_tta-panel-title a {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333333 !important;
+}
+i.vc_tta-controls-icon:after {
+  display: none !important;
+}
+i.vc_tta-controls-icon:before {
+  border-color: rgba(34, 90, 146, 1) !important;
+  width: 30px;
+}
+h4.vc_tta-panel-title a {
+  padding: 20px 50px !important;
+}
+h4.vc_tta-panel-title {
+  padding: 10px;
+}
+.vc_active h4.vc_tta-panel-title i {
+  opacity: 0;
+}
+.vc_active h4.vc_tta-panel-title a {
+  padding: 0 !important;
+}
+.vc_tta-panel.vc_active h4.vc_tta-panel-title {
+  padding: 15px 5px !important;
+}
+.vc_tta-panel {
+  position: relative;
+}
+.vc_tta-panel.vc_active:before,
+.vc_tta-panel.vc_active:after {
+  content: "";
+  background: #f3f6fb !important;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 40%;
+  height: 5px;
+  display: block;
+  z-index: 5;
+  transition: 0.2s ease-in-out;
+}
+.vc_tta-panel.vc_active:after {
+  right: 0;
+  bottom: -4px;
+  left: unset;
+  top: unset;
+}
+.vc_tta-panel.vc_active:hover:before,
+.vc_tta-panel.vc_active:hover:after {
+  width: 0;
+}

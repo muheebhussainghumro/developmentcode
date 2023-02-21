@@ -30,6 +30,100 @@
       border-radius: 50px;
       margin-right: 10px;
     }
+
+
+    /* style 2  */
+
+    .file-btn-wrapper input.resume-btn {
+      border: 2px solid #b90022;
+      border-radius: 40px;
+      min-height: 60px;
+      width: 200px;
+      padding: 30px 25px 5px 50px;
+      font-size: 13px;
+      color: #bd001c;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .file-btn-wrapper span.wpcf7-form-control-wrap {
+      text-align: center !important;
+    }
+
+    .file-btn-wrapper input.resume-btn::-webkit-file-upload-button {
+      display: none;
+    }
+
+    .file-btn-wrapper:before {
+      content: "";
+      background: url(https://eseospace.dev/websites/temporarystaffagency/wp-content/uploads/2023/01/Vector-min.png);
+      width: 23px;
+      height: 23px;
+      display: block;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 17px;
+      left: 20px;
+      pointer-events: none;
+    }
+
+    .file-btn-wrapper {
+      position: relative;
+      margin-right: 10px;
+    }
+
+    .file-btn-wrapper:after {
+      content: "Upload Resume";
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      color: #b90022 !important;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 15px;
+      pointer-events: none;
+    }
+
+    /* STYLE 3 */
+
+    .file-btn-wrapper input.resume-btn {
+      border: 2px solid #88b9c8;
+      min-height: 65px;
+      max-width: 250px;
+      padding: 33px 77px 5px 77px;
+      font-size: 13px;
+      color: #fff;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+      background: #8bb9c7;
+    }
+
+    .file-btn-wrapper input.resume-btn::-webkit-file-upload-button {
+      display: none;
+    }
+
+    .file-btn-wrapper {
+      position: relative;
+      margin-right: 10px;
+      max-width: max-content;
+      margin: auto;
+    }
+
+    .file-btn-wrapper:after {
+      content: "Upload Job Description";
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff !important;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 15px;
+      pointer-events: none;
+    }
   </style>
 </head>
 
@@ -40,6 +134,23 @@
     [file* your-resume limit:2mb filetypes:jpg|png|jpeg|doc|pdf class:resume-btn]
   </div>
 
+
+
+  <!-- style 2  -->
+
+  <div class="file-btn-wrapper">
+    [file* your-resume limit:2mb filetypes:jpg|png|jpeg|doc|pdf class:resume-btn]
+  </div>
+
+
+
+  <!-- STYLE 3 -->
+
+  <div class="job-description-form">
+    <div class="file-btn-wrapper">
+      [file* your-resume limit:2mb filetypes:jpg|png|jpeg|doc|pdf class:resume-btn]
+    </div>
+  </div>
 
 </body>
 

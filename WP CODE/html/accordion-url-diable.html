@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // accordian url disable
+
+        jQuery(document).ready(function () {
+            jQuery('.vc_tta-panel').on('click', function () {
+                jQuery('.vc_tta-panel').not(this).removeClass('vc_active');
+                jQuery(this).toggleClass("vc_active").next();
+                return false;
+            });
+        });
+
+    </script>
+
+
+    <script>
+
+        // request consultation popup btn 
+
+        jQuery(document).ready(function () {
+            jQuery('.product-wrapper .woodmart-add-btn').each(function () {
+                var $this = jQuery(this);
+                var x = jQuery('<a class="pop-open">Request Consultation</a>');
+                jQuery(x).appendTo($this);
+            });
+
+
+            jQuery(document).ready(function () {
+                jQuery('.vc_tta-panel').on('click', function () {
+                    jQuery('.vc_tta-panel').not(this).removeClass('vc_active');
+                    jQuery(this).toggleClass("vc_active").next();
+                    return false;
+                });
+            });
+
+
+            jQuery(document).ajaxComplete(function () {
+                jQuery('.product-wrapper .woodmart-add-btn').each(function () {
+                    var $this = jQuery(this);
+                    if ($this.is(':visible')) {
+                        var x = jQuery('<a class="pop-open">Request Consultation</a>');
+                        jQuery(x).appendTo($this);
+                    }
+                });
+            });
+
+            /* Package pop-up */
+            jQuery('.product-grid-item').each(function () {
+                var title = jQuery(this).find('h3.wd-entities-title a').text();
+                var btn = jQuery(this).find('.pop-open');
+                jQuery(btn).click(function () {
+                    jQuery('.field-hidden').val(title);
+                });
+            });
+        });
+
+
+        document.querySelector(".custom-categories-tabs ul.wd-nav-tabs li:nth-child(3) a").addEventListener("click",
+            function () {
+                window.location.href = "https://www.example.com";
+            });
+    </script>
+
+
+
+    </script>
+    </script>
+
+</body>
+
+</html>
