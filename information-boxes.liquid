@@ -1,0 +1,180 @@
+<section id="handicap-operators">
+    <div class="container">
+        <div class="handicaped-operator-row">
+            <div class="title-wrapper">
+                <div class="title-subtitle">
+                    <p>{{ section.settings.handicap_subtitle }}</p>
+                </div>
+                <div class="primary-title">
+                    <h4>{{ section.settings.handicap_title }}</h4>
+                </div>
+            </div>
+
+            <div class="handicaped-row">
+                <div class="row handicaped-inner-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="handicaped-product-wrapper">
+                            <div class="product-img">
+                                <img src="{{ section.settings.handicap_service_img | img_url: 'master' }}">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-title">
+                                    <h4>{{ section.settings.handicap_service_title }}</h4>
+                                </div>
+                                <div class="content-inner">
+                                    <p>{{ section.settings.handicap_service_text }}</p>
+                                </div>
+                                <div class="product-btn">
+                                    <p><a href="{{ section.settings.handicap_service_btn_url }}">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="handicaped-product-wrapper">
+                            <div class="product-img">
+                                <img src="{{ section.settings.handicap_service_img_2 | img_url: 'master' }}">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-title">
+                                    <h4>{{ section.settings.handicap_service_title_2 }}</h4>
+                                </div>
+                                <div class="content-inner">
+                                    <p>{{ section.settings.handicap_service_text_2 }}</p>
+                                </div>
+                                <div class="product-btn">
+                                    <p><a href="{{ section.settings.handicap_service_btn_url_2 }}">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="handicaped-product-wrapper">
+                            <div class="product-img">
+                                <img src="{{ section.settings.handicap_service_img_3 | img_url: 'master' }}">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-title">
+                                    <h4>{{ section.settings.handicap_service_title_3 }}</h4>
+                                </div>
+                                <div class="content-inner">
+                                    <p>{{ section.settings.handicap_service_text_3 }}</p>
+                                </div>
+                                <div class="product-btn">
+                                    <p><a href="{{ section.settings.handicap_service_btn_url_3 }}">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="primary-button-wrapper">
+                <a href="{{ section.settings.automatic_product_btn_link }}" class="btn primary-btn">{{
+                    section.settings.automatic_product_btn_text }}</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+"name": "Handicap Operator",
+"settings": [
+{
+"type": "text",
+"id": "handicap_title",
+"label": "Section Title"
+},
+{
+"type": "text",
+"id": "handicap_subtitle",
+"label": "Section Subtitle"
+},
+{
+"type": "image_picker",
+"id": "handicap_service_img",
+"label": "Service Image 1"
+},
+{
+"type": "text",
+"id": "handicap_service_title",
+"label": "Service Title 1"
+},
+{
+"type": "text",
+"id": "handicap_service_text",
+"label": "Service Text 1"
+},
+{
+"type": "url",
+"id": "handicap_service_btn_url",
+"label": "service Url 1"
+},
+{
+"type": "image_picker",
+"id": "handicap_service_img_2",
+"label": "Section Image 2"
+},
+{
+"type": "text",
+"id": "handicap_service_title_2",
+"label": "Service Title 2"
+},
+{
+"type": "text",
+"id": "handicap_service_text_2",
+"label": "Service Text 2"
+},
+{
+"type": "url",
+"id": "handicap_service_btn_url_2",
+"label": "service Url 2"
+},
+{
+"type": "image_picker",
+"id": "handicap_service_img_3",
+"label": "Section Image 3"
+},
+{
+"type": "text",
+"id": "handicap_service_title_3",
+"label": "Service Title 3"
+},
+{
+"type": "text",
+"id": "handicap_service_text_3",
+"label": "Service Text 3"
+},
+{
+"type": "url",
+"id": "handicap_service_btn_url_3",
+"label": "service Url 3"
+},
+{
+"type": "text",
+"id": "automatic_product_btn_text",
+"label": "Section Button Text"
+},
+{
+"type": "url",
+"id": "automatic_product_btn_link",
+"label": "Section Button Link"
+}
+]
+,
+"presets": [
+{
+"name": "Handicap Operator"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

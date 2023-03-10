@@ -1,0 +1,210 @@
+<section id="product-Section">
+    <div class="container">
+        <div class="product-section-inner">
+            <div class="products-title title-wrapper">
+                <div class="primary-title">
+                    <h4>{{ section.settings.product_title }}</h4>
+                </div>
+            </div>
+
+            <div class="products-main-row">
+                <!-- product row -->
+                <div class="products-inner">
+
+                    <div class="categories-main-wrapper">
+                        <div class="categories-col">
+                            {% for collection in collections %}
+                            {% unless collection.handle == 'featured-products' or collection.handle == 'frontpage' %}
+                            <div class="category-wrapper">
+                                <a href="{{ collection.url }}">
+                                    <div class="collection-grid-item">
+                                        <div class="info-box-title">
+                                            {% if collection.title == blank %}
+                                            {{ 'homepage.onboarding.collection_title' | t }}
+                                            {% else %}
+                                            {{ collection.title }}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% endunless %}
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="products-category-tabs">
+
+                        <!-- categories -->
+                        <div class="categories-wrapper categories-tabs">
+                            <div class="categories-col">
+
+                                {% for collection in collections %}
+                                {% if collection.handle != 'frontpage' and collection.handle != 'featured-products' and
+                                collection.products.size > 0 %}
+                                <h3 class="category-title">{{ collection.title }}</h3>
+                                <div class="products-tabs" id="shopCat-{{ collection.id }}">
+                                    <div class="row products-row" data="{{ collection.handle }}">
+                                        <div class="owl-carousel-products owl-carousel owl-theme">
+                                            {% for product in collection.products %}
+                                            <div class="item">
+                                                <div class="product-wrapper">
+                                                    <a href="{{ product.url }}" class="product-card-link"></a>
+                                                    <div class="product-img">
+                                                        <img src="{{ product.featured_image | product_img_url: 'large' }}"
+                                                            alt="{{ product.featured_image.alt }}">
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <div class="product-content-inner">
+                                                            <div class="product-title">
+                                                                <h4 class="product-title">{{ product.title | escape }}
+                                                                </h4>
+                                                            </div>
+                                                            <div class="pricing-wrapper">
+                                                                <div class="list-price">
+                                                                    <p>list price</p>
+                                                                </div>
+                                                                <div class="custom-product-price-wrapper">
+                                                                    {% render 'price', product: product %}
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-btns-row">
+                                                                <div class="product-btn-wrapper">
+                                                                    <a href="{{ product.url | within: collection }}"
+                                                                        class="product-btn">Description</a>
+                                                                </div>
+                                                                <div class="product-btn-wrapper">
+                                                                    <a href="#cross-reference"
+                                                                        class="product-btn open-popup-link">Cross
+                                                                        Reference</a>
+                                                                    <div class="cross-reference-wrapper">
+                                                                        {{
+                                                                        product.metafields.custom.cross_reference.value
+                                                                        }}
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-btn-wrapper">
+                                                                    <a href="{{ product.metafields.custom.installation_instructions.value }}"
+                                                                        class="product-btn">Installation
+                                                                        Instructions</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="add-to-cart-wrapper">
+                                                            <form action="/cart/add" method="post">
+                                                                {% if product.variants.size == 1 %}
+                                                                <input type="hidden" name="id"
+                                                                    value="{{ product.variants.first.id }}" />
+                                                                <div class="add-to-cart-wrapper">
+                                                                    <button type="submit" name="add"
+                                                                        class="palm-add-to-cart">
+                                                                        Add To Cart
+                                                                    </button>
+                                                                </div>
+                                                                {% else %}
+                                                                <div class="add-to-cart-wrapper">
+                                                                    <a href="{{ product.url | within: collection }}"
+                                                                        class="palm-add-to-cart">Show
+                                                                        Details</a>
+                                                                </div>
+                                                                {% endif %}
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+
+    // function openProducts(evt, catName) {
+    //     var i, tabcontent, tablinks;
+    //     tabcontent = document.getElementsByClassName("products-tabs");
+    //     for (i = 0; i < tabcontent.length; i++) {
+    //         tabcontent[i].style.display = "none";
+    //     }
+    //     tablinks = document.getElementsByClassName("tablinks");
+    //     for (i = 0; i < tablinks.length; i++) {
+    //         tablinks[i].className = tablinks[i].className.replace(" active", "");
+    //     }
+    //     document.getElementById(catName).style.display = "block";
+    //     evt.currentTarget.className += " active";
+    // }
+
+
+</script>
+
+
+
+
+{% schema %}
+{
+"name": "Product Page",
+"settings": [
+{
+"type": "text",
+"id": "product_title",
+"label": "Section Heading"
+},
+{
+"type": "text",
+"id": "product_text",
+"label": "Section Button Text"
+},
+{
+"type": "text",
+"id": "category_title",
+"label": "Sidebar Title"
+},
+{
+"type": "text",
+"id": "product_btn_text",
+"label": "Section Button Text"
+},
+{
+"type": "url",
+"id": "product_btn_link",
+"label": "Section Button Link"
+},
+{
+"type": "text",
+"id": "cross_reference_title",
+"label": "Cross Reference Title"
+}
+],
+"presets": [
+{
+"name": "Products"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
