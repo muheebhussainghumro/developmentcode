@@ -33,15 +33,16 @@
 
     <script src="../js/jquery.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.stat-number').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text().replace(/,/g, '')
+
+        jQuery(document).ready(function () {
+            jQuery('.stat-number').each(function () {
+                jQuery(this).prop('Counter', 0).animate({
+                    Counter: jQuery(this).text().replace(/,/g, '')
                 }, {
                     duration: 4000,
                     easing: 'swing',
                     step: function (now) {
-                        $(this).text(Math.ceil(now).toLocaleString('en'));
+                        jQuery(this).text(Math.ceil(now).toLocaleString('en'));
                     }
                 });
             });

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>OpenStreetMap Live Search</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/lodash/lodash.min.js"></script>
+    </head>
+
+    <style>
+        div#search-results {
+            background: #fff;
+            overflow: hidden;
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            max-width: 788px;
+            margin: auto;
+            padding: 0px 20px;
+            box-shadow: 0px 10px 15px rgb(0 0 0 / 15%);
+        }
+
+        div#search-results option {
+            font-size: 16px;
+            color: #181818 !important;
+            cursor: pointer;
+        }
+
+        div#search-results option:first-child {
+            padding-top: 10px;
+        }
+
+        div#search-results option:last-child {
+            padding-bottom: 10px;
+        }
+    </style>
+
+    <body>
+        <form id="address-search">
+            <div class="search-form">
+                <input id="search-input-street" type="search" name="add-search-street"
+                    placeholder="Enter your property street address">
+                <a href="#forminator-module-492" class="search-form-button"></a>
+            </div>
+            <div id="search-results"></div>
+        </form>
+
+        <script>
+            const searchInputStreet = document.getElementById('search-input-street');
+            const searchInputAddress1 = document.getElementById('search-input-address-1');
+            const searchResults = document.getElementById('search-results');
+            let timeoutId;
+            searchInputStreet.addEventListener('input', event => {
+                const query = event.target.value;
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    if (query.length > 2) {
+                        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=us`;
+                        axios.get(url)
+                            .then(response => {
+                                const results = response.data;
+                                searchResults.innerHTML = '';
+                                _.each(results, result => {
+                                    const option = document.createElement('option');
+                                    option.value = result.display_name;
+                                    option.text = result.display_name;
+                                    option.addEventListener('click', event => {
+                                        searchInputStreet.value = result.display_name;
+                                        searchResults.innerHTML = '';
+                                    });
+                                    searchResults.appendChild(option);
+                                });
+                                searchResults.size = results.length;
+                            })
+                            .catch(error => {
+                                console.error(error);
+                            });
+                    } else {
+                        searchResults.innerHTML = '';
+                    }
+                }, 500);
+            });
+            searchInputAddress1.addEventListener('input', event => {
+                const query = event.target.value;
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    if (query.length > 2) {
+                        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=us`;
+                        axios.get(url)
+                            .then(response => {
+                                const results = response.data;
+                                searchResults.innerHTML = '';
+                                _.each(results, result => {
+                                    const option = document.createElement('option');
+                                    option.value = result.display_name;
+                                    option.text = result.display_name;
+                                    option.addEventListener('click', event => {
+                                        searchInputAddress1.value = result.display_name;
+                                        searchResults.innerHTML = '';
+                                    });
+                                    searchResults.appendChild(option);
+                                });
+                                searchResults.size = results.length;
+                            })
+                            .catch(error => {
+                                console.error(error);
+                            });
+                    } else {
+                        searchResults.innerHTML = '';
+                    }
+                }, 500);
+            });
+
+        </script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>

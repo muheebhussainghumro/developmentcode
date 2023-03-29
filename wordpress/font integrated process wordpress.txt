@@ -1,0 +1,18 @@
+Font Integrated Progress
+
+download fonts > change in transfonter ( for css code)
+
+eseospace.dev/cpanel 
+> file manager 
+> public html 
+> websites 
+> select website* 
+> wp-content 
+> themes 
+> woodmart-child 
+> ( create folder fonts ) fonts (upload extracted files of fonts 
+> add css to wordpress 
+> change url to ( fonts/.....) 
+> then call it by name in theme setting typography
+
+

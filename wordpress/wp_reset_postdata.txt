@@ -1,0 +1,6 @@
+>> paste this function in end while loop  ==== wp_reset_postdata() ====
+<?php endwhile; wp_reset_postdata();?>
+
+
+>> to remove review
+

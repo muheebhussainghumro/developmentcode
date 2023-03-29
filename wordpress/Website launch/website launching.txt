@@ -1,0 +1,65 @@
+Website Launch Through PHP Code 
+
+ Open Cpanel 
+
+> "ssl/tls status" (select all and run autossl) > 
+> wordpress manager by softaculous 
+> install wordpress 
+> put email(at bottom) developer@eseospace
+> open admisitrative url
+
+> install (all in one migration) plugin in previous eseospace webiste 
+> all in one migration
+> export to > file (do not close tab)
+
+ Open New Wordpress Wesbite
+
+> install (all in one migration) plugin
+> open cpanal dashboard
+> file manager
+> your webiste* > public html > wp-content >  allio-backup > create file (abc.php) 
+> edit abc.php file
+> paste this php code 
+
+<?php
+define('BUFSIZ', 4095);
+$url = 'https://eseo.space/websites/takeoffadvising/wp-content/ai1wm-backups/eseo.space-websites-takeoffadvising-20230303-162331-495.wpress';
+$rfile = fopen($url, 'r');
+$lfile = fopen(basename($url), 'w');
+while(!feof($rfile))
+fwrite($lfile, fread($rfile, BUFSIZ), BUFSIZ);
+fclose($rfile);
+fclose($lfile);
+?>
+
+> change its url from previous website plugin
+> then save abc.php file
+> copy its url from wp-content to its end
+> and paste it after your url of new website 
+> if caution page appears then click (visit this unsafe site)
+> reload cpanel abc.php file page and you can see file of website 
+> delete abc.php file 
+> then in new webiste 
+> plugin (all in one migration) > backups
+> restore 
+
+if website file size is bigger {
+	> go to website cpanel 
+	> file manager
+	> public html 
+	> plugins
+	> all in one migration 
+	> constants.php (edit)
+	> find max file (change its size around 34)
+}
+
+After Migrating
+
+> set permalinks
+> reading
+> uncheck discourage search engine
+> theme setting ( save options )
+> theme editor ( change eseospace links ) 
+> user 
+> change password and update to portal !   
+> setting > discussion > uncheck (anyone can comment)

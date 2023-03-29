@@ -1,0 +1,8 @@
+link asset file
+
+> Asset
+> open adn select file
+> save 
+
+> theme.liquid
+> <link rel="stylesheet" type="text/css" href="{{ 'boostarp-grid.min.css' | asset_url }}">

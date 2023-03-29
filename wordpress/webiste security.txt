@@ -1,0 +1,33 @@
+> open webiste 
+> update plugins
+> update js composer
+> replace with current 
+> scan website (wordfence)
+
+> change wordpress password
+
+> don't allow to comments 
+
+> cpanel 
+> phpmyadmin
+> wp-users
+> edit
+> user login ( eseospace_admin )
+
+> change cpanel password
+> password and security
+
+== If virus occurs ==
+
+> cpanal 
+> public html
+> upload woodmartcore.zip
+> select all except (woodmartcore, wp confiq, wp-content)
+> extract woodmartcore.zip
+
+> then upload woodmart parent theme 
+
+
+
+
+

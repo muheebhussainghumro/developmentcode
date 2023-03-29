@@ -1,0 +1,7 @@
+<?php if (has_post_thumbnail()):  
+        $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'large', true);
+       ?>
+      <img src="<?php echo $thumbnail[0]; ?>" alt="Picture" class="featured-image">			
+<?php else: ?>
+      <img src="<?php echo site_url('/wp-content/uploads/2022/12/placeholder.png'); ?>" alt="Picture" class="featured-image">
+<?php endif; ?>

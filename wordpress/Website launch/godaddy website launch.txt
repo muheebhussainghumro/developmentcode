@@ -1,0 +1,10 @@
+> login into godaddy 
+> delegated access
+> wordpress & hosting
+> go to client hosting 
+> cpanel
+> check domains
+> take backup of their old website 
+> if not on wordpress 
+> public html > select all files > zip archive > download
+> then simply download wordpress and migrate your website 

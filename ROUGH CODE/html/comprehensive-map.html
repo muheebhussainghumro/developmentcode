@@ -9,10 +9,110 @@
 </head>
 
 <style>
+        .comprehensive-image-map .wpb_wrapper {
+                position: relative;
+        }
 
+        .comprehensive-image-map .wpb_wrapper img {
+                width: 100%;
+                pointer-events: none;
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map>a {
+                position: absolute;
+                border-radius: 20px;
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map>a,
+        .comprehensive-image-map .wpb_wrapper .image-map>a img {
+                display: block;
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map>a img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transition: 0.1s ease-in-out;
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map>a:hover img {
+                transform: scale(1.05);
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map>p {
+                position: absolute;
+                font-size: 20px;
+                font-weight: 700;
+                color: #3a3a3a !important;
+                text-align: center;
+                pointer-events: none;
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map>a {
+                animation-name: pulse-animation;
+                animation-duration: 0.6s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+        }
+
+        .comprehensive-image-map .wpb_wrapper .image-map:hover>a {
+                animation-play-state: paused;
+        }
+
+        @keyframes pulse-animation {
+                0% {
+                        filter: drop-shadow(0 0 15px rgb(32 88 156 / 0.3));
+                }
+
+                100% {
+                        filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.0));
+                }
+        }
 </style>
 
 <body>
+
+
+
+        <img src="https://baytecgroup.com/wp-content/uploads/2023/02/comprehensive-solution-1.png">
+        <img src="https://baytecgroup.com/wp-content/uploads/2023/02/comprehensive-solution-2.png">
+        <img src="https://baytecgroup.com/wp-content/uploads/2023/02/comprehensive-solution-3.png">
+        <div class="image-map">
+                <a href="#antenna" class="woodmart-open-popup" style="left: 5%; top: 0; width: 10%; height: 20%">
+                        <img src="https://baytecgroup.com/wp-content/uploads/2023/02/sub6antenna.png">
+                </a>
+                <a href="#small-cell" class="woodmart-open-popup"
+                        style="left: 60.5%; top: 85.5%; width: 6%; height: 15%">
+                        <img src="https://baytecgroup.com/wp-content/uploads/2023/02/smartcell.png"></a>
+                <a href="#femto-cell" class="woodmart-open-popup"
+                        style="left: 69%;top: 84.5%;width: 6.5%;height: 15%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/Femtocell-1-e1676995389906.png"></a>
+                <a href="#ngdu" class="woodmart-open-popup" style="left: 5.5%; top: 48%; width: 7.5%; height: 16%"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/opticalswitch-1.png"></a>
+                <a href="#pole-mount" class="woodmart-open-popup"
+                        style="left: 5%; top: 77%; width: 10%; height: 18%"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/outdoorrectifierbatter.png"></a>
+                <a href="#rack-mount" class="woodmart-open-popup"
+                        style="left: 32%;top: 70%;width: 18%;height: 27%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/rack-mount-min.png"></a>
+                <a href="#emaas" class="woodmart-open-popup" style="left: 45%;top: 1%;width: 20%;height: 24%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/Screen-Shot-2023-02-21-at-11.32.10-AM-min.png"></a>
+                <a href="#eson" class="woodmart-open-popup" style="left: 71%;top: 0%;width: 20%;height: 25%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/eMaas.png"></a>
+                <a href="#sfp" class="woodmart-open-popup" style="left: 68%;top: 40%;width: 10%;height: 14%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/central-datacenter-min.png"></a>
+                <a href="#sfp" class="woodmart-open-popup" style="left: 53%;top: 56.5%;width: 8%;height: 12%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/dark-fiber-min.png"></a>
+                <a href="#sfp" class="woodmart-open-popup" style="left: 39.5%;top: 46%;width: 9%;height: 14%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/edge-datacenter-min.png"></a>
+                <a href="#sfp" class="woodmart-open-popup" style="left: -1%;top: 58%;width: 9%;height: 14%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/fronthaul-sfp-min.png"></a>
+                <a href="#sfp" class="woodmart-open-popup" style="left: 21%;top: 57.5%;width: 7%;height: 10%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/midhaul-sfp-min.png"></a>
+                <p class="map-label" style="left: 71%;top: -7%;width: 20%;height: 25%;">eMaaS</p>
+                <p class="map-label" style="left: 45%;top: -7%;width: 20%;height: 20%;">eSon</p>
+        </div>
+
 
 
         <img src="https://baytecgroup.com/wp-content/uploads/2023/02/comprehensive-solution-min-1.png">
@@ -34,8 +134,8 @@
                 <a href="#rack-mount" class="woodmart-open-popup"
                         style="left: 32%;top: 70%;width: 18%;height: 27%;"><img
                                 src="https://baytecgroup.com/wp-content/uploads/2023/02/rack-mount-min.png"></a>
-                <a href="#emaas" class="woodmart-open-popup" style="left: 45%;top: 2%;width: 20%;height: 20%;"><img
-                                src="https://baytecgroup.com/wp-content/uploads/2023/02/realtimenetwork.png"></a>
+                <a href="#emaas" class="woodmart-open-popup" style="left: 45%;top: 1%;width: 20%;height: 24%;"><img
+                                src="https://baytecgroup.com/wp-content/uploads/2023/02/Screen-Shot-2023-02-21-at-11.32.10-AM-min.png"></a>
                 <a href="#eson" class="woodmart-open-popup" style="left: 71%;top: 0%;width: 20%;height: 25%;"><img
                                 src="https://baytecgroup.com/wp-content/uploads/2023/02/eMaas.png"></a>
                 <a href="#sfp" class="woodmart-open-popup" style="left: 68%;top: 40%;width: 10%;height: 14%;"><img
@@ -48,8 +148,9 @@
                                 src="https://baytecgroup.com/wp-content/uploads/2023/02/fronthaul-sfp-min.png"></a>
                 <a href="#sfp" class="woodmart-open-popup" style="left: 21%;top: 57.5%;width: 7%;height: 10%;"><img
                                 src="https://baytecgroup.com/wp-content/uploads/2023/02/midhaul-sfp-min.png"></a>
+                <p class="map-label" style="left: 71%;top: -7%;width: 20%;height: 25%;">eSon</p>
+                <p class="map-label" style="left: 45%;top: -7%;width: 20%;height: 20%;">eMaas</p>
         </div>
-
 
 
         <a href="#rack-mount" class="woodmart-open-popup" style="left: 33%; top: 84%; width: 6.5%; height: 9%"><img
@@ -58,5 +159,6 @@
                         src="https://baytecgroup.com/wp-content/uploads/2023/02/ngdoutdoor.png"></a>
 
 </body>
+
 
 </html>

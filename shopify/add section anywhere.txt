@@ -1,0 +1,7 @@
+> Section
+> Create new file 
+> section-name.liquid
+> save 
+
+> open page where you want to display section
+> {% section 'product-section' %}

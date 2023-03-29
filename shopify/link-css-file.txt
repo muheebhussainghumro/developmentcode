@@ -1,0 +1,3 @@
+>> create mystyle.css file in assets
+>> link file in theme.	liquid
+<link rel="stylesheet" type="text/css" href="{{ 'mystyle.css' | asset_url }}">

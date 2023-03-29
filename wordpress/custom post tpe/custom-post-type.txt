@@ -1,0 +1,11 @@
+Events
+grid
+upcoming events 
+past events
+information of events (archive)
+
+
+custom post type
+single-events.php file 
+archive-events.php
+paginaition

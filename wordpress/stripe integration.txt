@@ -1,0 +1,8 @@
+> upload plugin
+> woocommerce 
+> setting
+> payment 
+> stripe
+> add pk key in published key 
+> add sk key in security key 
+> copy and paste the bold link in last option ...

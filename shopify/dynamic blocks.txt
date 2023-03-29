@@ -1,0 +1,69 @@
+======== DYNAMIC TEXT AND IMAGE ========
+
+{% schema %}
+  {
+    "name": "Header Section",
+    "settings": [
+      {
+        "type": "html",
+        "id": "company_care_title",
+        "label": "Company Care Title"
+      },
+      {
+        "type": "textarea",
+        "id": "company_care_content",
+        "label": "Company Care Content"
+      },
+      { 
+        "type": "html",
+        "id": "about_title",
+        "label": "About Title"
+      },
+      { 
+        "type": "textarea",
+        "id": "about_content",
+        "label": "About content"
+      },
+      {
+        "type": "image_picker",
+        "id": "about_image",
+        "label": "About Image"
+      },
+      { 
+        "type": "html",
+        "id": "about_banner_text",
+        "label": "About Banner Text"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+======== DYNAMIC IMAGE GALLERY / BLOCKS ========
+
+{% schema %}
+  {
+    "name": "Featured In",
+    "settings": [
+      {
+        "type": "html",
+        "id": "feature_in_title",
+        "label": "Section Heading"
+      }
+    ],
+    "blocks": [
+     {
+       "name": "Feature Logo",
+       "type": "feature_in",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "feature_in_image",
+           "label": "Featured Logo"
+         }
+       ]
+     }
+   ]
+  }
+{% endschema %}

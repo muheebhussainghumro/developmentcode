@@ -1,0 +1,7 @@
+> section
+> add new > custom-footer.liquid
+
+> theme liquid 
+> add this above default footer 
+> {% section 'custom-footer' %} 
+> and hide default footer (display none) 

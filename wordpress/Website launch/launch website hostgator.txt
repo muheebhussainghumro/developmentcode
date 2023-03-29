@@ -1,0 +1,8 @@
+> hostgator login
+> hosting
+> open cpanel 
+> create folder in main tab (domain name incl .com) 
+> install wordpress 
+> domain 
+> create new domain 
+> connect it with your domain

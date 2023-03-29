@@ -1,0 +1,33 @@
+events post type 
+
+
+> Create post type
+> Install and activate advance custom field plugin (2m+ activation)
+> Then create custom_event.php file in cpanel
+> change date format to ymd (for return to reuse this date/ or for comparison)
+> change post type source "events"
+> Add fields name in "meta key" and "array key"
+
+
+<!-- POST WITH CONDITIONS -->
+<?php  
+    $today = date('Ymd'); // 20221012
+    $mainarray = array(
+        'post_type' => array('events'),
+        'post_status' => array('publish'),
+        'orderby' => 'meta_value_num',
+        'order' => 'ASC',
+        'meta_key' => 'event_date',
+        'posts_per_page' => 4,
+        'meta_query' => array(
+            array(
+                'key' => 'event_date',
+                'value' => $today,
+                'type' => 'numeric',
+                'compare' => '>='
+            )
+        ),
+        
+    );
+    $q = new WP_Query($mainarray);
+?>

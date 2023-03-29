@@ -1,0 +1,15 @@
+WP ENGINE SITE MIGRATE
+
+> add your site in eseospace
+> check nameservers from icann lookup and select the server and fill basic requirements
+> Install wp engine automated in staging site
+> enter email "developer@eseospace.com" and get started
+> migrate by inputing the required field from wo engine > site migration
+> site will be migrated in subdomain of wp engine
+> domain > add domain
+> upgrade domain network in domain
+> Paste records from advanced network in review
+
+    CNAME: wp.wpenginepowered.com
+    A record:  141.193.213.10
+    A record: 141.193.213.11

@@ -1,0 +1,51 @@
+> create section and call it 
+> {% section 'product-section' %}
+
+===
+
+<div class="custom-product-section">
+    <div class="container">
+        <div class="row custom-product-row">
+            {% for product in collections.feature-product.products limit: 6 %}
+            <div class="col-md-4 custom-product-wrapper">
+                <div class="product-inner">
+                    <div class="custom-product-image">
+                        <img src="{{ product.featured_image | product_img_url: 'large' }}">
+                    </div>
+                    <div class="custom-product-detail">
+                        <div class="custom-product-title-wrapper">
+                            <h4 class="custom-product-title">{{ product.title | escape }}</h4>
+                        </div>
+                        <div class="custom-product-price-wrapper">
+                            <p class="custom-product-price">{% include 'product-price-listing', product: product %}</p>
+                        </div>
+                    </div>
+                    <div class="custom-product-add-to-cart">
+                        <form action="/cart/add" method="post">
+                            {% if product.variants.size == 1 %}
+                            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                            <div class="add-to-cart-wrapper">
+                                <button type="submit" name="add" class="palm-add-to-cart">
+                                    Add To Cart
+                                </button>
+                            </div>
+                            {% else %}
+                            <div class="add-to-cart-wrapper">
+                                <a href="{{ product.url | within: collection }}" class="palm-add-to-cart">Show
+                                    Details</a>
+                            </div>
+                            {% endif %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+====
+
+> Save 
+>
+

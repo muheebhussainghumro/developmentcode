@@ -1,0 +1,18 @@
+<!-- for active class -->
+
+<!-- >> add jquery in asssets -->
+
+<script src="{{ 'jquery-3.6.0.min.js' | asset_url }}"></script>
+
+<script type="text/javascript">
+    $(function () {
+        var current = location.pathname;
+        $('.footer-menu ul.custom-menu li a').each(function () {
+            var $this = $(this);
+            // if the current path is like this link, make it active
+            if ($this.attr('href') == current) {
+                $this.addClass('active');
+            }
+        })
+    });
+</script>

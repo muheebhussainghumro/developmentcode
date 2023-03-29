@@ -1,0 +1,6 @@
+>> wp config code 
+define( 'WP_AUTO_UPDATE_CORE', true );
+
+
+>> woodmart child > functions.php code
+add_filter( 'auto_update_plugin', '__return_true' );

@@ -1,0 +1,18 @@
+add this is function.php
+
+>>>> owl carousl 
+wp_enqueue_style('owl-carousel-min-css', 'https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css', array(), '2.3.4', 'all' );
+wp_enqueue_script('owl-carousel-js', 'https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js', array(), '2.3.4', true );
+
+
+>>>> bootstrap
+wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' );
+>>>> bootstrap grid
+wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css' );
+
+
+
+> create file in child theme 
+> script-handler.js
+> paste this code in
+wp_enqueue_script( 'custom-script-js', get_stylesheet_directory_uri() . '/script-handler.js', array() );

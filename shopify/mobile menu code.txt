@@ -1,0 +1,83 @@
+@media screen and (max-width: 1024px){
+  .small--hide,
+  div#shopify-section-custom-header {
+    display: none !important;
+  }
+  .site-header__menu,
+  .mobile-nav-wrapper.js-menu--is-open{
+    display: block !important;
+  }
+  .site-header__mobile-nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+  }
+  header.site-header.border-bottom.logo--left .grid__item {
+    padding-left: 0px!important;
+    width: 100% !important;
+  }
+}
+
+
+==== for desktop designed icon =====
+
+
+.small--hide,
+div#shopify-section-custom-header {
+  visibility: hidden !important;
+}
+.site-header__menu,
+.mobile-nav-wrapper.js-menu--is-open {
+  display: block !important;
+  position: absolute;
+  left: 0px;
+}
+.site-header__mobile-nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+header.site-header.border-bottom.logo--left .grid__item {
+  padding-left: 0px !important;
+}
+.site-header__icons-wrapper {
+  position: static !important;
+}
+.grid__item.medium-up--one-quarter.text-right.site-header__icons {
+  position: static;
+}
+nav.mobile-nav-wrapper.medium-up--hide.critical-hidden.js-menu--is-open {
+  z-index: 5;
+}
+div#PageContainer {
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+nav.mobile-nav-wrapper {
+  background-color: #e5496e !important;
+}
+li.mobile-nav__item.border-bottom {
+  border-bottom: none !important;
+}
+ul#MobileNav {
+  border-bottom: 2px solid #e5496e !important;
+}
+ul#MobileNav li a {
+  color: #fff !important;
+}
+ul#MobileNav li a.mobile-nav__link.mobile-nav__link--active span {
+  border-bottom: 2px solid #fff !important;
+}

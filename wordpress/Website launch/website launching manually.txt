@@ -1,0 +1,13 @@
+>> zip and downalod wp-content folder
+>> export data base from phpmyadmin of your webiste
+>> zip and download 
+
+New Website
+
+>> upload and extract wp-content folder
+>> after uploading
+>> import data base in phpmyadmin
+>> edit wp-confiq and change "wpop" to "wp"
+>> phpmyadmin 
+>> wp-options change its url to new url (otherwise it will redirect you to older website)
+>> delete wpop files in your webiste from phpmyadmin 

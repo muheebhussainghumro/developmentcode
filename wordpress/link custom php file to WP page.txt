@@ -1,0 +1,11 @@
+> create .php file in woodmart child 
+> theme
+> paste this code 
+<?php /* Template Name: Find Job */  get_header(); ?>
+
+/* your code here /*
+
+<?php get_footer(); ?>
+
+
+> after that, set default templete to your php file 

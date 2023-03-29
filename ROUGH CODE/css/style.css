@@ -1,101 +1,14 @@
-.wd-hover-button .product-element-top:before,
-.wd-hover-info-alt .product-element-top:before {
-  background: linear-gradient(
-      0deg,
-      rgba(34, 90, 146, 0.3),
-      rgba(34, 90, 146, 0.3)
-    ),
-    #c4c4c4 !important;
-}
-.product-wrapper:hover {
-  background: #f3f6fb;
-}
-.product-wrapper {
-  transition: 0.2s ease-in-out;
-  padding-bottom: 15px;
-}
-.product-wrapper .wd-entities-title {
-  font-weight: 700;
-  font-size: 24px !important;
-  color: #333333;
-}
-.product-wrapper .wd-product-cats {
-  display: none;
-}
-.product-wrapper .woocommerce-Price-amount.amount {
-  font-size: 18px !important;
-  color: #333333;
-}
-.woodmart-add-btn:before,
-.woodmart-add-btn:after {
-  content: "";
-  background: #96a4b5 !important;
-  position: absolute;
-  left: 0;
-  top: -2px;
-  width: 40%;
-  height: 4px;
-  display: block;
-  z-index: 5;
-  transition: 0.2s ease-in-out;
-}
-.woodmart-add-btn:after {
-  right: 0;
-  bottom: -2px;
-  left: unset;
-  top: unset;
-}
-.woodmart-add-btn:hover:before,
-.woodmart-add-btn:hover:after {
-  width: 0;
-}
-.woodmart-add-btn {
-  max-width: max-content;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-.add_to_cart_button {
-  border-color: #fff !important;
+.footer-menu ul li a {
   font-size: 16px;
-  text-transform: uppercase;
-  color: #ffffff;
-  min-width: 160px;
-  min-height: 60px;
+  color: #000b1e;
 }
-.shop-tabs .vc_tta-panel-body,
-.shop-tabs .vc_tta-panels {
-  background: none !important;
-  border: none !important;
-}
-.shop-tabs ul.vc_tta-tabs-list li a {
-  font-size: 20px !important;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000 !important;
-  border-right: 2px solid #000 !important;
-  border-radius: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-.shop-tabs ul.vc_tta-tabs-list li.vc_active a {
-  color: #225a92 !important;
-  font-weight: 700 !important;
-}
-.shop-tabs ul.vc_tta-tabs-list li a span:after {
-  display: none !important;
-}
-ul.vc_tta-tabs-list li {
-  padding: 10px 0 !important;
-}
-@media (max-width: 1024px) {
-  ul.vc_tta-tabs-list li a {
-    font-size: 16px !important;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000 !important;
-    border-right: 2px solid #000 !important;
-    border-radius: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
+.services-menu ul li a:before {
+  content: "";
+  background: url(http://eseo.space/websites/landscapingsacramento/wp-content/uploads/2023/03/greater-min.png);
+  width: 6px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

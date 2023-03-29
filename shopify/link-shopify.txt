@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="{{ 'bootstrap-grid.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'owl.carousel.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'direct-hardware.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<script src="{{ 'jquery-3.6.0.min.js' | asset_url }}"></script>
+<script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+<script src="https://kit.fontawesome.com/27de28f114.js"></script>
+<script src="{{ 'solar-energy.js' | asset_url }}"></script>
+
+
+
+
+
+
+
+======== bootstrap + jqeury + owl carousel + mycss + myscript ======== 
+
+<link rel="stylesheet" type="text/css" href="{{ 'bootstrap-grid.min.css' | asset_url }}">
+<link rel="stylesheet" type="text/css" href="{{ 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' }}">
+<link rel="stylesheet" type="text/css" href="{{ 'mystyle.css' | asset_url }}">
+
+<script src="{{ 'jquery.js' | asset_url }}" ></script>
+<script src="{{ 'owl.carousel.min.js' | asset_url }}" ></script>
+<script src="{{ 'myscript.js' | asset_url }}" ></script>
+ 
+# OWL CAROUSEL + BOOTSTRAP GRID + CUSTOM STYLE
+
+<link rel="stylesheet" type="text/css" href="{{ 'owl.carousel.min.css' | asset_url }}">
+<link rel="stylesheet" type="text/css" href="{{ 'bootstrap-grid.min.css' | asset_url }}">
+<link rel="stylesheet" type="text/css" href="{{ 'mystyle.css' | asset_url }}">
+
+<!-- 
+
+# JQUERY + OWL CAROUSEL + CUSTOM SCRIPTS + FONT AWESOME
+
+ -->
+<script src="{{ 'jquery-3.6.0.min.js' | asset_url }}"></script>
+<script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+<script src="{{ 'sweet-palm.js' | asset_url }}"></script>
+<script src="https://kit.fontawesome.com/27de28f114.js" crossorigin="anonymous"></script>
+
+
+
+  

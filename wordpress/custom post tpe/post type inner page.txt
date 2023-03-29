@@ -1,0 +1,5 @@
+> cpanel
+> website 
+> woodmart child 
+> create file ( single-( *post-type-slug* ) )
+this will over write  your iner page and you can create custom page 

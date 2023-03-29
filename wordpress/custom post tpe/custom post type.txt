@@ -1,0 +1,13 @@
+
+> change all plural text (with s)
+> also change all singular text (without s)
+> add position menu_position 
+> add icon in menu_icon
+
+> eseospace.dev 
+> public html
+> website 
+> your website*
+> woodmart child
+> create custom post php file
+> call it with this shortcode ("  [cs-template-name page="custom_blog_template"]  ") 

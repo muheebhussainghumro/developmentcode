@@ -1,0 +1,10 @@
+> public html
+> website
+> create a new folder for new website and paste the files from old website folder
+> create data base for new(duplicated) website
+> phpmyadmin (export old website database)
+> import it to the new website databse
+> then change url of the new website from phpmyadmin > wp-options
+> change url using go live
+
+make sure to match the new database name to new wordpress

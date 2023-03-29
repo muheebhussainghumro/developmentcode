@@ -1,0 +1,17 @@
+Wordpress Installation 
+
+> eseospace.dev/cpanel 
+> file manager 
+> public html 
+> websites 
+> extract wordpress zip file 
+> change its name to your site 
+> then create data base from cpanel dashboard (mysql) 
+> add user to database
+> manage user privilege (select all make changes)
+> then open website in chrome eseospace.dev/websites/....... then install wordpress  
+> email ( developer@eseospace.com )
+
+
+site user pssword
+Demo1859*1990/-

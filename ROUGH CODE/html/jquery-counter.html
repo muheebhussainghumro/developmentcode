@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        margin-top: 200px;
+    }
+
+    .col-md-4 {
+        text-align: center;
+        padding-bottom: 50px;
+        border-right: 1px dashed black;
+    }
+
+    .col-md-4:last-child {
+        border-right: 0px solid black;
+    }
+
+    .counter {
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+
+    i {
+        font-size: 20px !Important;
+    }
+
+    @media (max-width: 991px) {
+        .col-md-4 {
+            border-right: 0px dashed black;
+            border-bottom: 1px dashed black;
+            width: 50%;
+            margin: auto auto;
+        }
+
+        .col-md-4:last-child {
+            border-bottom: 0px dashed black;
+        }
+    }
+</style>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1><span class="counter">2,523</span></h1>
+                <h3>Customers</h3>
+                <i class="fa fa-users"></i>
+            </div>
+            <div class="col-md-4">
+                <h1><span class="counter">63,075</span></h1>
+                <h3>Total Web Pages</h3>
+                <i class="fa fa-desktop"></i>
+            </div>
+            <div class="col-md-4">
+                <h1><span class="counter">12,218</span></h1>
+                <h3>Cups Of Coffee</h3>
+                <i class="fa fa-coffee"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/$/3.6.3/$.min.js"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 2000
+        });
+        $('.counter').addClass('animated fadeInDownBig');
+        $('h3').addClass('animated fadeIn');
+    </script>
+
+</body>
+
+</html>

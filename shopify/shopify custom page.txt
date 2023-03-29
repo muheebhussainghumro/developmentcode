@@ -1,0 +1,47 @@
+> create a page 
+> edits page in the customizer
+> create section
+> for custom design call section with preset in the customizer
+
+{% schema %}
+{
+"name": "Product Page",
+"settings": [
+{
+"type": "text",
+"id": "product_title",
+"label": "Section Heading"
+},
+{
+"type": "text",
+"id": "product_text",
+"label": "Section Button Text"
+},
+{
+"type": "text",
+"id": "category_title",
+"label": "Sidebar Title"
+},
+{
+"type": "text",
+"id": "product_btn_text",
+"label": "Section Button Text"
+},
+{
+"type": "url",
+"id": "product_btn_link",
+"label": "Section Button Link"
+},
+{
+"type": "text",
+"id": "cross_reference_title",
+"label": "Cross Reference Title"
+}
+],
+"presets": [
+{
+"name": "Products"
+}
+]
+}
+{% endschema %}

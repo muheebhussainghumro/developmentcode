@@ -1,0 +1,9 @@
+<div class="footer-menu">
+    <ul class="custom-menu">
+     {% for link in linklists.site-menu.links %}
+       <li>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+       </li>
+      {% endfor %}
+     </ul>
+   </div>

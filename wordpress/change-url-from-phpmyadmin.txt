@@ -1,0 +1,3 @@
+> phpmyadmin
+> wp_option
+> change url to its origional name and save 

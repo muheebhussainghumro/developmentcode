@@ -1,0 +1,39 @@
+[cs-template-name page="custom_blog_template"]
+
+[cs-template-name page="form-referral_program"]
+
+
+[cs-template-name page="template_blog"]
+
+ 
+
+
+
+login-main-row
+
+[cs-template-name page="template_blog"]
+
+
+---- shortcode code for woodmart child ----
+
+
+function cs_template_shortcode_wp( $atts ) {
+    $atts = shortcode_atts( array(
+        'page' => ''
+    ), $atts );
+    ob_start();
+    get_template_part($atts['page']);
+    return ob_get_clean();
+}
+add_shortcode( 'cs-template-name','cs_template_shortcode_wp' );
+
+[cs-template-name page="template_blog"]
+
+
+---- shortcode for html block -----
+
+<?php
+
+echo do_shortcode('[html_block id="324"]')
+
+?>

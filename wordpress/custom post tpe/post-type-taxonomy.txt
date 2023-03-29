@@ -1,0 +1,4 @@
+- create career custom post type 
+- create career taxanomy ( Always use  -  in slug )
+  connect taxonomy with career post type slug
+- career career taxanomy template

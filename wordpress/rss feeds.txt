@@ -1,0 +1,2 @@
+> install plugin ( Rss feed )
+> Enter provided link in rss feed plugin and setep how to show your feeds and where 
