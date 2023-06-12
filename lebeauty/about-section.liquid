@@ -1,0 +1,76 @@
+<section id="about-section">
+    <div class="page-width custom-container">
+        <div class="row about-row">
+            <div class="col-md-6 about-col">
+                <div class="primary-button-wrapper">
+                    <img src="{{ section.settings.about_img | img_url: 'master' }}" alt="LE Beauty">
+                </div>
+            </div>
+            <div class="col-md-6 about-col">
+                <div class="about-content-wrapper">
+                    <div class="title-wrapper">
+                        <p class="primary-subtitle">{{ section.settings.about_subtitle }}</p>
+                        <h1 class="primary-title">{{ section.settings.about_title }}</h1>
+                        <div class="title-inner-wrapper">
+                            {{ section.settings.about_inner_text }}
+                        </div>
+                        <div class="custom-btn-wrapper">
+                            <a href="{{ section.settings.btn_url }}" class="btn primary-btn">{{
+                                section.settings.btn_label }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "About",
+"settings": [
+{
+"type": "text",
+"id": "about_title",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "about_subtitle",
+"label": "Subtitle"
+},
+{
+"type": "html",
+"id": "about_inner_text",
+"label": "Text"
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Button Label"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Button Url"
+},
+{
+"type": "image_picker",
+"id": "about_img",
+"label": "Select About Image"
+}
+],
+"presets": [
+{
+"name": "About Section"
+}
+]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

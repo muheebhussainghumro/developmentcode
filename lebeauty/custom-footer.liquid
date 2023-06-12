@@ -1,0 +1,211 @@
+<footer id="footer-section">
+    <div class="page-width custom-container">
+        <div class="row footer-inner-row">
+            <div class="col-lg-5">
+                <div class="footer-title-wrapper">
+                    <h4 class="footer-title">{{ section.settings.footer_title_1 }}</h4>
+                    <p class="primary-subtitle">{{ section.settings.footer_text }}</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="newsletter-form-wrap">
+                        {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter-form__field-wrapper">
+                            <div class="field-wrapper">
+                                <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]"
+                                    class="subs-field" value="{{ form.email }}" aria-required="true" autocorrect="off"
+                                    autocapitalize="off" autocomplete="email" placeholder="Email Address" {% if
+                                    form.errors %} autofocus aria-invalid="true" aria-describedby="ContactFooter-error"
+                                    {% elsif form.posted_successfully? %} aria-describedby="ContactFooter-success" {%
+                                    endif %} placeholder="{{ 'newsletter.label' | t }}" required>
+                                <button type="submit" class="submit-btn" name="commit" id="Subscribe"
+                                    aria-label="{{ 'newsletter.button_label' | t }}">
+                                    Subscribe
+                                </button>
+                            </div>
+                            {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render
+                                'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{
+                                form.errors.messages['email'] }}</small>
+                            {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                        <h3 class="newsletter-form__message newsletter-form__message--success form__message"
+                            id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{
+                            'newsletter.success' | t }}</h3>
+                        {%- endif -%}
+                        {%- endform -%}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="footer-title-wrapper">
+                    <h4 class="footer-title">{{ section.settings.footer_title_2 }}</h4>
+                </div>
+                <div class="footer-menu-wrapper">
+                    <div class="footer-menu">
+                        <ul class="custom-menu">
+                            {% for link in linklists.new-site-map.links %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="footer-title-wrapper">
+                    <h4 class="footer-title">{{ section.settings.footer_title_3 }}</h4>
+                </div>
+                <div class="footer-menu-wrapper">
+                    <div class="footer-menu">
+                        <ul class="custom-menu">
+                            {% for link in linklists.products.links %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="footer-title-wrapper">
+                    <h4 class="footer-title">{{ section.settings.footer_title_4 }}</h4>
+                </div>
+                <div class="contact-wrapper">
+                    <a href="{{ section.settings.address_url }}">{{ section.settings.address }}</a>
+                </div>
+                <div class="contact-wrapper">
+                    <a href="tel:{{ section.settings.phone_link }}">{{ section.settings.phone_number }}</a>
+                </div>
+                <div class="contact-wrapper">
+                    <a href="mailto:{{ section.settings.email_link }}">{{ section.settings.email_address }}</a>
+                </div>
+                <div class="social-icons">
+                    <a href="{{ section.settings.facebook_url }}"><i class="fab fa-facebook-f"></i></a>
+                    <a href="{{ section.settings.twitter_url }}"><i class="fab fa-twitter"></i></i></a>
+                    <a href="{{ section.settings.instagram_url }}"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ section.settings.pinterest_url }}"><i class="fab fa-pinterest"></i></a>
+                    <a href="{{ section.settings.youtube_url }}"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright-row">
+            <div class="copyright-text-wrapper">
+                {{ section.settings.copyright_text }}
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+{% schema %}
+{
+"name": "Custom Footer",
+"settings": [
+{
+"type": "text",
+"id": "footer_title_1",
+"label": "Footer Title"
+},
+{
+"type": "text",
+"id": "footer_text",
+"label": "Footer Text"
+},
+{
+"type": "text",
+"id": "footer_title_2",
+"label": "Footer Title"
+},
+{
+"type": "text",
+"id": "footer_title_3",
+"label": "Footer Title"
+},
+{
+"type": "text",
+"id": "footer_title_4",
+"label": "Footer Title"
+},
+{
+"type": "text",
+"id": "address",
+"label": "Address"
+},
+{
+"type": "url",
+"id": "address_url",
+"label": "Address Url"
+},
+{
+"type": "text",
+"id": "phone_number",
+"label": "Phone Number"
+},
+{
+"type": "text",
+"id": "phone_link",
+"label": "Phone Link"
+},
+{
+"type": "text",
+"id": "email_address",
+"label": "Email Address"
+},
+{
+"type": "text",
+"id": "email_link",
+"label": "Email Link"
+},
+{
+"type": "url",
+"id": "facebook_url",
+"label": "Facebook link"
+},
+{
+"type": "url",
+"id": "twitter_url",
+"label": "Twitter link"
+},
+{
+"type": "url",
+"id": "instagram_url",
+"label": "Instagram link"
+},
+{
+"type": "url",
+"id": "pinterest_url",
+"label": "Pinterest link"
+},
+{
+"type": "url",
+"id": "youtube_url",
+"label": "Youtube link"
+},
+{
+"type": "html",
+"id": "copyright_text",
+"label": "Copyright Text"
+}
+],
+"presets": [
+{
+"name": "Footer"
+}
+]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

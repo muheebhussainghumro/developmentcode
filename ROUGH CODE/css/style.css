@@ -1,14 +1,29 @@
-.footer-menu ul li a {
-  font-size: 16px;
-  color: #000b1e;
+button.pum-close.popmake-close {
+  box-shadow: none !important;
+  font-size: 20px !important;
+  border-radius: 50% !important;
+  border: 1px solid #f1613d !important;
+  width: 50px !important;
+  height: 50px !important;
 }
-.services-menu ul li a:before {
-  content: "";
-  background: url(http://eseo.space/websites/landscapingsacramento/wp-content/uploads/2023/03/greater-min.png);
-  width: 6px;
-  height: 11px;
-  display: inline-block;
-  margin-right: 7px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.pum-container {
+  padding: 5% !important;
+}
+.training-category-form h4 {
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #100a27;
+  margin-bottom: 10px !important;
+}
+.training-category-form p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+.training-category-form .submit-btn {
+  display: block;
+  width: 100% !important;
 }

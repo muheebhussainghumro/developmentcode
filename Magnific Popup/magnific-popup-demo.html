@@ -76,8 +76,6 @@
 
 
 
-
-
     <div id="test-popup" class="white-popup mfp-hide">
         <h2>Popup content</h2>
         <p>Some text here..</p>
@@ -154,7 +152,6 @@
             </div>
         </div>
     </div>
-
     <a href="#cross-reference" class="btn open-popup-link">Show table popup</a>
 
 
@@ -162,6 +159,27 @@
     <script src="../js/jquery.js"></script>
     <script src="./Magnific Popup/jquery.magnific-popup.min.js"></script>
     <script>
+
+        jQuery(document).ready(function ($) {
+
+            jQuery(document).on('click', '.open-popup1', function (event) {
+                event.preventDefault();
+                jQuery(this).magnificPopup({
+                    items: {
+                        src: '.popup-review1',
+                        type: 'inline'
+                    },
+                    fixedContentPos: true,
+                    callbacks: {
+                        beforeOpen: function () { jQuery('html').addClass('mfp-helper'); },
+                        close: function () { jQuery('html').removeClass('mfp-helper'); }
+                    }
+                }).magnificPopup('open');
+
+            });
+        });
+
+
 
         $(document).ready(function () {
             $$(".open-popup-link").magnificPopup({

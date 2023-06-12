@@ -1,0 +1,592 @@
+/******************************************** Header CSS Start ********************************************/
+.whb-main-header .whb-general-header .whb-column:nth-child(1),
+.whb-main-header .whb-general-header .whb-column:nth-child(3) {
+  width: 20% !important;
+}
+.whb-row.whb-header-bottom .wd-header-text {
+  text-align: center !important;
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whb-row.whb-header-bottom .wd-header-text::before {
+  content: "" !important;
+  height: 30px !important;
+  width: 30px !important;
+  background-image: url("https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/Ã°Å¸â€¡ÂºÃ°Å¸â€¡Â¦-1.png") !important;
+  display: flex;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  margin-right: 10px !important;
+}
+.whb-general-header .wd-nav-main > li > a {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+.whb-general-header .wd-nav-main > li > a:hover,
+.whb-general-header .wd-nav-main > li.current-menu-item > a {
+  color: #3239ff !important;
+}
+.whb-general-header .wd-nav-main > li.current-menu-item > a {
+  font-weight: 700 !important;
+}
+header.whb-header .whb-general-header a.btn {
+  background-color: #fff0 !important;
+  border: 1.5px solid rgba(55, 55, 55, 0.8);
+  filter: drop-shadow(0px 12px 26px #484df3) !important;
+  border-radius: 6px;
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(55, 55, 55, 0.8);
+  opacity: 1 !important;
+  padding: 15px 30px !important;
+}
+header.whb-header .whb-general-header a.btn:hover {
+  box-shadow: none !important;
+  filter: drop-shadow(0 0 0 black) !important;
+  background-color: #4348f2 !important;
+  border-color: #fff0 !important;
+  color: #fff !important;
+}
+/******************************************** Header CSS End ********************************************/
+/********************************************* Font face rule css start *********************************************/
+@font-face {
+  font-family: "Bauziet";
+  src: url("fonts/Bauziet-Norm-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bauziet";
+  src: url("fonts/Bauziet-Norm-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bauziet";
+  src: url("fonts/Bauziet-Norm-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/********************************************* Font face rule css end *********************************************/
+
+/******************************************** Home Page CSS Start ********************************************/
+div#home-page-banner {
+  position: relative !important;
+}
+div#home-page-banner::before {
+  content: "" !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    95.06deg,
+    #4b52ff 0.76%,
+    #5e63ee 51.41%,
+    #3239ff 100%
+  );
+  opacity: 0.9;
+}
+.main-page-wrapper {
+  padding-top: 0 !important;
+}
+div#main-banner-text {
+  padding: 70px 0 !important;
+}
+div#main-banner-text h1 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 140%;
+}
+div#main-banner-text p {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+div#home-page-banner .text-center {
+  display: inline-block;
+}
+div#home-page-banner {
+  text-align: center;
+}
+div#home-page-banner .text-center:not(:last-child) {
+  margin-right: 40px;
+}
+div#home-page-banner .text-center a.btn {
+  box-shadow: 0px 12px 16px rgba(72, 77, 243, 0.26);
+  border-radius: 6px;
+  padding: 15px 0 !important;
+  text-align: center;
+  width: 180px;
+  text-transform: uppercase;
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+div#home-page-banner .text-center:last-child a.btn {
+  color: #fff !important;
+  background-color: #fff0 !important;
+}
+div#home-page-banner .wpb_single_image {
+  margin: 0 !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner {
+  background: #fbfbff;
+  border-radius: 6px;
+  padding: 30px !important;
+  min-height: 280px;
+  margin: 0 auto;
+  width: 92%;
+  transition: 0.8s !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner .txt {
+  margin: 0 !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 {
+  padding: 0 !important;
+}
+div#we-help-businesses-inner:not(:last-child) .vc_col-sm-6 {
+  padding-bottom: 20px !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+}
+div#we-help-businesses-inner:not(:last-child) .vc_col-sm-6::before {
+  content: "" !important;
+  height: 1px;
+  width: 80% !important;
+  background-color: #eeeeee !important;
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+div#we-help-businesses-inner .vc_col-sm-6:first-child .vc_column-inner::after {
+  content: "" !important;
+  height: 100% !important;
+  width: 1px !important;
+  background-color: #eee;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+div#we-help-businesses-inner:nth-child(2) .vc_col-sm-6 .vc_column-inner::after {
+  height: 110% !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner:hover {
+  background-color: #fff !important;
+  box-shadow: 0px 4px 26px rgba(190, 190, 190, 0.25) !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner .wpb_single_image {
+  margin-bottom: 20px !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner h3 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 15px;
+  color: #2f2e66 !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner p {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(47, 46, 102, 0.8);
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner p:last-child {
+  margin: 0 !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner p a {
+  color: #4950e9 !important;
+  transition: 0.8s !important;
+}
+div#we-help-businesses-inner .vc_col-sm-6 .vc_column-inner p a:hover {
+  color: black !important;
+}
+div#we-help-businesses-sec .txt h2 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 140%;
+  color: #2f2e66 !important;
+}
+div#case-studies-with-bg-sec .vc_col-sm-7 .vc_column-inner {
+  padding: 100px !important;
+  background-image: url(https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/Group-1000002590.png) !important;
+  background-size: 100% 100% !important;
+}
+div#case-studies-with-bg-sec
+  .vc_col-sm-7
+  .vc_column-inner
+  .vc_figure
+  .vc_single_image-wrapper {
+  display: block !important;
+}
+div#case-studies-with-bg-sec .vc_col-sm-7 .vc_column-inner .vc_figure {
+  display: block !important;
+}
+div#case-studies-with-bg-sec .vc_col-sm-7 .vc_column-inner .vc_figure img {
+  margin: 0 auto;
+  display: table;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner {
+  background-color: #f8f8f8 !important;
+  padding: 0 210px 0 60px;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner .case-study-text h6 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #2f2e66 !important;
+  position: relative !important;
+  padding-bottom: 7px;
+  margin-bottom: 50px;
+}
+div#case-studies-with-bg-sec
+  .vc_col-sm-5
+  .vc_column-inner
+  .case-study-text
+  h6::after {
+  content: "" !important;
+  height: 3px !important;
+  width: 23px !important;
+  background-color: #3c4ff4 !important;
+  position: absolute !important;
+  left: 0;
+  bottom: 0;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner .case-study-text ul {
+  padding: 0 !important;
+}
+div#case-studies-with-bg-sec
+  .vc_col-sm-5
+  .vc_column-inner
+  .case-study-text
+  ul
+  li {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+div#case-studies-with-bg-sec
+  .vc_col-sm-5
+  .vc_column-inner
+  .case-study-text
+  ul
+  li:not(:last-child) {
+  margin-right: 10px !important;
+}
+div#case-studies-with-bg-sec
+  .vc_col-sm-5
+  .vc_column-inner
+  .case-study-text
+  ul
+  li
+  a {
+  background: #2f2e66;
+  border-radius: 6px;
+  color: #fff !important;
+  padding: 8px 14px;
+  border: 1px solid #fff0;
+}
+div#case-studies-with-bg-sec
+  .vc_col-sm-5
+  .vc_column-inner
+  .case-study-text
+  ul
+  li
+  a:hover {
+  background-color: #fff0 !important;
+  color: #2f2e66 !important;
+  border-color: rgba(32, 32, 32, 0.8) !important;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner .case-study-text {
+  margin-bottom: 50px;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner .txt-2 h4 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: #2f2e66 !important;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner .txt-2 p {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(47, 46, 102, 0.6);
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner .wpb_single_image {
+  margin-bottom: 30px;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner a.btn {
+  background: linear-gradient(255.96deg, #3239ff 9%, #0008f4 94%);
+  border: 1px solid #bababa;
+  box-shadow: 0px 4px 12px rgba(81, 81, 81, 0.25);
+  border-radius: 6px;
+  color: #fff !important;
+  font-family: "Wix Madefor Display";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 16px 24px;
+  transition: 0.8s !important;
+}
+div#case-studies-with-bg-sec .vc_col-sm-5 .vc_column-inner a.btn:hover {
+  transform: translatey(-4px);
+  box-shadow: 0px 4px 12px rgb(81 81 81 / 73%);
+}
+div#case-studies-with-bg-sec.second .vc_col-sm-7 .vc_column-inner {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+div#case-studies-with-bg-sec.second .vc_col-sm-5 .vc_column-inner {
+  background-image: url("https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/Vector.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  h6 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #2f2e66 !important;
+  position: relative !important;
+  padding-bottom: 7px;
+  margin-bottom: 50px;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  h6::after {
+  content: "" !important;
+  height: 3px !important;
+  width: 23px !important;
+  background-color: #3c4ff4 !important;
+  position: absolute !important;
+  left: 0;
+  bottom: 0;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  ul {
+  padding: 0 !important;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  ul
+  li {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  ul
+  li:not(:last-child) {
+  margin-right: 10px !important;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  ul
+  li
+  a {
+  background: #2f2e66;
+  border-radius: 6px;
+  color: #fff !important;
+  padding: 8px 14px;
+  border: 1px solid #fff0;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text
+  ul
+  li
+  a:hover {
+  background-color: #fff0 !important;
+  color: #2f2e66 !important;
+  border-color: rgba(32, 32, 32, 0.8) !important;
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .case-study-text {
+  margin-bottom: 50px;
+}
+div#case-studies-sec .vc_col-sm-6:nth-child(1) .vc_column-inner .txt-2 h4 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: #2f2e66 !important;
+}
+div#case-studies-sec .vc_col-sm-6:nth-child(1) .vc_column-inner .txt-2 p {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(47, 46, 102, 0.6);
+}
+div#case-studies-sec
+  .vc_col-sm-6:nth-child(1)
+  .vc_column-inner
+  .wpb_single_image {
+  margin-bottom: 30px;
+}
+div#case-studies-sec .vc_col-sm-6:nth-child(1) .vc_column-inner a.btn {
+  background: linear-gradient(255.96deg, #3239ff 9%, #0008f4 94%);
+  border: 1px solid #bababa;
+  box-shadow: 0px 4px 12px rgba(81, 81, 81, 0.25);
+  border-radius: 6px;
+  color: #fff !important;
+  font-family: "Wix Madefor Display";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 16px 24px;
+  transition: 0.8s !important;
+}
+div#case-studies-sec .vc_col-sm-6:nth-child(1) .vc_column-inner a.btn:hover {
+  transform: translatey(-4px);
+  box-shadow: 0px 4px 12px rgb(81 81 81 / 73%);
+}
+div#case-studies-sec .vc_col-sm-6:nth-child(1) .vc_column-inner {
+  padding-right: 50px;
+}
+div#case-studies-sec .wpb_single_image.wpb_content_element.vc_align_left {
+  margin: 0;
+}
+div#testimonial-section h2 {
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 10px !important;
+  color: #202020;
+}
+div#testimonial-section p {
+  font-family: "Wix Madefor Display";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+div#testimonial-section .wd-testimon-info {
+  display: block !important;
+}
+div#testimonial-section .wd-testimon-info .wd-testimon-thumb {
+  margin-bottom: 20px;
+}
+div#testimonial-section .wd-testimon-name {
+  margin: 0 !important;
+  font-family: "Bauziet";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 100%;
+  color: #202020;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text {
+  background-color: #fff !important;
+  border: 1px solid #ecf2fd;
+  box-shadow: 0px 4px 16px rgba(184, 184, 184, 0.25);
+  border-radius: 8px;
+  font-family: "Wix Madefor Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(32, 32, 32, 0.8);
+  transition: unset !important;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text::before {
+  display: none;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text p {
+  margin: 0;
+  font-family: "Wix Madefor Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text p a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #202020;
+  margin-top: 10px;
+  display: table;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text p a::after {
+  content: "\f153" !important;
+  font-family: "woodmart-font";
+  margin-left: 8px;
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text p.moretext {
+  display: none;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text:hover {
+  background-color: #2f2e66 !important;
+  color: #fff !important;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text:hover p {
+  color: #fff !important;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text:hover p a {
+  color: #fff !important;
+}
+div#testimonial-section .testimon-style-info-top .wd-testimon-text {
+  min-height: 170px;
+}
+
+/******************************************** Home Page CSS End ********************************************/

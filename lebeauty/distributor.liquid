@@ -1,0 +1,38 @@
+<section id="distributor-section">
+    <div class="page-width custom-container">
+        <div class="distributor-main-row">
+            <div class="distributor-inner">
+                <div class="distributor-box">
+                    <img src="{{ section.settings.distributor_img | img_url: 'master' }}" alt="Distributor">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+"name": "banner",
+"settings": [
+{
+"type": "image_picker",
+"id": "distributor_img",
+"label": "Select Image"
+}
+],
+"presets": [
+{
+"name": "Distributor Section"
+}
+]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

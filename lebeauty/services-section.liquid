@@ -1,0 +1,68 @@
+<section id="service-section">
+    <div class="page-width custom-container">
+        <div class="services-container">
+            <div class="row services-box-row">
+                {% for block in section.blocks %}
+                {% case block.type %}
+                {% when 'services_blocks' %}
+                <div class="services-box-col col-lg-3 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon-wrapper">
+                            <img src="{{ section.settings.service_icon | img_url: 'master' }}" alt="Service Icon">
+                        </div>
+                        <div class="service-content-wrapper">
+                            <h4 class="service-title">{{ block.settings.service_title }}</h4>
+                            <div class="service-content">{{ block.settings.service_content }}</div>
+                        </div>
+                    </div>
+                </div>
+                {% endcase %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+"name": "Services Section",
+"max_blocks": 4,
+"settings": [
+],
+"blocks": [
+{
+"name": "Services Blocks",
+"type": "services_blocks",
+"settings": [
+{
+"type": "image_picker",
+"id": "service_icon",
+"label": "Service Icon"
+},
+{
+"type": "text",
+"id": "service_title",
+"label": "Service Title"
+},
+{
+"type": "text",
+"id": "service_content",
+"label": "Service Content"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Services Section"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

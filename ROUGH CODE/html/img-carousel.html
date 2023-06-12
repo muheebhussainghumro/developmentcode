@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        margin: 50px 0px;
+    }
+
+    .section-header {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .section-title {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .section-subtitle {
+        margin: 0 auto;
+        width: 30%;
+        color: #888;
+        font-size: 20px;
+    }
+
+    .trusted {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .trusted-row {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        align-items: center;
+    }
+
+    .trusted-row img {
+        width: 200px;
+        margin: 20px;
+    }
+
+    @media (max-width: 1000px) {
+        .trusted {
+            width: 100%;
+        }
+
+        .trusted-row img {
+            width: 100px;
+            margin: 20px;
+        }
+
+        .section-subtitle {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+
+    <section class="trusted-section">
+        <div class="section-header">
+            <h2 class="section-title">Trusted By The Best</h2>
+            <p class="section-subtitle">Our team has been trusted with thousands of events for the world's best
+                companies, big or small.</p>
+        </div>
+        <div class="trusted">
+            <div class="trusted-row trusted-row1">
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // this solution isn't a great one, especially if the user stays on the page for a while. Basically it just keeps adding the same images to the end of the container and scrolling indefinitely. 
+
+        // if you wanted to make this algorithm better on the DOM, you could maybe treat the image container as a stack to pop the images that are off the screen and push the next image in line to the container.
+
+        // Also, the links to the images below could break, resulting in broken images being placed into the scrolling container. I would host these images on your own server so nothing happens to them, and you don't take up resources from the other host.
+
+        function scrollWindow() {
+            var scroll = document.querySelector('.trusted-row');
+            if (scroll.offsetWidth + scroll.scrollLeft == scroll.scrollWidth) {
+                var container = document.createElement("div");
+                container.classList.add("trusted-column");
+
+                var image1 = document.createElement("img");
+                image1.src = images[imageIndex];
+
+                container.appendChild(image1);
+
+                scroll.appendChild(container);
+
+                if (imageIndex == images.length - 1) {
+                    imageIndex = 0;
+                } else {
+                    imageIndex += 2;
+                }
+            }
+            scroll.scrollLeft += 1;
+        }
+        function handleScroll() {
+            if (scrollStatus == false) {
+                startScroll();
+                scrollStatus = true;
+            } else {
+                stopScroll();
+                scrollStatus = false;
+            }
+        }
+        function startScroll() {
+            timeout = setInterval(scrollWindow, 20);
+            scrollStatus = true;
+        }
+        function stopScroll() {
+            clearInterval(timeout);
+            scrollStatus = false;
+        }
+        const images = [
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-8.png",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-7.jpg",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-6.png",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-5.png",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-4.png",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-3.png",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-2.png",
+            "https://volkoh.com/newvolkoh/wp-content/uploads/2023/05/img-1.png",
+            "https://www.cs.umd.edu/cscareerfair/sites/default/files/cs.umd.edu.openhouse/images/company/mitre_0.png",
+            "https://cdn.freelogovectors.net/wp-content/uploads/2019/02/leidos-logo.png",
+            "https://cdn.discordapp.com/attachments/620652013088407595/697112575271239811/GMU_foundation.png",
+            "https://media.discordapp.net/attachments/620652013088407595/697112610730016778/Sodexo_logo.png",
+            "https://pac.gmu.edu/wp-content/uploads/2018/07/cropped-paclogogreen.png",
+        ];
+        var scrollStatus = false;
+        var imageIndex = 0;
+        handleScroll();
+        document.querySelector('.trusted-row').addEventListener("click", function () {
+            handleScroll();
+        })
+    </script>
+
+</body>
+
+</html>

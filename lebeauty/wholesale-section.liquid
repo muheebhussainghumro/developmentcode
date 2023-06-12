@@ -1,0 +1,54 @@
+<section id="Wholesale-section">
+    <div class="page-width custom-container">
+        <div class="Wholesale-content-wrapper">
+            <div class="title-wrapper">
+                <p class="primary-subtitle">{{ section.settings.wholesale_subtitle }}</p>
+                <h1 class="primary-title">{{ section.settings.wholesale_title }}</h1>
+                <div class="custom-btn-wrapper">
+                    <a href="{{ section.settings.btn_url }}" class="btn primary-btn">{{
+                        section.settings.btn_label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "Wholesale",
+"settings": [
+{
+"type": "text",
+"id": "wholesale_title",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "wholesale_subtitle",
+"label": "Subtitle"
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Button Label"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Button Url"
+}
+],
+"presets": [
+{
+"name": "Wholesale Section"
+}
+]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

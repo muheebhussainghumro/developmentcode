@@ -1,1 +1,63 @@
-https://dimsemenov.com/plugins/magnific-popup/
+=============
+
+1)- Enqueue magnific scipts
+
+function woodmart_child_enqueue_styles() {
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
+	wp_enqueue_style('magnific-css', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', array(), '2.3.4', 'all' );
+	wp_enqueue_script('magnific-js', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js', array(), '2.3.4', true );
+}
+add_action( 'wp_enqueue_scripts', 'woodmart_child_enqueue_styles', 10010 );
+
+=============
+
+2)- add unique class to button where you to show the popup
+
+<div class="col-md-2 career-btn-wrapper">
+        <p class="job-popup-btn">Apply Now</p>
+</div>
+
+=============
+
+3)- Add popup code
+
+<div class="mfp-hide job-popup">
+    <div class="mfp-with-anim woodmart-promo-popup" style="background-color: #ffff;">
+        <div class="pop-job-details" id="jobHandler">
+            <div class="career-form-wrapper">
+                [contact-form-7 id="8" title="Career Form"]
+            </div>
+        </div>
+    </div>
+</div>
+
+=============
+
+4)- Add script 
+
+<script>
+    jQuery(document).ready(function($) {
+
+        jQuery(document).on('click', '.job-popup-btn', function(event) {
+            event.preventDefault();
+            jQuery(this).magnificPopup({
+                items: {
+                    src: '.job-popup',
+                    type: 'inline'
+                },
+                fixedContentPos: true,
+                callbacks: {
+                    beforeOpen: function() {
+                        jQuery('html').addClass('mfp-helper');
+                    },
+                    close: function() {
+                        jQuery('html').removeClass('mfp-helper');
+                    }
+                }
+            }).magnificPopup('open');
+
+        });
+    });
+</script>
+
+=============

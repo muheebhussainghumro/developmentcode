@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .wholesale-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .wholesale-wrapper .wholesale-icon {
+        position: relative;
+        background: #ffffff;
+        border-radius: 50% !important;
+        padding: 2px;
+        margin: 10px;
+        width: 90px;
+        height: 90px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-border-radius: 50%;
+        -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .wholesale-wrapper img {
+        width: 90px !important;
+        height: 90px !important;
+        display: block !important;
+    }
+
+    .wholesale-wrapper .tooltip {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        background: #fff;
+        color: #ffffff;
+        padding: 5px 8px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        border-radius: 4px;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-border-radius: 4px;
+    }
+
+    .wholesale-wrapper .tooltip::before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #fff;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transform: translate(-50%) rotate(45deg);
+        -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .wholesale-wrapper .wholesale-icon:hover .tooltip {
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .wholesale-wrapper .wholesale-icon:hover span,
+    .wholesale-wrapper .wholesale-icon:hover .tooltip {
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01);
+    }
+
+    .wholesale-wrapper .wholesale-icon:hover,
+    .wholesale-wrapper .wholesale-icon:hover .tooltip,
+    .wholesale-wrapper .wholesale-icon:hover .tooltip::before {
+        color: #333;
+    }
+
+    @media (max-width:991px) {
+
+        .wholesale-wrapper img,
+        .wholesale-wrapper .wholesale-icon {
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+</style>
+
+
+<body>
+
+
+
+    <div class="row">
+        <div class="col-12 wholesale-wrapper">
+            <div class="wholesale-icon pork">
+                <div class="tooltip">Pork</div>
+                <span><img
+                        src="https://cdn.shopify.com/s/files/1/0605/0621/0503/files/Group_35.svg?v=1686051108"></span>
+            </div>
+            <div class="wholesale-icon lamb">
+                <div class="tooltip">Lamb</div>
+                <span><img
+                        src="https://cdn.shopify.com/s/files/1/0605/0621/0503/files/Group_33.svg?v=1686051108"></span>
+            </div>
+            <div class="wholesale-icon poultry">
+                <div class="tooltip">Poultry</div>
+                <span><img
+                        src="https://cdn.shopify.com/s/files/1/0605/0621/0503/files/Group_34.svg?v=1686051108"></span>
+            </div>
+            <div class="wholesale-icon beef">
+                <div class="tooltip">Beef</div>
+                <span><img
+                        src="https://cdn.shopify.com/s/files/1/0605/0621/0503/files/Group_36.svg?v=1686051108"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

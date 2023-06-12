@@ -1,0 +1,71 @@
+<section id="banner-section">
+    <div class="page-width custom-container">
+        <div class="row banner-row">
+            <div class="col-md-6 beauty-col">
+                <div class="banner-content-wrapper">
+                    <div class="title-wrapper">
+                        <p class="main-subtitle">{{ section.settings.banner_subtitle }}</p>
+                        <h1 class="main-title">{{ section.settings.banner_title }}</h1>
+                        <div class="custom-btn-wrapper">
+                            <a href="{{ section.settings.btn_url }}" class="btn primary-btn banner-btn">{{
+                                section.settings.btn_label }}</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 beauty-col">
+                <div class="primary-button-wrapper">
+                    <img src="{{ section.settings.banner_img | img_url: 'master' }}" alt="Florist Shop">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+"name": "banner",
+"settings": [
+{
+"type": "text",
+"id": "banner_title",
+"label": "Main Title"
+},
+{
+"type": "text",
+"id": "banner_subtitle",
+"label": "Main Subtitle"
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Button Label"
+},
+{
+"type": "text",
+"id": "btn_url",
+"label": "Button Url"
+},
+{
+"type": "image_picker",
+"id": "banner_img",
+"label": "Select Banner Image"
+}
+],
+"presets": [
+{
+"name": "Banner Section"
+}
+]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
